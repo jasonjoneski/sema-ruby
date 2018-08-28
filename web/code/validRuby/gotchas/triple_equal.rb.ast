@@ -1,0 +1,80 @@
+    (RootNode 6
+      (BlockNode 6
+        (CallNode:=== 6
+          (FixnumNode 6)
+          (ArrayNode 6
+            (FixnumNode 6)
+          )
+          null
+        )
+        (CallNode:=== 9
+          (ConstNode:Fixnum 9)
+          (ArrayNode 9
+            (FixnumNode 9)
+          )
+          null
+        )
+        (CallNode:=== 12
+          (FixnumNode 12)
+          (ArrayNode 12
+            (ConstNode:Fixnum 12)
+          )
+          null
+        )
+        (CallNode:=== 15
+          (ConstNode:Class 15)
+          (ArrayNode 15
+            (ConstNode:Class 15)
+          )
+          null
+        )
+        (CallNode:=== 16
+          (ConstNode:Object 16)
+          (ArrayNode 16
+            (ConstNode:Object 16)
+          )
+          null
+        )
+        (CallNode:=== 17
+          (ConstNode:Class 17)
+          (ArrayNode 17
+            (ConstNode:Object 17)
+          )
+          null
+        )
+        (CallNode:=== 18
+          (ConstNode:Object 18)
+          (ArrayNode 18
+            (ConstNode:Class 18)
+          )
+          null
+        )
+        (CallNode:=== 21
+          (ConstNode:Fixnum 21)
+          (ArrayNode 21
+            (ConstNode:Fixnum 21)
+          )
+          null
+        )
+        (CallNode:=== 24
+          (DotNode 24
+            (FixnumNode 24)
+            (FixnumNode 24)
+          )
+          (ArrayNode 24
+            (FixnumNode 24)
+          )
+          null
+        )
+        (CallNode:=== 27
+          (FixnumNode 27)
+          (ArrayNode 27
+            (DotNode 27
+              (FixnumNode 27)
+              (FixnumNode 27)
+            )
+          )
+          null
+        )
+      )
+    )

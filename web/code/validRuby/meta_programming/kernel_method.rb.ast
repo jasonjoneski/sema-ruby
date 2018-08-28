@@ -1,0 +1,36 @@
+    (RootNode 6
+      (BlockNode 6
+        (ClassNode 6
+          (Colon2ImplicitNode:Foo 6
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (CallNode:ancestors 7
+          (ConstNode:Foo 7)
+          null
+          null
+        )
+        (ModuleNode 10
+          (Colon2ImplicitNode:Kernel 10
+            null
+          )
+          (DefnNode:foobar 11
+            (ArgsNode 12
+              (ListNode 12)
+              (ListNode 12)
+              (ListNode 12)
+              (ListNode 12)
+            )
+            (FCallNode:puts 12
+              (ArrayNode 12
+                (StrNode 12)
+              )
+              null
+            )
+          )
+        )
+        (VCallNode:foobar 17)
+      )
+    )

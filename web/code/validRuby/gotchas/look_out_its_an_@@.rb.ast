@@ -1,0 +1,67 @@
+    (RootNode 6
+      (BlockNode 6
+        (ClassNode 6
+          (Colon2ImplicitNode:Parent 6
+            null
+          )
+          (BlockNode 7
+            (ClassVarAsgnNode:@@value 7
+              (FixnumNode 7)
+            )
+            (DefsNode:value 9
+              (SelfNode 9)
+              (ArgsNode 10
+                (ListNode 10)
+                (ListNode 10)
+                (ListNode 10)
+                (ListNode 10)
+              )
+              (ClassVarNode:@@value 10)
+            )
+            (DefsNode:inc_value 13
+              (SelfNode 13)
+              (ArgsNode 14
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+              )
+              (ClassVarAsgnNode:@@value 14
+                (CallNode:+ 14
+                  (ClassVarNode:@@value 14)
+                  (ArrayNode 14
+                    (FixnumNode 14)
+                  )
+                  null
+                )
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 18
+          (Colon2ImplicitNode:Child 18
+            null
+          )
+          (ClassVarAsgnNode:@@value 19
+            (FixnumNode 19)
+          )
+          (ConstNode:Parent 18)
+        )
+        (CallNode:value 22
+          (ConstNode:Parent 22)
+          null
+          null
+        )
+        (CallNode:inc_value 25
+          (ConstNode:Parent 25)
+          null
+          null
+        )
+        (CallNode:value 26
+          (ConstNode:Child 26)
+          null
+          null
+        )
+      )
+    )

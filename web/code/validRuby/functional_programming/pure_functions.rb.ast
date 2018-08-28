@@ -1,0 +1,20 @@
+    (RootNode 3
+      (DefnNode:sum_two_numbers 3
+        (ArgsNode 3
+          (ListNode 3
+            (ArgumentNode:a 3)
+            (ArgumentNode:b 3)
+          )
+          (ListNode 3)
+          (ListNode 3)
+          (ListNode 3)
+        )
+        (CallNode:+ 4
+          (LocalVarNode:a 4)
+          (ArrayNode 4
+            (LocalVarNode:b 4)
+          )
+          null
+        )
+      )
+    )

@@ -1,0 +1,106 @@
+    (RootNode 2
+      (BlockNode 2
+        (ClassNode 2
+          (Colon2ImplicitNode:Hai 2
+            null
+          )
+          (DefnNode:method_missing 3
+            (ArgsNode 3
+              (ListNode 3
+                (ArgumentNode:method 3)
+              )
+              (ListNode 3)
+              (RestArgNode:args 3)
+              (ListNode 3)
+              (ListNode 3)
+            )
+            (BlockNode 4
+              (FCallNode:puts 4
+                (ArrayNode 4
+                  (DStrNode 4
+                    (StrNode 4)
+                    (EvStrNode 4
+                      (LocalVarNode:method 4)
+                    )
+                    (StrNode 4)
+                    (EvStrNode 4
+                      (CallNode:join 4
+                        (LocalVarNode:args 4)
+                        (ArrayNode 4
+                          (StrNode 4)
+                        )
+                        null
+                      )
+                    )
+                    (StrNode 4)
+                  )
+                )
+                null
+              )
+              (IfNode 5
+                (FCallNode:block_given? 5
+                  null
+                  null
+                )
+                (FCallNode:puts 5
+                  (ArrayNode 5
+                    (StrNode 5)
+                  )
+                  null
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (CallNode:yolo 8
+          (CallNode:new 8
+            (ConstNode:Hai 8)
+            null
+            null
+          )
+          null
+          null
+        )
+        (CallNode:yolo 9
+          (CallNode:new 9
+            (ConstNode:Hai 9)
+            null
+            null
+          )
+          (ArrayNode 9
+            (StrNode 9)
+            (FixnumNode 9)
+            (SymbolNode:c 9)
+          )
+          null
+        )
+        (CallNode:yolo 10
+          (CallNode:new 10
+            (ConstNode:Hai 10)
+            null
+            null
+          )
+          (ArrayNode 10
+            (SymbolNode:a 10)
+            (SymbolNode:b 10)
+            (SymbolNode:c 10)
+          )
+          (IterNode 10
+            (ArgsNode 10
+              (ListNode 10)
+              (ListNode 10)
+              (ListNode 10)
+              (ListNode 10)
+            )
+            (FCallNode:puts 10
+              (ArrayNode 10
+                (StrNode 10)
+              )
+              null
+            )
+          )
+        )
+      )
+    )

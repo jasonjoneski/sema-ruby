@@ -1,0 +1,25 @@
+    (RootNode 5
+      (BlockNode 5
+        (LocalAsgnNode:str 5
+          (StrNode 5)
+        )
+        (CallNode:upcase 6
+          (LocalVarNode:str 6)
+          null
+          null
+        )
+        (LocalVarNode:str 9)
+        (CallNode:upcase! 12
+          (LocalVarNode:str 12)
+          null
+          null
+        )
+        (LocalVarNode:str 15)
+        (CallNode:upcase! 19
+          (LocalVarNode:str 19)
+          null
+          null
+        )
+        (LocalVarNode:str 22)
+      )
+    )

@@ -1,0 +1,211 @@
+    (RootNode 10
+      (BlockNode 10
+        (ModuleNode 10
+          (Colon2ImplicitNode:Originator 10
+            null
+          )
+          (BlockNode 11
+            (DefnNode:saves 11
+              (ArgsNode 12
+                (ListNode 12)
+                (ListNode 12)
+                (ListNode 12)
+                (ListNode 12)
+              )
+              (OpAsgnOrNode 12
+                (InstVarNode:@saves 12)
+                (InstAsgnNode:@saves 12
+                  (HashNode 12)
+                )
+              )
+            )
+            (DefnNode:save 15
+              (ArgsNode 15
+                (ListNode 15
+                  (ArgumentNode:key 15)
+                )
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+              )
+              (BlockNode 16
+                (FCallNode:puts 16
+                  (ArrayNode 16
+                    (DStrNode 16
+                      (StrNode 16)
+                      (EvStrNode 16
+                        (LocalVarNode:key 16)
+                      )
+                    )
+                  )
+                  null
+                )
+                (AttrAssignNode:[]= 17
+                  (InstVarNode:@saves 17)
+                  (ArrayNode 17
+                    (LocalVarNode:key 17)
+                    (CallNode:dump 17
+                      (ConstNode:Marshal 17)
+                      (ArrayNode 17
+                        (SelfNode 17)
+                      )
+                      null
+                    )
+                  )
+                )
+              )
+            )
+            (DefnNode:restore 20
+              (ArgsNode 20
+                (ListNode 20
+                  (ArgumentNode:key 20)
+                )
+                (ListNode 20)
+                (ListNode 20)
+                (ListNode 20)
+              )
+              (BlockNode 21
+                (FCallNode:puts 21
+                  (ArrayNode 21
+                    (DStrNode 21
+                      (StrNode 21)
+                      (EvStrNode 21
+                        (LocalVarNode:key 21)
+                      )
+                    )
+                  )
+                  null
+                )
+                (FCallNode:include_state 22
+                  (ArrayNode 22
+                    (CallNode:load 22
+                      (ConstNode:Marshal 22)
+                      (ArrayNode 22
+                        (CallNode:[] 22
+                          (InstVarNode:@saves 22)
+                          (ArrayNode 22
+                            (LocalVarNode:key 22)
+                          )
+                          null
+                        )
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+            )
+            (VCallNode:private 25)
+            (DefnNode:include_state 27
+              (ArgsNode 27
+                (ListNode 27
+                  (ArgumentNode:other 27)
+                )
+                (ListNode 27)
+                (ListNode 27)
+                (ListNode 27)
+              )
+              (CallNode:each 28
+                (CallNode:instance_variables 28
+                  (LocalVarNode:other 28)
+                  null
+                  null
+                )
+                null
+                (IterNode 28
+                  (ArgsNode 28
+                    (ListNode 28
+                      (ArgumentNode:v 28)
+                    )
+                    (ListNode 28)
+                    (ListNode 28)
+                    (ListNode 28)
+                  )
+                  (IfNode 28
+                    (CallNode:== 28
+                      (DVarNode:v 28)
+                      (ArrayNode 28
+                        (StrNode 28)
+                      )
+                      null
+                    )
+                    null
+                    (FCallNode:instance_variable_set 28
+                      (ArrayNode 28
+                        (DVarNode:v 28)
+                        (CallNode:instance_variable_get 28
+                          (LocalVarNode:other 28)
+                          (ArrayNode 28
+                            (DVarNode:v 28)
+                          )
+                          null
+                        )
+                      )
+                      null
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (ClassNode 32
+          (Colon2ImplicitNode:Example 32
+            null
+          )
+          (BlockNode 33
+            (FCallNode:include 33
+              (ArrayNode 33
+                (ConstNode:Originator 33)
+              )
+              null
+            )
+            (FCallNode:attr_accessor 35
+              (ArrayNode 35
+                (SymbolNode:name 35)
+                (SymbolNode:color 35)
+              )
+              null
+            )
+            (DefnNode:initialize 37
+              (ArgsNode 37
+                (ListNode 37
+                  (ArgumentNode:name 37)
+                  (ArgumentNode:color 37)
+                )
+                (ListNode 37)
+                (ListNode 37)
+                (ListNode 37)
+              )
+              (BlockNode 38
+                (InstAsgnNode:@name 38
+                  (LocalVarNode:name 38)
+                )
+                (InstAsgnNode:@color 39
+                  (LocalVarNode:color 39)
+                )
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:example 44
+          (CallNode:new 44
+            (ConstNode:Example 44)
+            (ArrayNode 44
+              (StrNode 44)
+              (StrNode 44)
+            )
+            null
+          )
+        )
+        (CallNode:save 45
+          (LocalVarNode:example 45)
+          (ArrayNode 45
+            (SymbolNode:now 45)
+          )
+          null
+        )
+      )
+    )

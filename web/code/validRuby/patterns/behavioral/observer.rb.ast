@@ -1,0 +1,300 @@
+    (RootNode 4
+      (BlockNode 4
+        (ModuleNode 4
+          (Colon2ImplicitNode:Observable 4
+            null
+          )
+          (BlockNode 5
+            (DefnNode:initialize 5
+              (ArgsNode 6
+                (ListNode 6)
+                (ListNode 6)
+                (ListNode 6)
+                (ListNode 6)
+              )
+              (InstAsgnNode:@observers 6
+                (ZArrayNode 6)
+              )
+            )
+            (DefnNode:add_observer 9
+              (ArgsNode 9
+                (ListNode 9
+                  (ArgumentNode:observer 9)
+                )
+                (ListNode 9)
+                (ListNode 9)
+                (ListNode 9)
+              )
+              (IfNode 10
+                (CallNode:include? 10
+                  (InstVarNode:@observers 10)
+                  (ArrayNode 10
+                    (LocalVarNode:observer 10)
+                  )
+                  null
+                )
+                null
+                (CallNode:<< 10
+                  (InstVarNode:@observers 10)
+                  (ArrayNode 10
+                    (LocalVarNode:observer 10)
+                  )
+                  null
+                )
+              )
+            )
+            (DefnNode:delete_observer 13
+              (ArgsNode 13
+                (ListNode 13
+                  (ArgumentNode:observer 13)
+                )
+                (ListNode 13)
+                (ListNode 13)
+                (ListNode 13)
+              )
+              (CallNode:delete 14
+                (InstVarNode:@observers 14)
+                (ArrayNode 14
+                  (LocalVarNode:observer 14)
+                )
+                null
+              )
+            )
+            (DefnNode:notify_observers 17
+              (ArgsNode 18
+                (ListNode 18)
+                (ListNode 18)
+                (ListNode 18)
+                (ListNode 18)
+              )
+              (CallNode:each 18
+                (InstVarNode:@observers 18)
+                null
+                (IterNode 18
+                  (ArgsNode 18
+                    (ListNode 18
+                      (ArgumentNode:x 18)
+                    )
+                    (ListNode 18)
+                    (ListNode 18)
+                    (ListNode 18)
+                  )
+                  (CallNode:update 18
+                    (DVarNode:x 18)
+                    (ArrayNode 18
+                      (SelfNode 18)
+                    )
+                    null
+                  )
+                )
+              )
+            )
+          )
+        )
+        (ClassNode 22
+          (Colon2ImplicitNode:Employee 22
+            null
+          )
+          (BlockNode 23
+            (FCallNode:include 23
+              (ArrayNode 23
+                (ConstNode:Observable 23)
+              )
+              null
+            )
+            (FCallNode:attr_reader 25
+              (ArrayNode 25
+                (SymbolNode:name 25)
+              )
+              null
+            )
+            (FCallNode:attr_accessor 26
+              (ArrayNode 26
+                (SymbolNode:title 26)
+                (SymbolNode:salary 26)
+              )
+              null
+            )
+            (DefnNode:initialize 28
+              (ArgsNode 28
+                (ListNode 28
+                  (ArgumentNode:name 28)
+                  (ArgumentNode:title 28)
+                  (ArgumentNode:salary 28)
+                )
+                (ListNode 28)
+                (ListNode 28)
+                (ListNode 28)
+              )
+              (BlockNode 29
+                (SuperNode 29
+                  null
+                )
+                (InstAsgnNode:@name 30
+                  (LocalVarNode:name 30)
+                )
+                (InstAsgnNode:@title 31
+                  (LocalVarNode:title 31)
+                )
+                (InstAsgnNode:@salary 32
+                  (LocalVarNode:salary 32)
+                )
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 36
+          (Colon2ImplicitNode:BaseObserver 36
+            null
+          )
+          (DefnNode:update 37
+            (ArgsNode 38
+              (ListNode 38)
+              (ListNode 38)
+              (ListNode 38)
+              (ListNode 38)
+            )
+            (FCallNode:raise 38
+              (ArrayNode 38
+                (StrNode 38)
+              )
+              null
+            )
+          )
+          null
+        )
+        (ClassNode 42
+          (Colon2ImplicitNode:Payroll 42
+            null
+          )
+          (DefnNode:update 43
+            (ArgsNode 43
+              (ListNode 43
+                (ArgumentNode:employee 43)
+              )
+              (ListNode 43)
+              (ListNode 43)
+              (ListNode 43)
+            )
+            (BlockNode 44
+              (FCallNode:p 44
+                (ArrayNode 44
+                  (DStrNode 44
+                    (StrNode 44)
+                    (EvStrNode 44
+                      (CallNode:name 44
+                        (LocalVarNode:employee 44)
+                        null
+                        null
+                      )
+                    )
+                    (StrNode 44)
+                  )
+                )
+                null
+              )
+              (FCallNode:p 45
+                (ArrayNode 45
+                  (DStrNode 45
+                    (StrNode 45)
+                    (EvStrNode 45
+                      (CallNode:salary 45
+                        (LocalVarNode:employee 45)
+                        null
+                        null
+                      )
+                    )
+                    (StrNode 45)
+                  )
+                )
+                null
+              )
+            )
+          )
+          (ConstNode:BaseObserver 42)
+        )
+        (ClassNode 49
+          (Colon2ImplicitNode:TaxMan 49
+            null
+          )
+          (DefnNode:update 50
+            (ArgsNode 50
+              (ListNode 50
+                (ArgumentNode:employee 50)
+              )
+              (ListNode 50)
+              (ListNode 50)
+              (ListNode 50)
+            )
+            (FCallNode:p 51
+              (ArrayNode 51
+                (DStrNode 51
+                  (StrNode 51)
+                  (EvStrNode 51
+                    (CallNode:name 51
+                      (LocalVarNode:employee 51)
+                      null
+                      null
+                    )
+                  )
+                  (StrNode 51)
+                )
+              )
+              null
+            )
+          )
+          (ConstNode:BaseObserver 49)
+        )
+        (LocalAsgnNode:mike 56
+          (CallNode:new 56
+            (ConstNode:Employee 56)
+            (ArrayNode 56
+              (StrNode 56)
+              (StrNode 56)
+              (FixnumNode 56)
+            )
+            null
+          )
+        )
+        (CallNode:add_observer 58
+          (LocalVarNode:mike 58)
+          (ArrayNode 58
+            (CallNode:new 58
+              (ConstNode:Payroll 58)
+              null
+              null
+            )
+          )
+          null
+        )
+        (CallNode:add_observer 59
+          (LocalVarNode:mike 59)
+          (ArrayNode 59
+            (CallNode:new 59
+              (ConstNode:TaxMan 59)
+              null
+              null
+            )
+          )
+          null
+        )
+        (AttrAssignNode:salary= 61
+          (LocalVarNode:mike 61)
+          (ArrayNode 61
+            (FixnumNode 61)
+          )
+        )
+        (AttrAssignNode:title= 62
+          (LocalVarNode:mike 62)
+          (ArrayNode 62
+            (StrNode 62)
+          )
+        )
+        (CallNode:notify_observers 63
+          (LocalVarNode:mike 63)
+          null
+          null
+        )
+      )
+    )

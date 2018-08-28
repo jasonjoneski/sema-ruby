@@ -1,0 +1,42 @@
+    (RootNode 0
+      (BlockNode 0
+        (LocalAsgnNode:str 0
+          (StrNode 0)
+        )
+        (CallNode:[] 3
+          (LocalVarNode:str 3)
+          (ArrayNode 3
+            (FixnumNode 3)
+          )
+          null
+        )
+        (CallNode:[] 7
+          (LocalVarNode:str 7)
+          (ArrayNode 7
+            (DotNode 7
+              (FixnumNode 7)
+              (FixnumNode 7)
+            )
+          )
+          null
+        )
+        (CallNode:[] 11
+          (LocalVarNode:str 11)
+          (ArrayNode 11
+            (FixnumNode 11)
+            (FixnumNode 11)
+          )
+          null
+        )
+        (LocalAsgnNode:str 15
+          (StrNode 15)
+        )
+        (CallNode:[] 18
+          (LocalVarNode:str 18)
+          (ArrayNode 18
+            (FixnumNode 18)
+          )
+          null
+        )
+      )
+    )

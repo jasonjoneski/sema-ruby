@@ -1,0 +1,212 @@
+    (RootNode 5
+      (BlockNode 5
+        (ClassNode 5
+          (Colon2ImplicitNode:Rectangle 5
+            null
+          )
+          (BlockNode 6
+            (DefnNode:initialize 6
+              (ArgsNode 6
+                (ListNode 6
+                  (ArgumentNode:height 6)
+                  (ArgumentNode:width 6)
+                )
+                (ListNode 6)
+                (ListNode 6)
+                (ListNode 6)
+              )
+              (BlockNode 7
+                (InstAsgnNode:@height 7
+                  (LocalVarNode:height 7)
+                )
+                (InstAsgnNode:@width 8
+                  (LocalVarNode:width 8)
+                )
+              )
+            )
+            (DefnNode:set_height 11
+              (ArgsNode 11
+                (ListNode 11
+                  (ArgumentNode:height 11)
+                )
+                (ListNode 11)
+                (ListNode 11)
+                (ListNode 11)
+              )
+              (InstAsgnNode:@height 12
+                (LocalVarNode:height 12)
+              )
+            )
+            (DefnNode:set_width 15
+              (ArgsNode 15
+                (ListNode 15
+                  (ArgumentNode:width 15)
+                )
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+              )
+              (InstAsgnNode:@width 16
+                (LocalVarNode:width 16)
+              )
+            )
+            (DefnNode:square 19
+              (ArgsNode 20
+                (ListNode 20)
+                (ListNode 20)
+                (ListNode 20)
+                (ListNode 20)
+              )
+              (CallNode:* 20
+                (InstVarNode:@width 20)
+                (ArrayNode 20
+                  (InstVarNode:@height 20)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 30
+          (Colon2ImplicitNode:Square 30
+            null
+          )
+          (BlockNode 31
+            (DefnNode:initialize 31
+              (ArgsNode 31
+                (ListNode 31
+                  (ArgumentNode:side 31)
+                )
+                (ListNode 31)
+                (ListNode 31)
+                (ListNode 31)
+              )
+              (SuperNode 32
+                (ArrayNode 32
+                  (LocalVarNode:side 32)
+                  (LocalVarNode:side 32)
+                )
+              )
+            )
+            (DefnNode:set_height 35
+              (ArgsNode 35
+                (ListNode 35
+                  (ArgumentNode:height 35)
+                )
+                (ListNode 35)
+                (ListNode 35)
+                (ListNode 35)
+              )
+              (BlockNode 36
+                (SuperNode 36
+                  (ArrayNode 36
+                    (LocalVarNode:height 36)
+                  )
+                )
+                (InstAsgnNode:@width 37
+                  (LocalVarNode:height 37)
+                )
+              )
+            )
+            (DefnNode:set_width 40
+              (ArgsNode 40
+                (ListNode 40
+                  (ArgumentNode:width 40)
+                )
+                (ListNode 40)
+                (ListNode 40)
+                (ListNode 40)
+              )
+              (BlockNode 41
+                (SuperNode 41
+                  (ArrayNode 41
+                    (LocalVarNode:width 41)
+                  )
+                )
+                (InstAsgnNode:@height 42
+                  (LocalVarNode:width 42)
+                )
+              )
+            )
+          )
+          (ConstNode:Rectangle 30)
+        )
+        (ClassNode 52
+          (Colon2ImplicitNode:Animal 52
+            null
+          )
+          (DefnNode:walk 53
+            (ArgsNode 54
+              (ListNode 54)
+              (ListNode 54)
+              (ListNode 54)
+              (ListNode 54)
+            )
+            (StrNode 54)
+          )
+          null
+        )
+        (ClassNode 58
+          (Colon2ImplicitNode:Cat 58
+            null
+          )
+          (DefnNode:run 59
+            (ArgsNode 60
+              (ListNode 60)
+              (ListNode 60)
+              (ListNode 60)
+              (ListNode 60)
+            )
+            (StrNode 60)
+          )
+          (ConstNode:Animal 58)
+        )
+        (ClassNode 66
+          (Colon2ImplicitNode:Animal 66
+            null
+          )
+          (BlockNode 67
+            (DefnNode:walk 67
+              (ArgsNode 68
+                (ListNode 68)
+                (ListNode 68)
+                (ListNode 68)
+                (ListNode 68)
+              )
+              (StrNode 68)
+            )
+            (DefnNode:run 71
+              (ArgsNode 72
+                (ListNode 72)
+                (ListNode 72)
+                (ListNode 72)
+                (ListNode 72)
+              )
+              (FCallNode:raise 72
+                (ArrayNode 72
+                  (ConstNode:NotImplementedError 72)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 76
+          (Colon2ImplicitNode:Cat 76
+            null
+          )
+          (DefnNode:run 77
+            (ArgsNode 78
+              (ListNode 78)
+              (ListNode 78)
+              (ListNode 78)
+              (ListNode 78)
+            )
+            (StrNode 78)
+          )
+          (ConstNode:Animal 76)
+        )
+      )
+    )

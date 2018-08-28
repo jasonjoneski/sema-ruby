@@ -1,0 +1,34 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:Cursor 7
+          null
+        )
+        (BlockNode 8
+          (FCallNode:abstractmethod 8
+            (ArrayNode 8
+              (SymbolNode:datum 8)
+            )
+            null
+          )
+          (FCallNode:abstractmethod 10
+            (ArrayNode 10
+              (SymbolNode:insertAfter 10)
+            )
+            null
+          )
+          (FCallNode:abstractmethod 12
+            (ArrayNode 12
+              (SymbolNode:insertBefore 12)
+            )
+            null
+          )
+          (FCallNode:abstractmethod 14
+            (ArrayNode 14
+              (SymbolNode:withdraw 14)
+            )
+            null
+          )
+        )
+        (ConstNode:AbstractObject 7)
+      )
+    )

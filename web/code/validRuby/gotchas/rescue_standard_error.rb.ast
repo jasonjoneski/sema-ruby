@@ -1,0 +1,60 @@
+    (RootNode 4
+      (BlockNode 4
+        (BeginNode 4
+          (RescueNode 5
+            (RescueBodyNode 6
+              (ArrayNode 6
+                (ConstNode:Exception 6)
+              )
+              (BlockNode 6
+                (LocalAsgnNode:e 7
+                  (GlobalVarNode:$! 6)
+                )
+                (CallNode:warn 7
+                  (VCallNode:logger 7)
+                  (ArrayNode 7
+                    (DStrNode 7
+                      (StrNode 7)
+                      (EvStrNode 7
+                        (LocalVarNode:e 7)
+                      )
+                    )
+                  )
+                  null
+                )
+              )
+            )
+            (LocalVarNode:foo 5)
+            null
+          )
+        )
+        (BeginNode 14
+          (RescueNode 15
+            (RescueBodyNode 16
+              (ArrayNode 16
+                (ConstNode:StandardError 16)
+              )
+              (BlockNode 16
+                (LocalAsgnNode:e 17
+                  (GlobalVarNode:$! 16)
+                )
+                (CallNode:warn 17
+                  (VCallNode:logger 17)
+                  (ArrayNode 17
+                    (DStrNode 17
+                      (StrNode 17)
+                      (EvStrNode 17
+                        (LocalVarNode:e 17)
+                      )
+                    )
+                  )
+                  null
+                )
+              )
+            )
+            (LocalVarNode:foo 15)
+            null
+          )
+        )
+      )
+    )

@@ -1,0 +1,57 @@
+    (RootNode 5
+      (BlockNode 5
+        (ClassNode 5
+          (Colon2ImplicitNode:Singleton 5
+            null
+          )
+          (DefsNode:new 6
+            (SelfNode 6)
+            (ArgsNode 7
+              (ListNode 7)
+              (ListNode 7)
+              (ListNode 7)
+              (ListNode 7)
+            )
+            (OpAsgnOrNode 7
+              (InstVarNode:@instance 7)
+              (InstAsgnNode:@instance 7
+                (ZSuperNode 7)
+              )
+            )
+          )
+          null
+        )
+        (FCallNode:require 12
+          (ArrayNode 12
+            (StrNode 12)
+          )
+          null
+        )
+        (ClassNode 14
+          (Colon2ImplicitNode:OtherSingleton 14
+            null
+          )
+          (FCallNode:include 15
+            (ArrayNode 15
+              (ConstNode:Singleton 15)
+            )
+            null
+          )
+          null
+        )
+        (LocalAsgnNode:s1 21
+          (CallNode:new 21
+            (ConstNode:Singleton 21)
+            null
+            null
+          )
+        )
+        (LocalAsgnNode:s2 22
+          (CallNode:instance 22
+            (ConstNode:OtherSingleton 22)
+            null
+            null
+          )
+        )
+      )
+    )

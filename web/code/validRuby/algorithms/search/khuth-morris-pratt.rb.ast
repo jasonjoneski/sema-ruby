@@ -1,0 +1,276 @@
+    (RootNode 13
+      (ClassNode 13
+        (Colon2ImplicitNode:String 13
+          null
+        )
+        (DefnNode:kmp_search 14
+          (ArgsNode 14
+            (ListNode 14
+              (ArgumentNode:substring 14)
+            )
+            (ListNode 14)
+            (ListNode 14)
+            (ListNode 14)
+          )
+          (BlockNode 15
+            (IfNode 15
+              (OrNode 15
+                (CallNode:nil? 15
+                  (SelfNode 15)
+                  null
+                  null
+                )
+                (CallNode:nil? 15
+                  (LocalVarNode:substring 15)
+                  null
+                  null
+                )
+              )
+              (ReturnNode 15
+                (NilNode 15)
+              )
+              null
+            )
+            (LocalAsgnNode:pos 17
+              (FixnumNode 17)
+            )
+            (LocalAsgnNode:cnd 18
+              (FixnumNode 18)
+            )
+            (LocalAsgnNode:failure_table 19
+              (ArrayNode 19
+                (FixnumNode 19)
+                (FixnumNode 19)
+              )
+            )
+            (WhileNode 20
+              (CallNode:< 20
+                (LocalVarNode:pos 20)
+                (ArrayNode 20
+                  (CallNode:length 20
+                    (LocalVarNode:substring 20)
+                    null
+                    null
+                  )
+                )
+                null
+              )
+              (IfNode 21
+                (CallNode:== 21
+                  (CallNode:[] 21
+                    (LocalVarNode:substring 21)
+                    (ArrayNode 21
+                      (CallNode:- 21
+                        (LocalVarNode:pos 21)
+                        (ArrayNode 21
+                          (FixnumNode 21)
+                        )
+                        null
+                      )
+                    )
+                    null
+                  )
+                  (ArrayNode 21
+                    (CallNode:[] 21
+                      (LocalVarNode:substring 21)
+                      (ArrayNode 21
+                        (LocalVarNode:cnd 21)
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+                (BlockNode 22
+                  (AttrAssignNode:[]= 22
+                    (LocalVarNode:failure_table 22)
+                    (ArrayNode 22
+                      (LocalVarNode:pos 22)
+                      (CallNode:+ 22
+                        (LocalVarNode:cnd 22)
+                        (ArrayNode 22
+                          (FixnumNode 22)
+                        )
+                        null
+                      )
+                    )
+                  )
+                  (LocalAsgnNode:pos 23
+                    (CallNode:+ 23
+                      (LocalVarNode:pos 23)
+                      (ArrayNode 23
+                        (FixnumNode 23)
+                      )
+                      null
+                    )
+                  )
+                  (LocalAsgnNode:cnd 24
+                    (CallNode:+ 24
+                      (LocalVarNode:cnd 24)
+                      (ArrayNode 24
+                        (FixnumNode 24)
+                      )
+                      null
+                    )
+                  )
+                )
+                (IfNode 25
+                  (CallNode:positive? 25
+                    (LocalVarNode:cnd 25)
+                    null
+                    null
+                  )
+                  (LocalAsgnNode:cnd 26
+                    (CallNode:[] 26
+                      (LocalVarNode:failure_table 26)
+                      (ArrayNode 26
+                        (LocalVarNode:cnd 26)
+                      )
+                      null
+                    )
+                  )
+                  (BlockNode 28
+                    (AttrAssignNode:[]= 28
+                      (LocalVarNode:failure_table 28)
+                      (ArrayNode 28
+                        (LocalVarNode:pos 28)
+                        (FixnumNode 28)
+                      )
+                    )
+                    (LocalAsgnNode:pos 29
+                      (CallNode:+ 29
+                        (LocalVarNode:pos 29)
+                        (ArrayNode 29
+                          (FixnumNode 29)
+                        )
+                        null
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (LocalAsgnNode:m 33
+              (LocalAsgnNode:i 33
+                (FixnumNode 33)
+              )
+            )
+            (WhileNode 34
+              (CallNode:< 34
+                (CallNode:+ 34
+                  (LocalVarNode:m 34)
+                  (ArrayNode 34
+                    (LocalVarNode:i 34)
+                  )
+                  null
+                )
+                (ArrayNode 34
+                  (CallNode:length 34
+                    (SelfNode 34)
+                    null
+                    null
+                  )
+                )
+                null
+              )
+              (IfNode 35
+                (CallNode:== 35
+                  (CallNode:[] 35
+                    (LocalVarNode:substring 35)
+                    (ArrayNode 35
+                      (LocalVarNode:i 35)
+                    )
+                    null
+                  )
+                  (ArrayNode 35
+                    (FCallNode:[] 35
+                      (ArrayNode 35
+                        (CallNode:+ 35
+                          (LocalVarNode:m 35)
+                          (ArrayNode 35
+                            (LocalVarNode:i 35)
+                          )
+                          null
+                        )
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+                (BlockNode 36
+                  (LocalAsgnNode:i 36
+                    (CallNode:+ 36
+                      (LocalVarNode:i 36)
+                      (ArrayNode 36
+                        (FixnumNode 36)
+                      )
+                      null
+                    )
+                  )
+                  (IfNode 37
+                    (CallNode:== 37
+                      (LocalVarNode:i 37)
+                      (ArrayNode 37
+                        (CallNode:length 37
+                          (LocalVarNode:substring 37)
+                          null
+                          null
+                        )
+                      )
+                      null
+                    )
+                    (ReturnNode 37
+                      (LocalVarNode:m 37)
+                    )
+                    null
+                  )
+                )
+                (BlockNode 39
+                  (LocalAsgnNode:m 39
+                    (CallNode:- 39
+                      (CallNode:+ 39
+                        (LocalVarNode:m 39)
+                        (ArrayNode 39
+                          (LocalVarNode:i 39)
+                        )
+                        null
+                      )
+                      (ArrayNode 39
+                        (CallNode:[] 39
+                          (LocalVarNode:failure_table 39)
+                          (ArrayNode 39
+                            (LocalVarNode:i 39)
+                          )
+                          null
+                        )
+                      )
+                      null
+                    )
+                  )
+                  (IfNode 40
+                    (CallNode:positive? 40
+                      (LocalVarNode:i 40)
+                      null
+                      null
+                    )
+                    (LocalAsgnNode:i 40
+                      (CallNode:[] 40
+                        (LocalVarNode:failure_table 40)
+                        (ArrayNode 40
+                          (LocalVarNode:i 40)
+                        )
+                        null
+                      )
+                    )
+                    null
+                  )
+                )
+              )
+            )
+            (NilNode 44)
+          )
+        )
+        null
+      )
+    )

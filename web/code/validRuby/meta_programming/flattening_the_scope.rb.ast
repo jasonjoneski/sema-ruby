@@ -1,0 +1,99 @@
+    (RootNode 10
+      (BlockNode 10
+        (LocalAsgnNode:my_var 10
+          (StrNode 10)
+        )
+        (ClassNode 11
+          (Colon2ImplicitNode:OuterScopeGate 11
+            null
+          )
+          (BlockNode 12
+            (FCallNode:puts 12
+              (ArrayNode 12
+                (VCallNode:my_var 12)
+              )
+              null
+            )
+            (DefnNode:inner_scope_gate 14
+              (ArgsNode 15
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+              )
+              (FCallNode:puts 15
+                (ArrayNode 15
+                  (VCallNode:my_var 15)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:my_var 22
+          (StrNode 22)
+        )
+        (ConstDeclNode:MyClass 23
+          null
+          (CallNode:new 23
+            (ConstNode:Class 23)
+            null
+            (IterNode 29
+              (ArgsNode 24
+                (ListNode 24)
+                (ListNode 24)
+                (ListNode 24)
+                (ListNode 24)
+              )
+              (BlockNode 24
+                (FCallNode:puts 24
+                  (ArrayNode 24
+                    (DStrNode 24
+                      (StrNode 24)
+                      (EvStrNode 24
+                        (LocalVarNode:my_var 24)
+                      )
+                    )
+                  )
+                  null
+                )
+                (FCallNode:define_method 26
+                  (ArrayNode 26
+                    (SymbolNode:my_method 26)
+                  )
+                  (IterNode 28
+                    (ArgsNode 27
+                      (ListNode 27)
+                      (ListNode 27)
+                      (ListNode 27)
+                      (ListNode 27)
+                    )
+                    (FCallNode:puts 27
+                      (ArrayNode 27
+                        (DStrNode 27
+                          (StrNode 27)
+                          (EvStrNode 27
+                            (LocalVarNode:my_var 27)
+                          )
+                        )
+                      )
+                      null
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (CallNode:my_method 30
+          (CallNode:new 30
+            (ConstNode:MyClass 30)
+            null
+            null
+          )
+          null
+          null
+        )
+      )
+    )

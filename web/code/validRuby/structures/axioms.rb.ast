@@ -1,0 +1,102 @@
+    (RootNode 4
+      (BlockNode 4
+        (LocalAsgnNode:y 4
+          (LocalVarNode:x 4)
+        )
+        (LocalAsgnNode:y 11
+          (FixnumNode 11)
+        )
+        (LocalAsgnNode:y 22
+          (CallNode:+ 22
+            (LocalVarNode:y 22)
+            (ArrayNode 22
+              (FixnumNode 22)
+            )
+            null
+          )
+        )
+        (LocalAsgnNode:y 30
+          (CallNode:+ 30
+            (LocalVarNode:y 30)
+            (ArrayNode 30
+              (FixnumNode 30)
+            )
+            null
+          )
+        )
+        (LocalAsgnNode:y 42
+          (FCallNode:f 42
+            (ArrayNode 42
+              (LocalVarNode:x 42)
+            )
+            null
+          )
+        )
+        (LocalAsgnNode:y 54
+          (CallNode:[] 54
+            (LocalVarNode:a 54)
+            (ArrayNode 54
+              (VCallNode:i 54)
+            )
+            null
+          )
+        )
+        (LocalAsgnNode:i 64
+          (CallNode:new 64
+            (ConstNode:Integer 64)
+            (ArrayNode 64
+              (FixnumNode 64)
+            )
+            null
+          )
+        )
+        (DefnNode:sum 72
+          (ArgsNode 72
+            (ListNode 72
+              (ArgumentNode:n 72)
+            )
+            (ListNode 72)
+            (ListNode 72)
+            (ListNode 72)
+          )
+          (BlockNode 73
+            (LocalAsgnNode:result 73
+              (FixnumNode 73)
+            )
+            (LocalAsgnNode:i 74
+              (FixnumNode 74)
+            )
+            (WhileNode 75
+              (CallNode:<= 75
+                (LocalVarNode:i 75)
+                (ArrayNode 75
+                  (LocalVarNode:n 75)
+                )
+                null
+              )
+              (BlockNode 76
+                (LocalAsgnNode:result 76
+                  (CallNode:+ 76
+                    (LocalVarNode:result 76)
+                    (ArrayNode 76
+                      (LocalVarNode:i 76)
+                    )
+                    null
+                  )
+                )
+                (LocalAsgnNode:i 77
+                  (CallNode:+ 77
+                    (LocalVarNode:i 77)
+                    (ArrayNode 77
+                      (FixnumNode 77)
+                    )
+                    null
+                  )
+                )
+              )
+            )
+            (LocalVarNode:result 79)
+          )
+        )
+      )
+    )

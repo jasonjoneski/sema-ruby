@@ -1,0 +1,211 @@
+    (RootNode 3
+      (BlockNode 3
+        (ClassNode 3
+          (Colon2ImplicitNode:Decorator 3
+            null
+          )
+          (BlockNode 4
+            (DefnNode:initialize 4
+              (ArgsNode 4
+                (ListNode 4
+                  (ArgumentNode:item 4)
+                )
+                (ListNode 4)
+                (ListNode 4)
+                (ListNode 4)
+              )
+              (InstAsgnNode:@item 5
+                (LocalVarNode:item 5)
+              )
+            )
+            (DefnNode:use 8
+              (ArgsNode 9
+                (ListNode 9)
+                (ListNode 9)
+                (ListNode 9)
+                (ListNode 9)
+              )
+              (CallNode:use 9
+                (VCallNode:item 9)
+                null
+                null
+              )
+            )
+            (DefnNode:another_use 13
+              (ArgsNode 14
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+              )
+              (CallNode:+ 14
+                (CallNode:use 14
+                  (VCallNode:item 14)
+                  null
+                  null
+                )
+                (ArrayNode 14
+                  (StrNode 14)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 18
+          (Colon2ImplicitNode:MagicDecorator 18
+            null
+          )
+          (DefnNode:description 19
+            (ArgsNode 20
+              (ListNode 20)
+              (ListNode 20)
+              (ListNode 20)
+              (ListNode 20)
+            )
+            (CallNode:+ 20
+              (CallNode:description 20
+                (InstVarNode:@item 20)
+                null
+                null
+              )
+              (ArrayNode 20
+                (StrNode 20)
+              )
+              null
+            )
+          )
+          (ConstNode:Decorator 18)
+        )
+        (ClassNode 24
+          (Colon2ImplicitNode:MasterpieceDecorator 24
+            null
+          )
+          (DefnNode:description 25
+            (ArgsNode 26
+              (ListNode 26)
+              (ListNode 26)
+              (ListNode 26)
+              (ListNode 26)
+            )
+            (CallNode:+ 26
+              (CallNode:description 26
+                (InstVarNode:@item 26)
+                null
+                null
+              )
+              (ArrayNode 26
+                (StrNode 26)
+              )
+              null
+            )
+          )
+          (ConstNode:Decorator 24)
+        )
+        (ClassNode 31
+          (Colon2ImplicitNode:Item 31
+            null
+          )
+          (BlockNode 32
+            (FCallNode:attr_reader 32
+              (ArrayNode 32
+                (SymbolNode:description 32)
+              )
+              null
+            )
+            (DefnNode:initialize 34
+              (ArgsNode 35
+                (ListNode 35)
+                (ListNode 35)
+                (ListNode 35)
+                (ListNode 35)
+              )
+              (InstAsgnNode:@description 35
+                (StrNode 35)
+              )
+            )
+            (DefnNode:use 38
+              (ArgsNode 39
+                (ListNode 39)
+                (ListNode 39)
+                (ListNode 39)
+                (ListNode 39)
+              )
+              (StrNode 39)
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:item 44
+          (CallNode:new 44
+            (ConstNode:Item 44)
+            null
+            null
+          )
+        )
+        (FCallNode:puts 45
+          (ArrayNode 45
+            (CallNode:description 45
+              (LocalVarNode:item 45)
+              null
+              null
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:magic_item 47
+          (CallNode:new 47
+            (ConstNode:MagicDecorator 47)
+            (ArrayNode 47
+              (LocalVarNode:item 47)
+            )
+            null
+          )
+        )
+        (FCallNode:puts 48
+          (ArrayNode 48
+            (CallNode:description 48
+              (LocalVarNode:magic_item 48)
+              null
+              null
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:masterpiece_item 50
+          (CallNode:new 50
+            (ConstNode:MasterpieceDecorator 50)
+            (ArrayNode 50
+              (LocalVarNode:item 50)
+            )
+            null
+          )
+        )
+        (FCallNode:puts 51
+          (ArrayNode 51
+            (CallNode:description 51
+              (LocalVarNode:masterpiece_item 51)
+              null
+              null
+            )
+          )
+          null
+        )
+        (CallNode:use 54
+          (LocalVarNode:item 54)
+          null
+          null
+        )
+        (CallNode:use 55
+          (LocalVarNode:magic_item 55)
+          null
+          null
+        )
+        (CallNode:use 56
+          (LocalVarNode:masterpiece_item 56)
+          null
+          null
+        )
+      )
+    )

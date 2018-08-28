@@ -1,0 +1,221 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:DoubleLinkedList 7
+          null
+        )
+        (BlockNode 8
+          (ClassNode 8
+            (Colon2ImplicitNode:Element 8
+              null
+            )
+            (BlockNode 9
+              (FCallNode:attr_accessor 9
+                (ArrayNode 9
+                  (SymbolNode:prev 9)
+                )
+                null
+              )
+              (DefnNode:initialize 11
+                (ArgsNode 11
+                  (ListNode 11
+                    (ArgumentNode:list 11)
+                    (ArgumentNode:data 11)
+                    (ArgumentNode:succ 11)
+                    (ArgumentNode:prev 11)
+                  )
+                  (ListNode 11)
+                  (ListNode 11)
+                  (ListNode 11)
+                )
+                (BlockNode 12
+                  (SuperNode 12
+                    (ArrayNode 12
+                      (LocalVarNode:list 12)
+                      (LocalVarNode:data 12)
+                      (LocalVarNode:succ 12)
+                    )
+                  )
+                  (InstAsgnNode:@prev 13
+                    (LocalVarNode:prev 13)
+                  )
+                )
+              )
+              (DefnNode:insert_after 16
+                (ArgsNode 16
+                  (ListNode 16
+                    (ArgumentNode:item 16)
+                  )
+                  (ListNode 16)
+                  (ListNode 16)
+                  (ListNode 16)
+                )
+                NilImplicitNode
+              )
+              (DefnNode:insert_before 20
+                (ArgsNode 20
+                  (ListNode 20
+                    (ArgumentNode:item 20)
+                  )
+                  (ListNode 20)
+                  (ListNode 20)
+                  (ListNode 20)
+                )
+                NilImplicitNode
+              )
+            )
+            (CallNode:< 8
+              (ConstNode:SinglyLinkedList 8)
+              (ArrayNode 8
+                (ConstNode:Element 8)
+              )
+              null
+            )
+          )
+          (FCallNode:attr_accessor 25
+            (ArrayNode 25
+              (SymbolNode:head 25)
+              (SymbolNode:tail 25)
+            )
+            null
+          )
+          (DefnNode:initialize 27
+            (ArgsNode 28
+              (ListNode 28)
+              (ListNode 28)
+              (ListNode 28)
+              (ListNode 28)
+            )
+            (BlockNode 28
+              (InstAsgnNode:@head 28
+                (NilNode 28)
+              )
+              (InstAsgnNode:@tail 29
+                (NilNode 29)
+              )
+            )
+          )
+          (DefnNode:purge 32
+            (ArgsNode 33
+              (ListNode 33)
+              (ListNode 33)
+              (ListNode 33)
+              (ListNode 33)
+            )
+            (BlockNode 33
+              (InstAsgnNode:@head 33
+                (NilNode 33)
+              )
+              (InstAsgnNode:@tail 34
+                (NilNode 34)
+              )
+            )
+          )
+          (DefnNode:empty? 37
+            (ArgsNode 38
+              (ListNode 38)
+              (ListNode 38)
+              (ListNode 38)
+              (ListNode 38)
+            )
+            (CallNode:nil? 38
+              (InstVarNode:@head 38)
+              null
+              null
+            )
+          )
+          (DefnNode:first 41
+            (ArgsNode 42
+              (ListNode 42)
+              (ListNode 42)
+              (ListNode 42)
+              (ListNode 42)
+            )
+            (IfNode 42
+              (CallNode:nil? 42
+                (InstVarNode:@head 42)
+                null
+                null
+              )
+              (FCallNode:raise 43
+                (ArrayNode 43
+                  (ConstNode:Error 43)
+                )
+                null
+              )
+              (CallNode:data 45
+                (InstVarNode:@head 45)
+                null
+                null
+              )
+            )
+          )
+          (DefnNode:last 49
+            (ArgsNode 50
+              (ListNode 50)
+              (ListNode 50)
+              (ListNode 50)
+              (ListNode 50)
+            )
+            (IfNode 50
+              (CallNode:nil? 50
+                (InstVarNode:@tail 50)
+                null
+                null
+              )
+              (FCallNode:raise 51
+                (ArrayNode 51
+                  (ConstNode:Error 51)
+                )
+                null
+              )
+              (CallNode:data 53
+                (InstVarNode:@tail 53)
+                null
+                null
+              )
+            )
+          )
+          (DefnNode:prepend 57
+            (ArgsNode 57
+              (ListNode 57
+                (ArgumentNode:elem 57)
+              )
+              (ListNode 57)
+              (ListNode 57)
+              (ListNode 57)
+            )
+            NilImplicitNode
+          )
+          (DefnNode:append 61
+            (ArgsNode 61
+              (ListNode 61
+                (ArgumentNode:elem 61)
+              )
+              (ListNode 61)
+              (ListNode 61)
+              (ListNode 61)
+            )
+            NilImplicitNode
+          )
+          (DefnNode:clone 65
+            (ArgsNode 66
+              (ListNode 66)
+              (ListNode 66)
+              (ListNode 66)
+              (ListNode 66)
+            )
+            NilImplicitNode
+          )
+          (DefnNode:extract 69
+            (ArgsNode 70
+              (ListNode 70)
+              (ListNode 70)
+              (ListNode 70)
+              (ListNode 70)
+            )
+            NilImplicitNode
+          )
+        )
+        (ConstNode:SinglyLinkedList 7)
+      )
+    )

@@ -1,0 +1,123 @@
+    (RootNode 5
+      (BlockNode 5
+        (FCallNode:require 5
+          (ArrayNode 5
+            (StrNode 5)
+          )
+          null
+        )
+        (LocalAsgnNode:f 7
+          (CallNode:new 7
+            (ConstNode:Fiber 7)
+            null
+            (IterNode 15
+              (ArgsNode 7
+                (ListNode 7
+                  (ArgumentNode:value 7)
+                )
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+              )
+              (BlockNode 8
+                (DAsgnNode:first 8
+                  (DVarNode:value 8)
+                )
+                (FCallNode:puts 9
+                  (ArrayNode 9
+                    (DStrNode 9
+                      (StrNode 9)
+                      (EvStrNode 9
+                        (IfNode 9
+                          (DVarNode:first 9)
+                          (DVarNode:first 9)
+                          (StrNode 9)
+                        )
+                      )
+                    )
+                  )
+                  null
+                )
+                (DAsgnNode:second 10
+                  (CallNode:yield 10
+                    (ConstNode:Fiber 10)
+                    null
+                    null
+                  )
+                )
+                (FCallNode:puts 11
+                  (ArrayNode 11
+                    (DStrNode 11
+                      (StrNode 11)
+                      (EvStrNode 11
+                        (IfNode 11
+                          (DVarNode:second 11)
+                          (DVarNode:second 11)
+                          (StrNode 11)
+                        )
+                      )
+                    )
+                  )
+                  null
+                )
+                (DAsgnNode:other 12
+                  (CallNode:yield 12
+                    (ConstNode:Fiber 12)
+                    null
+                    null
+                  )
+                )
+                (FCallNode:puts 13
+                  (ArrayNode 13
+                    (DStrNode 13
+                      (StrNode 13)
+                      (EvStrNode 13
+                        (DVarNode:first 13)
+                      )
+                      (StrNode 13)
+                      (EvStrNode 13
+                        (DVarNode:second 13)
+                      )
+                      (StrNode 13)
+                      (EvStrNode 13
+                        (IfNode 13
+                          (DVarNode:other 13)
+                          (DVarNode:other 13)
+                          (StrNode 13)
+                        )
+                      )
+                    )
+                  )
+                  null
+                )
+                (FCallNode:puts 14
+                  (ArrayNode 14
+                    (StrNode 14)
+                  )
+                  null
+                )
+              )
+            )
+          )
+        )
+        (CallNode:resume 17
+          (LocalVarNode:f 17)
+          (ArrayNode 17
+            (StrNode 17)
+          )
+          null
+        )
+        (CallNode:resume 18
+          (LocalVarNode:f 18)
+          (ArrayNode 18
+            (StrNode 18)
+          )
+          null
+        )
+        (CallNode:resume 19
+          (LocalVarNode:f 19)
+          null
+          null
+        )
+      )
+    )

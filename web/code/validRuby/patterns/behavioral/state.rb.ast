@@ -1,0 +1,461 @@
+    (RootNode 8
+      (BlockNode 8
+        (ModuleNode 8
+          (Colon2ImplicitNode:StatePattern 8
+            null
+          )
+          (BlockNode 9
+            (ClassNode 9
+              (Colon2ImplicitNode:UnknownStateException 9
+                null
+              )
+              NilImplicitNode
+              (ConstNode:RuntimeError 9)
+            )
+            (DefsNode:included 12
+              (SelfNode 12)
+              (ArgsNode 12
+                (ListNode 12
+                  (ArgumentNode:base 12)
+                )
+                (ListNode 12)
+                (ListNode 12)
+                (ListNode 12)
+              )
+              (CallNode:extend 13
+                (LocalVarNode:base 13)
+                (ArrayNode 13
+                  (Colon2ConstNode:ClassMethods 13
+                    (ConstNode:StatePattern 13)
+                  )
+                )
+                null
+              )
+            )
+            (ModuleNode 16
+              (Colon2ImplicitNode:ClassMethods 16
+                null
+              )
+              (BlockNode 17
+                (FCallNode:attr_reader 17
+                  (ArrayNode 17
+                    (SymbolNode:state_classes 17)
+                  )
+                  null
+                )
+                (DefnNode:state 19
+                  (ArgsNode 19
+                    (ListNode 19
+                      (ArgumentNode:state_name 19)
+                    )
+                    (ListNode 19)
+                    (ListNode 19)
+                    (ListNode 19)
+                    (BlockArgNode:block 19)
+                  )
+                  (BlockNode 20
+                    (OpAsgnOrNode 20
+                      (InstVarNode:@state_classes 20)
+                      (InstAsgnNode:@state_classes 20
+                        (HashNode 20)
+                      )
+                    )
+                    (LocalAsgnNode:new_klass 22
+                      (CallNode:new 22
+                        (ConstNode:Class 22)
+                        (ArrayNode 22
+                          (SelfNode 22)
+                        )
+                        (BlockPassNode 22
+                          (ArrayNode 22
+                            (SelfNode 22)
+                          )
+                          (LocalVarNode:block 22)
+                        )
+                      )
+                    )
+                    (CallNode:class_eval 23
+                      (LocalVarNode:new_klass 23)
+                      null
+                      (IterNode 30
+                        (ArgsNode 24
+                          (ListNode 24)
+                          (ListNode 24)
+                          (ListNode 24)
+                          (ListNode 24)
+                        )
+                        (BlockNode 24
+                          (FCallNode:alias_method 24
+                            (ArrayNode 24
+                              (SymbolNode:__old_init 24)
+                              (SymbolNode:initialize 24)
+                            )
+                            null
+                          )
+                          (DefnNode:initialize 26
+                            (ArgsNode 26
+                              (ListNode 26
+                                (ArgumentNode:context 26)
+                              )
+                              (ListNode 26)
+                              (RestArgNode:args 26)
+                              (ListNode 26)
+                              (ListNode 26)
+                              (BlockArgNode:block 26)
+                            )
+                            (BlockNode 27
+                              (InstAsgnNode:@context 27
+                                (LocalVarNode:context 27)
+                              )
+                              (FCallNode:__old_init 28
+                                (SplatNode 28
+                                  (LocalVarNode:args 28)
+                                )
+                                (BlockPassNode 28
+                                  (SplatNode 28
+                                    (LocalVarNode:args 28)
+                                  )
+                                  (LocalVarNode:block 28)
+                                )
+                              )
+                            )
+                          )
+                        )
+                      )
+                    )
+                    (AttrAssignNode:[]= 32
+                      (InstVarNode:@state_classes 32)
+                      (ArrayNode 32
+                        (LocalVarNode:state_name 32)
+                        (LocalVarNode:new_klass 32)
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (FCallNode:attr_accessor 36
+              (ArrayNode 36
+                (SymbolNode:current_state 36)
+                (SymbolNode:current_state_obj 36)
+              )
+              null
+            )
+            (DefnNode:transition_to 38
+              (ArgsNode 38
+                (ListNode 38
+                  (ArgumentNode:state_name 38)
+                )
+                (ListNode 38)
+                (RestArgNode:args 38)
+                (ListNode 38)
+                (ListNode 38)
+                (BlockArgNode:block 38)
+              )
+              (BlockNode 39
+                (LocalAsgnNode:new_context 39
+                  (OrNode 39
+                    (InstVarNode:@context 39)
+                    (SelfNode 39)
+                  )
+                )
+                (LocalAsgnNode:klass 40
+                  (CallNode:[] 40
+                    (CallNode:state_classes 40
+                      (CallNode:class 40
+                        (LocalVarNode:new_context 40)
+                        null
+                        null
+                      )
+                      null
+                      null
+                    )
+                    (ArrayNode 40
+                      (LocalVarNode:state_name 40)
+                    )
+                    null
+                  )
+                )
+                (IfNode 41
+                  (LocalVarNode:klass 41)
+                  (BlockNode 42
+                    (AttrAssignNode:current_state= 42
+                      (LocalVarNode:new_context 42)
+                      (ArrayNode 42
+                        (LocalVarNode:state_name 42)
+                      )
+                    )
+                    (AttrAssignNode:current_state_obj= 43
+                      (LocalVarNode:new_context 43)
+                      (ArrayNode 43
+                        (CallNode:new 43
+                          (LocalVarNode:klass 43)
+                          (ArgsCatNode 43
+                            (ArrayNode 43
+                              (LocalVarNode:new_context 43)
+                            )
+                            (LocalVarNode:args 43)
+                          )
+                          (BlockPassNode 43
+                            (ArgsCatNode 43
+                              (ArrayNode 43
+                                (LocalVarNode:new_context 43)
+                              )
+                              (LocalVarNode:args 43)
+                            )
+                            (LocalVarNode:block 43)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (FCallNode:raise 45
+                    (ArrayNode 45
+                      (ConstNode:UnknownStateException 45)
+                      (DStrNode 45
+                        (StrNode 45)
+                        (EvStrNode 45
+                          (LocalVarNode:state_name 45)
+                        )
+                      )
+                    )
+                    null
+                  )
+                )
+              )
+            )
+            (DefnNode:method_missing 49
+              (ArgsNode 49
+                (ListNode 49
+                  (ArgumentNode:method 49)
+                )
+                (ListNode 49)
+                (RestArgNode:args 49)
+                (ListNode 49)
+                (ListNode 49)
+                (BlockArgNode:block 49)
+              )
+              (BlockNode 50
+                (IfNode 50
+                  (InstVarNode:@current_state_obj 50)
+                  null
+                  (FCallNode:transition_to 50
+                    (ArrayNode 50
+                      (SymbolNode:initial 50)
+                    )
+                    null
+                  )
+                )
+                (IfNode 52
+                  (InstVarNode:@current_state_obj 52)
+                  (CallNode:send 53
+                    (InstVarNode:@current_state_obj 53)
+                    (ArgsCatNode 53
+                      (ArrayNode 53
+                        (LocalVarNode:method 53)
+                      )
+                      (LocalVarNode:args 53)
+                    )
+                    (BlockPassNode 53
+                      (ArgsCatNode 53
+                        (ArrayNode 53
+                          (LocalVarNode:method 53)
+                        )
+                        (LocalVarNode:args 53)
+                      )
+                      (LocalVarNode:block 53)
+                    )
+                  )
+                  (ZSuperNode 55)
+                )
+              )
+            )
+          )
+        )
+        (ClassNode 60
+          (Colon2ImplicitNode:Connection 60
+            null
+          )
+          (BlockNode 61
+            (FCallNode:include 61
+              (ArrayNode 61
+                (ConstNode:StatePattern 61)
+              )
+              null
+            )
+            (FCallNode:state 64
+              (ArrayNode 64
+                (SymbolNode:initial 64)
+              )
+              (IterNode 75
+                (ArgsNode 65
+                  (ListNode 65)
+                  (ListNode 65)
+                  (ListNode 65)
+                  (ListNode 65)
+                )
+                (BlockNode 65
+                  (DefnNode:connect 65
+                    (ArgsNode 66
+                      (ListNode 66)
+                      (ListNode 66)
+                      (ListNode 66)
+                      (ListNode 66)
+                    )
+                    (FCallNode:puts 69
+                      (ArrayNode 69
+                        (StrNode 69)
+                      )
+                      null
+                    )
+                  )
+                  (DefnNode:disconnect 72
+                    (ArgsNode 73
+                      (ListNode 73)
+                      (ListNode 73)
+                      (ListNode 73)
+                      (ListNode 73)
+                    )
+                    (FCallNode:puts 73
+                      (ArrayNode 73
+                        (StrNode 73)
+                      )
+                      null
+                    )
+                  )
+                )
+              )
+            )
+            (FCallNode:state 77
+              (ArrayNode 77
+                (SymbolNode:connected 77)
+              )
+              (IterNode 90
+                (ArgsNode 78
+                  (ListNode 78)
+                  (ListNode 78)
+                  (ListNode 78)
+                  (ListNode 78)
+                )
+                (BlockNode 78
+                  (DefnNode:initialize 78
+                    (ArgsNode 78
+                      (ListNode 78
+                        (ArgumentNode:msg 78)
+                      )
+                      (ListNode 78)
+                      (ListNode 78)
+                      (ListNode 78)
+                    )
+                    (FCallNode:puts 79
+                      (ArrayNode 79
+                        (DStrNode 79
+                          (StrNode 79)
+                          (EvStrNode 79
+                            (LocalVarNode:msg 79)
+                          )
+                        )
+                      )
+                      null
+                    )
+                  )
+                  (DefnNode:connect 82
+                    (ArgsNode 83
+                      (ListNode 83)
+                      (ListNode 83)
+                      (ListNode 83)
+                      (ListNode 83)
+                    )
+                    (FCallNode:puts 83
+                      (ArrayNode 83
+                        (StrNode 83)
+                      )
+                      null
+                    )
+                  )
+                  (DefnNode:disconnect 86
+                    (ArgsNode 87
+                      (ListNode 87)
+                      (ListNode 87)
+                      (ListNode 87)
+                      (ListNode 87)
+                    )
+                    (BlockNode 87
+                      (FCallNode:puts 87
+                        (ArrayNode 87
+                          (StrNode 87)
+                        )
+                        null
+                      )
+                      (FCallNode:transition_to 88
+                        (ArrayNode 88
+                          (SymbolNode:initial 88)
+                        )
+                        null
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (DefnNode:reset 92
+              (ArgsNode 93
+                (ListNode 93)
+                (ListNode 93)
+                (ListNode 93)
+                (ListNode 93)
+              )
+              (FCallNode:puts 95
+                (ArrayNode 95
+                  (StrNode 95)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:c 100
+          (CallNode:new 100
+            (ConstNode:Connection 100)
+            null
+            null
+          )
+        )
+        (CallNode:disconnect 101
+          (LocalVarNode:c 101)
+          null
+          null
+        )
+        (CallNode:connect 102
+          (LocalVarNode:c 102)
+          null
+          null
+        )
+        (CallNode:connect 103
+          (LocalVarNode:c 103)
+          null
+          null
+        )
+        (CallNode:disconnect 104
+          (LocalVarNode:c 104)
+          null
+          null
+        )
+        (CallNode:connect 105
+          (LocalVarNode:c 105)
+          null
+          null
+        )
+        (CallNode:reset 106
+          (LocalVarNode:c 106)
+          null
+          null
+        )
+        (CallNode:disconnect 107
+          (LocalVarNode:c 107)
+          null
+          null
+        )
+      )
+    )

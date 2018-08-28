@@ -1,0 +1,29 @@
+    (RootNode 4
+      (BlockNode 4
+        (LocalAsgnNode:str 4
+          (StrNode 4)
+        )
+        (LocalAsgnNode:sym 5
+          (SymbolNode:string 5)
+        )
+        (FCallNode:puts 7
+          (ArrayNode 7
+            (LocalVarNode:str 7)
+          )
+          null
+        )
+        (FCallNode:puts 10
+          (ArrayNode 10
+            (LocalVarNode:sym 10)
+          )
+          null
+        )
+        (CallNode:== 13
+          (LocalVarNode:str 13)
+          (ArrayNode 13
+            (LocalVarNode:sym 13)
+          )
+          null
+        )
+      )
+    )

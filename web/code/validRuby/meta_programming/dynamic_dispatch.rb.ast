@@ -1,0 +1,20 @@
+    (RootNode 3
+      (BlockNode 3
+        (CallNode:public_send 3
+          (FixnumNode 3)
+          (ArrayNode 3
+            (SymbolNode:+ 3)
+            (FixnumNode 3)
+          )
+          null
+        )
+        (CallNode:send 6
+          (FixnumNode 6)
+          (ArrayNode 6
+            (SymbolNode:+ 6)
+            (FixnumNode 6)
+          )
+          null
+        )
+      )
+    )

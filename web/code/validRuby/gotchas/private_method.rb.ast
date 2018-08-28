@@ -1,0 +1,68 @@
+    (RootNode 25
+      (BlockNode 25
+        (LocalAsgnNode:person 25
+          (CallNode:new 25
+            (ConstNode:Person 25)
+            (ArrayNode 25
+              (StrNode 25)
+            )
+            null
+          )
+        )
+        (CallNode:encrypt 26
+          (LocalVarNode:person 26)
+          (ArrayNode 26
+            (StrNode 26)
+          )
+          null
+        )
+        (ModuleNode 33
+          (Colon2ImplicitNode:Encryption 33
+            null
+          )
+          (BlockNode 34
+            (VCallNode:private 34)
+            (DefnNode:encrypt 36
+              (ArgsNode 36
+                (ListNode 36
+                  (ArgumentNode:string 36)
+                )
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+              )
+              (CallNode:hexdigest 37
+                (Colon2ConstNode:SHA2 37
+                  (ConstNode:Digest 37)
+                )
+                (ArrayNode 37
+                  (LocalVarNode:string 37)
+                )
+                null
+              )
+            )
+          )
+        )
+        (LocalAsgnNode:person 46
+          (CallNode:new 46
+            (ConstNode:Person 46)
+            (ArrayNode 46
+              (StrNode 46)
+            )
+            null
+          )
+        )
+        (FCallNode:p 47
+          (ArrayNode 47
+            (CallNode:encrypt 47
+              (LocalVarNode:person 47)
+              (ArrayNode 47
+                (StrNode 47)
+              )
+              null
+            )
+          )
+          null
+        )
+      )
+    )

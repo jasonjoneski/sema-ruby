@@ -1,0 +1,70 @@
+    (RootNode 8
+      (DefnNode:method_missing 8
+        (ArgsNode 8
+          (ListNode 8
+            (ArgumentNode:message 8)
+          )
+          (ListNode 8)
+          (RestArgNode:args 8)
+          (ListNode 8)
+          (ListNode 8)
+          (BlockArgNode:block 8)
+        )
+        (BlockNode 9
+          (IfNode 9
+            (CallNode:match? 9
+              (CallNode:to_s 9
+                (LocalVarNode:message 9)
+                null
+                null
+              )
+              (ArrayNode 9
+                (RegexpNode 9)
+              )
+              null
+            )
+            (ReturnNode 9
+              (FCallNode:get 9
+                (ArgsCatNode 9
+                  (ArrayNode 9
+                    (CallNode:to_sym 9
+                      (CallNode:last_match 9
+                        (ConstNode:Regexp 9)
+                        (ArrayNode 9
+                          (FixnumNode 9)
+                        )
+                        null
+                      )
+                      null
+                      null
+                    )
+                  )
+                  (LocalVarNode:args 9)
+                )
+                (BlockPassNode 9
+                  (ArgsCatNode 9
+                    (ArrayNode 9
+                      (CallNode:to_sym 9
+                        (CallNode:last_match 9
+                          (ConstNode:Regexp 9)
+                          (ArrayNode 9
+                            (FixnumNode 9)
+                          )
+                          null
+                        )
+                        null
+                        null
+                      )
+                    )
+                    (LocalVarNode:args 9)
+                  )
+                  (LocalVarNode:block 9)
+                )
+              )
+            )
+            null
+          )
+          (ZSuperNode 10)
+        )
+      )
+    )

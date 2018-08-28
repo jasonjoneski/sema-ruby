@@ -1,0 +1,71 @@
+    (RootNode 6
+      (BlockNode 6
+        (ClassNode 6
+          (Colon2ImplicitNode:String 6
+            null
+          )
+          (DefnNode:m 7
+            (ArgsNode 8
+              (ListNode 8)
+              (ListNode 8)
+              (ListNode 8)
+              (ListNode 8)
+            )
+            (FCallNode:puts 8
+              (ArrayNode 8
+                (StrNode 8)
+              )
+              null
+            )
+          )
+          null
+        )
+        (DefnNode:add_method_to_class 14
+          (ArgsNode 14
+            (ListNode 14
+              (ArgumentNode:the_class 14)
+            )
+            (ListNode 14)
+            (ListNode 14)
+            (ListNode 14)
+          )
+          (CallNode:class_eval 15
+            (LocalVarNode:the_class 15)
+            null
+            (IterNode 19
+              (ArgsNode 16
+                (ListNode 16)
+                (ListNode 16)
+                (ListNode 16)
+                (ListNode 16)
+              )
+              (DefnNode:m 16
+                (ArgsNode 17
+                  (ListNode 17)
+                  (ListNode 17)
+                  (ListNode 17)
+                  (ListNode 17)
+                )
+                (FCallNode:puts 17
+                  (ArrayNode 17
+                    (StrNode 17)
+                  )
+                  null
+                )
+              )
+            )
+          )
+        )
+        (FCallNode:add_method_to_class 22
+          (ArrayNode 22
+            (ConstNode:String 22)
+          )
+          null
+        )
+        (CallNode:m 23
+          (StrNode 23)
+          null
+          null
+        )
+      )
+    )

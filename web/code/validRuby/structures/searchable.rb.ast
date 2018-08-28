@@ -1,0 +1,106 @@
+    (RootNode 7
+      (BlockNode 7
+        (ModuleNode 7
+          (Colon2ImplicitNode:SearchableContainerMethods 7
+            null
+          )
+          (BlockNode 8
+            (FCallNode:abstractmethod 8
+              (ArrayNode 8
+                (SymbolNode:member? 8)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 10
+              (ArrayNode 10
+                (SymbolNode:insert 10)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 12
+              (ArrayNode 12
+                (SymbolNode:withdraw 12)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 14
+              (ArrayNode 14
+                (SymbolNode:find 14)
+              )
+              null
+            )
+          )
+        )
+        (ClassNode 17
+          (Colon2ImplicitNode:SearchableContainer 17
+            null
+          )
+          (BlockNode 18
+            (FCallNode:include 18
+              (ArrayNode 18
+                (ConstNode:SearchableContainerMethods 18)
+              )
+              null
+            )
+            (DefnNode:initialize 20
+              (ArgsNode 21
+                (ListNode 21)
+                (ListNode 21)
+                (ListNode 21)
+                (ListNode 21)
+              )
+              (ZSuperNode 21)
+            )
+          )
+          (ConstNode:Container 17)
+        )
+        (ModuleNode 25
+          (Colon2ImplicitNode:SearchTreeMethods 25
+            null
+          )
+          (BlockNode 26
+            (FCallNode:abstractmethod 26
+              (ArrayNode 26
+                (SymbolNode:min 26)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 28
+              (ArrayNode 28
+                (SymbolNode:max 28)
+              )
+              null
+            )
+          )
+        )
+        (ClassNode 31
+          (Colon2ImplicitNode:SearchTree 31
+            null
+          )
+          (BlockNode 32
+            (DefnNode:initialize 32
+              (ArgsNode 33
+                (ListNode 33)
+                (ListNode 33)
+                (ListNode 33)
+                (ListNode 33)
+              )
+              (ZSuperNode 33)
+            )
+            (FCallNode:include 36
+              (ArrayNode 36
+                (ConstNode:SearchableContainerMethods 36)
+              )
+              null
+            )
+            (FCallNode:include 37
+              (ArrayNode 37
+                (ConstNode:SearchTreeMethods 37)
+              )
+              null
+            )
+          )
+          (ConstNode:Tree 31)
+        )
+      )
+    )

@@ -1,0 +1,79 @@
+    (RootNode 6
+      (BlockNode 6
+        (ClassNode 6
+          (Colon2ImplicitNode:Adaptee 6
+            null
+          )
+          (DefnNode:walk 7
+            (ArgsNode 8
+              (ListNode 8)
+              (ListNode 8)
+              (ListNode 8)
+              (ListNode 8)
+            )
+            (StrNode 8)
+          )
+          null
+        )
+        (ClassNode 12
+          (Colon2ImplicitNode:Adaptor 12
+            null
+          )
+          (BlockNode 13
+            (FCallNode:attr_reader 13
+              (ArrayNode 13
+                (SymbolNode:adaptee 13)
+              )
+              null
+            )
+            (DefnNode:initialize 15
+              (ArgsNode 16
+                (ListNode 16)
+                (ListNode 16)
+                (ListNode 16)
+                (ListNode 16)
+              )
+              (InstAsgnNode:@adaptee 16
+                (CallNode:new 16
+                  (ConstNode:Adaptee 16)
+                  null
+                  null
+                )
+              )
+            )
+            (DefnNode:walk 19
+              (ArgsNode 20
+                (ListNode 20)
+                (ListNode 20)
+                (ListNode 20)
+                (ListNode 20)
+              )
+              (CallNode:+ 20
+                (CallNode:walk 20
+                  (VCallNode:adaptee 20)
+                  null
+                  null
+                )
+                (ArrayNode 20
+                  (StrNode 20)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:adaptor 26
+          (CallNode:new 26
+            (ConstNode:Adaptor 26)
+            null
+            null
+          )
+        )
+        (CallNode:walk 27
+          (LocalVarNode:adaptor 27)
+          null
+          null
+        )
+      )
+    )

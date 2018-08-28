@@ -1,0 +1,368 @@
+    (RootNode 7
+      (BlockNode 7
+        (ClassNode 7
+          (Colon2ImplicitNode:BankAccount 7
+            null
+          )
+          (BlockNode 8
+            (FCallNode:attr_reader 8
+              (ArrayNode 8
+                (SymbolNode:balance 8)
+              )
+              null
+            )
+            (DefnNode:initialize 10
+              (ArgsNode 10
+                (ListNode 10)
+                (ListNode 10
+                  (OptArgNode:balance 10
+                    (LocalAsgnNode:balance 10
+                      (FixnumNode 10)
+                    )
+                  )
+                )
+                (ListNode 10)
+                (ListNode 10)
+              )
+              (InstAsgnNode:@balance 11
+                (LocalVarNode:balance 11)
+              )
+            )
+            (DefnNode:deposit 14
+              (ArgsNode 14
+                (ListNode 14
+                  (ArgumentNode:amount 14)
+                )
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+              )
+              (LocalAsgnNode:balance 15
+                (CallNode:+ 15
+                  (LocalVarNode:balance 15)
+                  (ArrayNode 15
+                    (LocalVarNode:amount 15)
+                  )
+                  null
+                )
+              )
+            )
+            (DefnNode:withdraw 18
+              (ArgsNode 18
+                (ListNode 18
+                  (ArgumentNode:amount 18)
+                )
+                (ListNode 18)
+                (ListNode 18)
+                (ListNode 18)
+              )
+              (LocalAsgnNode:balance 19
+                (CallNode:- 19
+                  (LocalVarNode:balance 19)
+                  (ArrayNode 19
+                    (LocalVarNode:amount 19)
+                  )
+                  null
+                )
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 25
+          (Colon2ImplicitNode:BankAccountProxy 25
+            null
+          )
+          (BlockNode 26
+            (DefnNode:initialize 26
+              (ArgsNode 26
+                (ListNode 26
+                  (ArgumentNode:real_object 26)
+                )
+                (ListNode 26)
+                (ListNode 26)
+                (ListNode 26)
+              )
+              (InstAsgnNode:@real_object 27
+                (LocalVarNode:real_object 27)
+              )
+            )
+            (DefnNode:balance 30
+              (ArgsNode 31
+                (ListNode 31)
+                (ListNode 31)
+                (ListNode 31)
+                (ListNode 31)
+              )
+              (CallNode:balance 31
+                (InstVarNode:@real_object 31)
+                null
+                null
+              )
+            )
+            (DefnNode:deposit 34
+              (ArgsNode 34
+                (ListNode 34
+                  (ArgumentNode:amount 34)
+                )
+                (ListNode 34)
+                (ListNode 34)
+                (ListNode 34)
+              )
+              (CallNode:deposit 35
+                (InstVarNode:@real_object 35)
+                (ArrayNode 35
+                  (LocalVarNode:amount 35)
+                )
+                null
+              )
+            )
+            (DefnNode:withdraw 38
+              (ArgsNode 38
+                (ListNode 38
+                  (ArgumentNode:amount 38)
+                )
+                (ListNode 38)
+                (ListNode 38)
+                (ListNode 38)
+              )
+              (CallNode:withdraw 39
+                (InstVarNode:@real_object 39)
+                (ArrayNode 39
+                  (LocalVarNode:amount 39)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 49
+          (Colon2ImplicitNode:BankAccountProtectionProxy 49
+            null
+          )
+          (BlockNode 50
+            (DefnNode:initialize 50
+              (ArgsNode 50
+                (ListNode 50
+                  (ArgumentNode:real_account 50)
+                  (ArgumentNode:owner_name 50)
+                )
+                (ListNode 50)
+                (ListNode 50)
+                (ListNode 50)
+              )
+              (BlockNode 51
+                (InstAsgnNode:@subject 51
+                  (LocalVarNode:real_account 51)
+                )
+                (InstAsgnNode:@owner_name 52
+                  (LocalVarNode:owner_name 52)
+                )
+              )
+            )
+            (DefnNode:deposit 55
+              (ArgsNode 55
+                (ListNode 55
+                  (ArgumentNode:amount 55)
+                )
+                (ListNode 55)
+                (ListNode 55)
+                (ListNode 55)
+              )
+              (BlockNode 56
+                (VCallNode:check_access 56)
+                (CallNode:deposit 57
+                  (InstVarNode:@subject 57)
+                  (ArrayNode 57
+                    (LocalVarNode:amount 57)
+                  )
+                  null
+                )
+              )
+            )
+            (DefnNode:withdraw 60
+              (ArgsNode 60
+                (ListNode 60
+                  (ArgumentNode:amount 60)
+                )
+                (ListNode 60)
+                (ListNode 60)
+                (ListNode 60)
+              )
+              (BlockNode 61
+                (VCallNode:check_access 61)
+                (CallNode:withdraw 62
+                  (InstVarNode:@subject 62)
+                  (ArrayNode 62
+                    (LocalVarNode:amount 62)
+                  )
+                  null
+                )
+              )
+            )
+            (DefnNode:balance 65
+              (ArgsNode 66
+                (ListNode 66)
+                (ListNode 66)
+                (ListNode 66)
+                (ListNode 66)
+              )
+              (BlockNode 66
+                (VCallNode:check_access 66)
+                (CallNode:balance 67
+                  (InstVarNode:@subject 67)
+                  null
+                  null
+                )
+              )
+            )
+            (DefnNode:check_access 70
+              (ArgsNode 71
+                (ListNode 71)
+                (ListNode 71)
+                (ListNode 71)
+                (ListNode 71)
+              )
+              NilImplicitNode
+            )
+          )
+          null
+        )
+        (ClassNode 81
+          (Colon2ImplicitNode:BankAccountVirtualProxy 81
+            null
+          )
+          (BlockNode 82
+            (DefnNode:initialize 82
+              (ArgsNode 82
+                (ListNode 82)
+                (ListNode 82)
+                (ListNode 82)
+                (ListNode 82)
+                (BlockArgNode:creation_block 82)
+              )
+              (InstAsgnNode:@creation_block 83
+                (LocalVarNode:creation_block 83)
+              )
+            )
+            (DefnNode:deposit 86
+              (ArgsNode 86
+                (ListNode 86
+                  (ArgumentNode:amount 86)
+                )
+                (ListNode 86)
+                (ListNode 86)
+                (ListNode 86)
+              )
+              (CallNode:deposit 87
+                (VCallNode:subject 87)
+                (ArrayNode 87
+                  (LocalVarNode:amount 87)
+                )
+                null
+              )
+            )
+            (DefnNode:withdraw 90
+              (ArgsNode 90
+                (ListNode 90
+                  (ArgumentNode:amount 90)
+                )
+                (ListNode 90)
+                (ListNode 90)
+                (ListNode 90)
+              )
+              (CallNode:withdraw 91
+                (VCallNode:subject 91)
+                (ArrayNode 91
+                  (LocalVarNode:amount 91)
+                )
+                null
+              )
+            )
+            (DefnNode:balance 94
+              (ArgsNode 95
+                (ListNode 95)
+                (ListNode 95)
+                (ListNode 95)
+                (ListNode 95)
+              )
+              (CallNode:balance 95
+                (VCallNode:subject 95)
+                null
+                null
+              )
+            )
+            (DefnNode:subject 98
+              (ArgsNode 99
+                (ListNode 99)
+                (ListNode 99)
+                (ListNode 99)
+                (ListNode 99)
+              )
+              (OpAsgnOrNode 99
+                (InstVarNode:@subject 99)
+                (InstAsgnNode:@subject 99
+                  (CallNode:call 99
+                    (InstVarNode:@creation_block 99)
+                    null
+                    null
+                  )
+                )
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 111
+          (Colon2ImplicitNode:BankAccountRemoteProxy 111
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ConstDeclNode:URI 115
+          null
+          (StrNode 115)
+        )
+        (CallNode:start_service 116
+          (ConstNode:DRb 116)
+          (ArrayNode 116
+            (ConstNode:URI 116)
+            (CallNode:new 116
+              (ConstNode:BankAccountRemoteProxy 116)
+              null
+              null
+            )
+          )
+          null
+        )
+        (CallNode:join 117
+          (CallNode:thread 117
+            (ConstNode:DRb 117)
+            null
+            null
+          )
+          null
+          null
+        )
+        (ConstDeclNode:URI 120
+          null
+          (StrNode 120)
+        )
+        (LocalAsgnNode:proxy 121
+          (CallNode:new_with_uri 121
+            (ConstNode:DRbObject 121)
+            (ArrayNode 121
+              (ConstNode:URI 121)
+            )
+            null
+          )
+        )
+        (CallNode:balance 122
+          (LocalVarNode:proxy 122)
+          null
+          null
+        )
+      )
+    )

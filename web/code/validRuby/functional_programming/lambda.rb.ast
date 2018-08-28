@@ -1,0 +1,67 @@
+    (RootNode 2
+      (BlockNode 2
+        (LocalAsgnNode:say_hello 2
+          (FCallNode:lambda 2
+            null
+            (IterNode 2
+              (ArgsNode 2
+                (ListNode 2
+                  (ArgumentNode:name 2)
+                )
+                (ListNode 2)
+                (ListNode 2)
+                (ListNode 2)
+              )
+              (FCallNode:puts 2
+                (ArrayNode 2
+                  (DStrNode 2
+                    (StrNode 2)
+                    (EvStrNode 2
+                      (DVarNode:name 2)
+                    )
+                  )
+                )
+                null
+              )
+            )
+          )
+        )
+        (LocalAsgnNode:say_hello 3
+          (LambdaNode 3
+            (ArgsNode 3
+              (ListNode 3
+                (ArgumentNode:name 3)
+              )
+              (ListNode 3)
+              (ListNode 3)
+              (ListNode 3)
+            )
+            (FCallNode:puts 3
+              (ArrayNode 3
+                (DStrNode 3
+                  (StrNode 3)
+                  (EvStrNode 3
+                    (DVarNode:name 3)
+                  )
+                )
+              )
+              null
+            )
+          )
+        )
+        (CallNode:call 7
+          (LocalVarNode:say_hello 7)
+          (ArrayNode 7
+            (StrNode 7)
+          )
+          null
+        )
+        (CallNode:call 8
+          (LocalVarNode:say_hello 8)
+          (ArrayNode 8
+            (StrNode 8)
+          )
+          null
+        )
+      )
+    )

@@ -1,0 +1,18 @@
+    (RootNode 12
+      (BlockNode 12
+        (LocalAsgnNode:x 12
+          (AndNode 12
+            (TrueNode 12)
+            (FalseNode 12)
+          )
+        )
+        (LocalVarNode:x 15)
+        (AndNode 20
+          (LocalAsgnNode:x 20
+            (TrueNode 20)
+          )
+          (FalseNode 20)
+        )
+        (LocalVarNode:x 23)
+      )
+    )

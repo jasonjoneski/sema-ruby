@@ -1,0 +1,296 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:QueueAsArray 7
+          null
+        )
+        (BlockNode 8
+          (DefnNode:initialize 8
+            (ArgsNode 8
+              (ListNode 8)
+              (ListNode 8
+                (OptArgNode:size 8
+                  (LocalAsgnNode:size 8
+                    (FixnumNode 8)
+                  )
+                )
+              )
+              (ListNode 8)
+              (ListNode 8)
+            )
+            (BlockNode 9
+              (SuperNode 9
+                null
+              )
+              (InstAsgnNode:@array 10
+                (CallNode:new 10
+                  (ConstNode:Array 10)
+                  (ArrayNode 10
+                    (LocalVarNode:size 10)
+                  )
+                  null
+                )
+              )
+              (InstAsgnNode:@head 11
+                (FixnumNode 11)
+              )
+              (InstAsgnNode:@tail 12
+                (CallNode:- 12
+                  (LocalVarNode:size 12)
+                  (ArrayNode 12
+                    (FixnumNode 12)
+                  )
+                  null
+                )
+              )
+            )
+          )
+          (DefnNode:purge 15
+            (ArgsNode 16
+              (ListNode 16)
+              (ListNode 16)
+              (ListNode 16)
+              (ListNode 16)
+            )
+            (WhileNode 16
+              (CallNode:> 16
+                (InstVarNode:@count 16)
+                (ArrayNode 16
+                  (FixnumNode 16)
+                )
+                null
+              )
+              (BlockNode 17
+                (AttrAssignNode:[]= 17
+                  (InstVarNode:@array 17)
+                  (ArrayNode 17
+                    (InstVarNode:@head 17)
+                    (NilNode 17)
+                  )
+                )
+                (InstAsgnNode:@head 18
+                  (CallNode:+ 18
+                    (InstVarNode:@head 18)
+                    (ArrayNode 18
+                      (FixnumNode 18)
+                    )
+                    null
+                  )
+                )
+                (IfNode 19
+                  (CallNode:== 19
+                    (InstVarNode:@head 19)
+                    (ArrayNode 19
+                      (CallNode:length 19
+                        (InstVarNode:@array 19)
+                        null
+                        null
+                      )
+                    )
+                    null
+                  )
+                  (InstAsgnNode:@head 19
+                    (FixnumNode 19)
+                  )
+                  null
+                )
+                (InstAsgnNode:@count 20
+                  (CallNode:- 20
+                    (InstVarNode:@count 20)
+                    (ArrayNode 20
+                      (FixnumNode 20)
+                    )
+                    null
+                  )
+                )
+              )
+            )
+          )
+          (DefnNode:head 24
+            (ArgsNode 25
+              (ListNode 25)
+              (ListNode 25)
+              (ListNode 25)
+              (ListNode 25)
+            )
+            (BlockNode 25
+              (IfNode 25
+                (CallNode:== 25
+                  (InstVarNode:@count 25)
+                  (ArrayNode 25
+                    (FixnumNode 25)
+                  )
+                  null
+                )
+                (FCallNode:raise 25
+                  (ArrayNode 25
+                    (ConstNode:ContainerEmpty 25)
+                  )
+                  null
+                )
+                null
+              )
+              (CallNode:[] 26
+                (InstVarNode:@array 26)
+                (ArrayNode 26
+                  (InstVarNode:@head 26)
+                )
+                null
+              )
+            )
+          )
+          (DefnNode:enqueue 29
+            (ArgsNode 29
+              (ListNode 29
+                (ArgumentNode:obj 29)
+              )
+              (ListNode 29)
+              (ListNode 29)
+              (ListNode 29)
+            )
+            (BlockNode 30
+              (IfNode 30
+                (CallNode:== 30
+                  (InstVarNode:@count 30)
+                  (ArrayNode 30
+                    (CallNode:length 30
+                      (InstVarNode:@array 30)
+                      null
+                      null
+                    )
+                  )
+                  null
+                )
+                (FCallNode:raise 30
+                  (ArrayNode 30
+                    (ConstNode:ContainerFull 30)
+                  )
+                  null
+                )
+                null
+              )
+              (InstAsgnNode:@tail 31
+                (CallNode:+ 31
+                  (InstVarNode:@tail 31)
+                  (ArrayNode 31
+                    (FixnumNode 31)
+                  )
+                  null
+                )
+              )
+              (IfNode 32
+                (CallNode:== 32
+                  (InstVarNode:@tail 32)
+                  (ArrayNode 32
+                    (CallNode:length 32
+                      (InstVarNode:@array 32)
+                      null
+                      null
+                    )
+                  )
+                  null
+                )
+                (InstAsgnNode:@tail 32
+                  (FixnumNode 32)
+                )
+                null
+              )
+              (AttrAssignNode:[]= 33
+                (InstVarNode:@array 33)
+                (ArrayNode 33
+                  (InstVarNode:@tail 33)
+                  (LocalVarNode:obj 33)
+                )
+              )
+              (InstAsgnNode:@count 34
+                (CallNode:+ 34
+                  (InstVarNode:@count 34)
+                  (ArrayNode 34
+                    (FixnumNode 34)
+                  )
+                  null
+                )
+              )
+            )
+          )
+          (DefnNode:dequeue 37
+            (ArgsNode 38
+              (ListNode 38)
+              (ListNode 38)
+              (ListNode 38)
+              (ListNode 38)
+            )
+            (BlockNode 38
+              (IfNode 38
+                (CallNode:== 38
+                  (InstVarNode:@count 38)
+                  (ArrayNode 38
+                    (FixnumNode 38)
+                  )
+                  null
+                )
+                (FCallNode:raise 38
+                  (ArrayNode 38
+                    (ConstNode:ContainerEmpty 38)
+                  )
+                  null
+                )
+                null
+              )
+              (LocalAsgnNode:result 39
+                (CallNode:[] 39
+                  (InstVarNode:@array 39)
+                  (ArrayNode 39
+                    (InstVarNode:@head 39)
+                  )
+                  null
+                )
+              )
+              (AttrAssignNode:[]= 40
+                (InstVarNode:@array 40)
+                (ArrayNode 40
+                  (InstVarNode:@head 40)
+                  (NilNode 40)
+                )
+              )
+              (InstAsgnNode:@head 41
+                (CallNode:+ 41
+                  (InstVarNode:@head 41)
+                  (ArrayNode 41
+                    (FixnumNode 41)
+                  )
+                  null
+                )
+              )
+              (IfNode 42
+                (CallNode:== 42
+                  (InstVarNode:@head 42)
+                  (ArrayNode 42
+                    (CallNode:length 42
+                      (InstVarNode:@array 42)
+                      null
+                      null
+                    )
+                  )
+                  null
+                )
+                (InstAsgnNode:@head 42
+                  (FixnumNode 42)
+                )
+                null
+              )
+              (InstAsgnNode:@count 43
+                (CallNode:- 43
+                  (InstVarNode:@count 43)
+                  (ArrayNode 43
+                    (FixnumNode 43)
+                  )
+                  null
+                )
+              )
+              (LocalVarNode:result 44)
+            )
+          )
+        )
+        (ConstNode:Queue 7)
+      )
+    )

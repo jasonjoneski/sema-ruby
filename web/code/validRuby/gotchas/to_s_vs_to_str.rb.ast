@@ -1,0 +1,87 @@
+    (RootNode 31
+      (BlockNode 31
+        (ClassNode 31
+          (Colon2ImplicitNode:ArticleTitle 31
+            null
+          )
+          (BlockNode 32
+            (DefnNode:initialize 32
+              (ArgsNode 32
+                (ListNode 32
+                  (ArgumentNode:text 32)
+                )
+                (ListNode 32)
+                (ListNode 32)
+                (ListNode 32)
+              )
+              (InstAsgnNode:@text 33
+                (LocalVarNode:text 33)
+              )
+            )
+            (DefnNode:slug 36
+              (ArgsNode 37
+                (ListNode 37)
+                (ListNode 37)
+                (ListNode 37)
+                (ListNode 37)
+              )
+              (CallNode:downcase 37
+                (CallNode:tr_s 37
+                  (CallNode:strip 37
+                    (InstVarNode:@text 37)
+                    null
+                    null
+                  )
+                  (ArrayNode 37
+                    (StrNode 37)
+                    (StrNode 37)
+                  )
+                  null
+                )
+                null
+                null
+              )
+            )
+            (DefnNode:to_str 40
+              (ArgsNode 41
+                (ListNode 41)
+                (ListNode 41)
+                (ListNode 41)
+                (ListNode 41)
+              )
+              (BlockNode 41
+                (FCallNode:puts 41
+                  (ArrayNode 41
+                    (StrNode 41)
+                  )
+                  null
+                )
+                (InstVarNode:@text 42)
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:title 46
+          (CallNode:new 46
+            (ConstNode:ArticleTitle 46)
+            (ArrayNode 46
+              (StrNode 46)
+            )
+            null
+          )
+        )
+        (FCallNode:puts 50
+          (ArrayNode 50
+            (CallNode:+ 50
+              (StrNode 50)
+              (ArrayNode 50
+                (LocalVarNode:title 50)
+              )
+              null
+            )
+          )
+          null
+        )
+      )
+    )

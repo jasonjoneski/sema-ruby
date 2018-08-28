@@ -1,0 +1,39 @@
+    (RootNode 3
+      (BlockNode 3
+        (ClassNode 3
+          (Colon2ImplicitNode:String 3
+            null
+          )
+          (BlockNode 4
+            (AliasNode 4
+
+
+            )
+            (DefnNode:length 6
+              (ArgsNode 7
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+              )
+              (DStrNode 7
+                (StrNode 7)
+                (EvStrNode 7
+                  (SelfNode 7)
+                )
+                (StrNode 7)
+                (EvStrNode 7
+                  (VCallNode:orig_length 7)
+                )
+              )
+            )
+          )
+          null
+        )
+        (CallNode:length 11
+          (StrNode 11)
+          null
+          null
+        )
+      )
+    )

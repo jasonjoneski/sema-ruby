@@ -1,0 +1,88 @@
+    (RootNode 1
+      (BlockNode 1
+        (ModuleNode 1
+          (Colon2ImplicitNode:MyMixin 1
+            null
+          )
+          (BlockNode 2
+            (DefsNode:included 2
+              (SelfNode 2)
+              (ArgsNode 2
+                (ListNode 2
+                  (ArgumentNode:base 2)
+                )
+                (ListNode 2)
+                (ListNode 2)
+                (ListNode 2)
+              )
+              (CallNode:extend 3
+                (LocalVarNode:base 3)
+                (ArrayNode 3
+                  (ConstNode:ClassMethods 3)
+                )
+                null
+              )
+            )
+            (DefnNode:a 6
+              (ArgsNode 7
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+              )
+              (FCallNode:puts 7
+                (ArrayNode 7
+                  (StrNode 7)
+                )
+                null
+              )
+            )
+            (ModuleNode 10
+              (Colon2ImplicitNode:ClassMethods 10
+                null
+              )
+              (DefnNode:x 11
+                (ArgsNode 12
+                  (ListNode 12)
+                  (ListNode 12)
+                  (ListNode 12)
+                  (ListNode 12)
+                )
+                (FCallNode:puts 12
+                  (ArrayNode 12
+                    (StrNode 12)
+                  )
+                  null
+                )
+              )
+            )
+          )
+        )
+        (ClassNode 17
+          (Colon2ImplicitNode:Foo 17
+            null
+          )
+          (FCallNode:include 18
+            (ArrayNode 18
+              (ConstNode:MyMixin 18)
+            )
+            null
+          )
+          null
+        )
+        (CallNode:x 21
+          (ConstNode:Foo 21)
+          null
+          null
+        )
+        (CallNode:a 22
+          (CallNode:new 22
+            (ConstNode:Foo 22)
+            null
+            null
+          )
+          null
+          null
+        )
+      )
+    )

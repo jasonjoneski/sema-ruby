@@ -1,0 +1,31 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:OrderedList 7
+          null
+        )
+        (BlockNode 8
+          (DefnNode:initialize 8
+            (ArgsNode 9
+              (ListNode 9)
+              (ListNode 9)
+              (ListNode 9)
+              (ListNode 9)
+            )
+            (ZSuperNode 9)
+          )
+          (FCallNode:abstractmethod 12
+            (ArrayNode 12
+              (SymbolNode:[] 12)
+            )
+            null
+          )
+          (FCallNode:abstractmethod 14
+            (ArrayNode 14
+              (SymbolNode:findPosition 14)
+            )
+            null
+          )
+        )
+        (ConstNode:SearchableContainer 7)
+      )
+    )

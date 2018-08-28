@@ -2,8 +2,8 @@
 //    flatDir("libs")
 //}
 dependencies {
-    implementation group: 'org.jruby', name: 'jruby-core', version: '9.2.0.0'
-    implementation project(':core')
-    implementation 'com.google.code.gson:gson:2.8.5'
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.6'
+    compile group: 'org.jruby', name: 'jruby-core', version: '9.2.0.0'
+    compile project(':core')
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.6'
 }

@@ -1,0 +1,121 @@
+    (RootNode 10
+      (ClassNode 10
+        (Colon2ImplicitNode:Array 10
+          null
+        )
+        (DefnNode:binary_search 11
+          (ArgsNode 11
+            (ListNode 11
+              (ArgumentNode:item 11)
+            )
+            (ListNode 11)
+            (ListNode 11)
+            (ListNode 11)
+          )
+          (BlockNode 12
+            (IfNode 12
+              (CallNode:nil? 12
+                (LocalVarNode:item 12)
+                null
+                null
+              )
+              (ReturnNode 12
+                (NilNode 12)
+              )
+              null
+            )
+            (LocalAsgnNode:low 14
+              (FixnumNode 14)
+            )
+            (LocalAsgnNode:high 15
+              (CallNode:- 15
+                (CallNode:size 15
+                  (SelfNode 15)
+                  null
+                  null
+                )
+                (ArrayNode 15
+                  (FixnumNode 15)
+                )
+                null
+              )
+            )
+            (WhileNode 17
+              (CallNode:<= 17
+                (LocalVarNode:low 17)
+                (ArrayNode 17
+                  (LocalVarNode:high 17)
+                )
+                null
+              )
+              (BlockNode 18
+                (LocalAsgnNode:mid 18
+                  (CallNode:/ 18
+                    (CallNode:+ 18
+                      (LocalVarNode:low 18)
+                      (ArrayNode 18
+                        (LocalVarNode:high 18)
+                      )
+                      null
+                    )
+                    (ArrayNode 18
+                      (FixnumNode 18)
+                    )
+                    null
+                  )
+                )
+                (LocalAsgnNode:val 19
+                  (FCallNode:[] 19
+                    (ArrayNode 19
+                      (LocalVarNode:mid 19)
+                    )
+                    null
+                  )
+                )
+                (IfNode 20
+                  (CallNode:> 20
+                    (LocalVarNode:val 20)
+                    (ArrayNode 20
+                      (LocalVarNode:item 20)
+                    )
+                    null
+                  )
+                  (LocalAsgnNode:high 21
+                    (CallNode:- 21
+                      (LocalVarNode:mid 21)
+                      (ArrayNode 21
+                        (FixnumNode 21)
+                      )
+                      null
+                    )
+                  )
+                  (IfNode 22
+                    (CallNode:< 22
+                      (LocalVarNode:val 22)
+                      (ArrayNode 22
+                        (LocalVarNode:item 22)
+                      )
+                      null
+                    )
+                    (LocalAsgnNode:low 23
+                      (CallNode:+ 23
+                        (LocalVarNode:mid 23)
+                        (ArrayNode 23
+                          (FixnumNode 23)
+                        )
+                        null
+                      )
+                    )
+                    (ReturnNode 25
+                      (LocalVarNode:val 25)
+                    )
+                  )
+                )
+              )
+            )
+            (NilNode 29)
+          )
+        )
+        null
+      )
+    )

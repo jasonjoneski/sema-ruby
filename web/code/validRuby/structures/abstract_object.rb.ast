@@ -1,0 +1,104 @@
+    (RootNode 6
+      (ClassNode 6
+        (Colon2ImplicitNode:AbstractObject 6
+          null
+        )
+        (BlockNode 7
+          (DefnNode:initialize 7
+            (ArgsNode 8
+              (ListNode 8)
+              (ListNode 8)
+              (ListNode 8)
+              (ListNode 8)
+            )
+            (ZSuperNode 8)
+          )
+          (FCallNode:include 11
+            (ArrayNode 11
+              (Colon3Node:Comparable 11)
+            )
+            null
+          )
+          (DefnNode:<=> 13
+            (ArgsNode 13
+              (ListNode 13
+                (ArgumentNode:obj 13)
+              )
+              (ListNode 13)
+              (ListNode 13)
+              (ListNode 13)
+            )
+            (IfNode 14
+              (FCallNode:is_a? 14
+                (ArrayNode 14
+                  (CallNode:type 14
+                    (LocalVarNode:obj 14)
+                    null
+                    null
+                  )
+                )
+                null
+              )
+              (FCallNode:compareTo 15
+                (ArrayNode 15
+                  (LocalVarNode:obj 15)
+                )
+                null
+              )
+              (IfNode 16
+                (CallNode:is_a? 16
+                  (LocalVarNode:obj 16)
+                  (ArrayNode 16
+                    (VCallNode:type 16)
+                  )
+                  null
+                )
+                (CallNode:-@ 17
+                  (CallNode:compareTo 17
+                    (LocalVarNode:obj 17)
+                    (ArrayNode 17
+                      (SelfNode 17)
+                    )
+                    null
+                  )
+                  null
+                  null
+                )
+                (CallNode:<=> 19
+                  (CallNode:name 19
+                    (VCallNode:type 19)
+                    null
+                    null
+                  )
+                  (ArrayNode 19
+                    (CallNode:name 19
+                      (CallNode:type 19
+                        (LocalVarNode:obj 19)
+                        null
+                        null
+                      )
+                      null
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+            )
+          )
+          (FCallNode:abstractmethod 23
+            (ArrayNode 23
+              (SymbolNode:compareTo 23)
+            )
+            null
+          )
+          (FCallNode:protected 25
+            (ArrayNode 25
+              (SymbolNode:compareTo 25)
+            )
+            null
+          )
+        )
+        (Colon3Node:Object 6)
+      )
+    )

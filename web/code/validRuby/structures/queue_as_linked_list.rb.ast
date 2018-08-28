@@ -1,0 +1,153 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:QueueAsLinkedList 7
+          null
+        )
+        (BlockNode 8
+          (DefnNode:initialize 8
+            (ArgsNode 9
+              (ListNode 9)
+              (ListNode 9)
+              (ListNode 9)
+              (ListNode 9)
+            )
+            (BlockNode 9
+              (ZSuperNode 9)
+              (InstAsgnNode:@list 10
+                (CallNode:new 10
+                  (ConstNode:SinglyLinkedList 10)
+                  null
+                  null
+                )
+              )
+            )
+          )
+          (DefnNode:purge 13
+            (ArgsNode 14
+              (ListNode 14)
+              (ListNode 14)
+              (ListNode 14)
+              (ListNode 14)
+            )
+            (BlockNode 14
+              (CallNode:purge 14
+                (InstVarNode:@list 14)
+                null
+                null
+              )
+              (ZSuperNode 15)
+            )
+          )
+          (DefnNode:head 18
+            (ArgsNode 19
+              (ListNode 19)
+              (ListNode 19)
+              (ListNode 19)
+              (ListNode 19)
+            )
+            (BlockNode 19
+              (IfNode 19
+                (CallNode:== 19
+                  (InstVarNode:@count 19)
+                  (ArrayNode 19
+                    (FixnumNode 19)
+                  )
+                  null
+                )
+                (FCallNode:raise 19
+                  (ArrayNode 19
+                    (ConstNode:ContainerEmpty 19)
+                  )
+                  null
+                )
+                null
+              )
+              (CallNode:first 20
+                (InstVarNode:@list 20)
+                null
+                null
+              )
+            )
+          )
+          (DefnNode:enqueue 23
+            (ArgsNode 23
+              (ListNode 23
+                (ArgumentNode:obj 23)
+              )
+              (ListNode 23)
+              (ListNode 23)
+              (ListNode 23)
+            )
+            (BlockNode 24
+              (CallNode:append 24
+                (InstVarNode:@list 24)
+                (ArrayNode 24
+                  (LocalVarNode:obj 24)
+                )
+                null
+              )
+              (InstAsgnNode:@count 25
+                (CallNode:+ 25
+                  (InstVarNode:@count 25)
+                  (ArrayNode 25
+                    (FixnumNode 25)
+                  )
+                  null
+                )
+              )
+            )
+          )
+          (DefnNode:dequeue 28
+            (ArgsNode 29
+              (ListNode 29)
+              (ListNode 29)
+              (ListNode 29)
+              (ListNode 29)
+            )
+            (BlockNode 29
+              (IfNode 29
+                (CallNode:== 29
+                  (InstVarNode:@count 29)
+                  (ArrayNode 29
+                    (FixnumNode 29)
+                  )
+                  null
+                )
+                (FCallNode:raise 29
+                  (ArrayNode 29
+                    (ConstNode:ContainerEmpty 29)
+                  )
+                  null
+                )
+                null
+              )
+              (LocalAsgnNode:result 30
+                (CallNode:first 30
+                  (InstVarNode:@list 30)
+                  null
+                  null
+                )
+              )
+              (CallNode:extract 31
+                (InstVarNode:@list 31)
+                (ArrayNode 31
+                  (LocalVarNode:result 31)
+                )
+                null
+              )
+              (InstAsgnNode:@count 32
+                (CallNode:- 32
+                  (InstVarNode:@count 32)
+                  (ArrayNode 32
+                    (FixnumNode 32)
+                  )
+                  null
+                )
+              )
+              (LocalVarNode:result 33)
+            )
+          )
+        )
+        (ConstNode:Queue 7)
+      )
+    )

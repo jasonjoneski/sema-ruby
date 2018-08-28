@@ -1,0 +1,88 @@
+    (RootNode 8
+      (BlockNode 8
+        (ClassNode 8
+          (Colon2ImplicitNode:Apple 8
+            null
+          )
+          (BlockNode 9
+            (DefsNode:latin_name 9
+              (SelfNode 9)
+              (ArgsNode 10
+                (ListNode 10)
+                (ListNode 10)
+                (ListNode 10)
+                (ListNode 10)
+              )
+              (VCallNode:binomial_name 10)
+            )
+            (VCallNode:private 13)
+            (DefsNode:binomial_name 15
+              (SelfNode 15)
+              (ArgsNode 16
+                (ListNode 16)
+                (ListNode 16)
+                (ListNode 16)
+                (ListNode 16)
+              )
+              (StrNode 16)
+            )
+          )
+          null
+        )
+        (CallNode:latin_name 20
+          (ConstNode:Apple 20)
+          null
+          null
+        )
+        (CallNode:binomial_name 21
+          (ConstNode:Apple 21)
+          null
+          null
+        )
+        (ClassNode 28
+          (Colon2ImplicitNode:Orange 28
+            null
+          )
+          (BlockNode 29
+            (DefsNode:latin_name 29
+              (SelfNode 29)
+              (ArgsNode 30
+                (ListNode 30)
+                (ListNode 30)
+                (ListNode 30)
+                (ListNode 30)
+              )
+              (VCallNode:binomial_name 30)
+            )
+            (SClassNode 33
+              (SelfNode 33)
+              (FCallNode:private 34
+                (ArrayNode 34
+                  (DefnNode:binomial_name 34
+                    (ArgsNode 35
+                      (ListNode 35)
+                      (ListNode 35)
+                      (ListNode 35)
+                      (ListNode 35)
+                    )
+                    (StrNode 35)
+                  )
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (CallNode:latin_name 40
+          (ConstNode:Orange 40)
+          null
+          null
+        )
+        (CallNode:binomial_name 41
+          (ConstNode:Orange 41)
+          null
+          null
+        )
+      )
+    )

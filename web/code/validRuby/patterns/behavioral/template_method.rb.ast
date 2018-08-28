@@ -1,0 +1,173 @@
+    (RootNode 4
+      (BlockNode 4
+        (ModuleNode 4
+          (Colon2ImplicitNode:Template 4
+            null
+          )
+          (DefnNode:generate 8
+            (ArgsNode 9
+              (ListNode 9)
+              (ListNode 9)
+              (ListNode 9)
+              (ListNode 9)
+            )
+            (BlockNode 9
+              (LocalAsgnNode:string 9
+                (DStrNode 9
+                  (StrNode 9)
+                  (EvStrNode 9
+                    (VCallNode:tagname 9)
+                  )
+                )
+              )
+              (LocalAsgnNode:styles 10
+                (StrNode 10)
+              )
+              (IfNode 11
+                (FCallNode:respond_to? 11
+                  (ArrayNode 11
+                    (SymbolNode:font_size 11)
+                  )
+                  null
+                )
+                (LocalAsgnNode:styles 11
+                  (CallNode:+ 11
+                    (LocalVarNode:styles 11)
+                    (ArrayNode 11
+                      (DStrNode 11
+                        (StrNode 11)
+                        (EvStrNode 11
+                          (VCallNode:font_size 11)
+                        )
+                        (StrNode 11)
+                      )
+                    )
+                    null
+                  )
+                )
+                null
+              )
+              (IfNode 12
+                (FCallNode:respond_to? 12
+                  (ArrayNode 12
+                    (SymbolNode:background_color 12)
+                  )
+                  null
+                )
+                (LocalAsgnNode:styles 12
+                  (CallNode:+ 12
+                    (LocalVarNode:styles 12)
+                    (ArrayNode 12
+                      (DStrNode 12
+                        (StrNode 12)
+                        (EvStrNode 12
+                          (VCallNode:background_color 12)
+                        )
+                        (StrNode 12)
+                      )
+                    )
+                    null
+                  )
+                )
+                null
+              )
+              (IfNode 13
+                (CallNode:empty? 13
+                  (LocalVarNode:styles 13)
+                  null
+                  null
+                )
+                null
+                (LocalAsgnNode:string 13
+                  (CallNode:+ 13
+                    (LocalVarNode:string 13)
+                    (ArrayNode 13
+                      (DStrNode 13
+                        (StrNode 13)
+                        (EvStrNode 13
+                          (LocalVarNode:styles 13)
+                        )
+                        (StrNode 13)
+                      )
+                    )
+                    null
+                  )
+                )
+              )
+              (LocalAsgnNode:string 14
+                (CallNode:+ 14
+                  (LocalVarNode:string 14)
+                  (ArrayNode 14
+                    (DStrNode 14
+                      (StrNode 14)
+                      (EvStrNode 14
+                        (VCallNode:content 14)
+                      )
+                      (StrNode 14)
+                      (EvStrNode 14
+                        (VCallNode:tagname 14)
+                      )
+                      (StrNode 14)
+                    )
+                  )
+                  null
+                )
+              )
+            )
+          )
+        )
+        (ClassNode 18
+          (Colon2ImplicitNode:Body 18
+            null
+          )
+          (BlockNode 19
+            (DefnNode:tagname 19
+              (ArgsNode 20
+                (ListNode 20)
+                (ListNode 20)
+                (ListNode 20)
+                (ListNode 20)
+              )
+              (StrNode 20)
+            )
+            (DefnNode:content 23
+              (ArgsNode 24
+                (ListNode 24)
+                (ListNode 24)
+                (ListNode 24)
+                (ListNode 24)
+              )
+              (StrNode 24)
+            )
+            (DefnNode:font_size 27
+              (ArgsNode 28
+                (ListNode 28)
+                (ListNode 28)
+                (ListNode 28)
+                (ListNode 28)
+              )
+              (StrNode 28)
+            )
+            (FCallNode:include 31
+              (ArrayNode 31
+                (ConstNode:Template 31)
+              )
+              null
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:body 35
+          (CallNode:new 35
+            (ConstNode:Body 35)
+            null
+            null
+          )
+        )
+        (CallNode:generate 36
+          (LocalVarNode:body 36)
+          null
+          null
+        )
+      )
+    )

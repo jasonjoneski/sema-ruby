@@ -1,0 +1,22 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:Iterator 7
+          null
+        )
+        (BlockNode 8
+          (FCallNode:abstractmethod 8
+            (ArrayNode 8
+              (SymbolNode:more? 8)
+            )
+            null
+          )
+          (FCallNode:abstractmethod 10
+            (ArrayNode 10
+              (SymbolNode:succ 10)
+            )
+            null
+          )
+        )
+        (ConstNode:AbstractObject 7)
+      )
+    )

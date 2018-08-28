@@ -1,0 +1,358 @@
+    (RootNode 3
+      (BlockNode 3
+        (ClassNode 3
+          (Colon2ImplicitNode:Foo 3
+            null
+          )
+          (FCallNode:define_method 4
+            (ArrayNode 4
+              (SymbolNode:bar 4)
+            )
+            (IterNode 6
+              (ArgsNode 5
+                (ListNode 5)
+                (ListNode 5)
+                (ListNode 5)
+                (ListNode 5)
+              )
+              (FCallNode:puts 5
+                (ArrayNode 5
+                  (StrNode 5)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (CallNode:bar 8
+          (CallNode:new 8
+            (ConstNode:Foo 8)
+            null
+            null
+          )
+          null
+          null
+        )
+        (ClassNode 12
+          (Colon2ImplicitNode:Bar 12
+            null
+          )
+          (BlockNode 14
+            (DefsNode:create_method 14
+              (SelfNode 14)
+              (ArgsNode 14
+                (ListNode 14
+                  (ArgumentNode:method 14)
+                )
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+              )
+              (FCallNode:define_method 15
+                (ArrayNode 15
+                  (DStrNode 15
+                    (StrNode 15)
+                    (EvStrNode 15
+                      (LocalVarNode:method 15)
+                    )
+                  )
+                )
+                (IterNode 17
+                  (ArgsNode 16
+                    (ListNode 16)
+                    (ListNode 16)
+                    (ListNode 16)
+                    (ListNode 16)
+                  )
+                  (FCallNode:puts 16
+                    (ArrayNode 16
+                      (DStrNode 16
+                        (StrNode 16)
+                        (EvStrNode 16
+                          (LocalVarNode:method 16)
+                        )
+                        (StrNode 16)
+                      )
+                    )
+                    null
+                  )
+                )
+              )
+            )
+            (FCallNode:create_method 21
+              (ArrayNode 21
+                (SymbolNode:foo 21)
+              )
+              null
+            )
+            (FCallNode:create_method 22
+              (ArrayNode 22
+                (SymbolNode:bar 22)
+              )
+              null
+            )
+            (FCallNode:create_method 23
+              (ArrayNode 23
+                (SymbolNode:baz 23)
+              )
+              null
+            )
+          )
+          null
+        )
+        (CallNode:my_foo 25
+          (CallNode:new 25
+            (ConstNode:Bar 25)
+            null
+            null
+          )
+          null
+          null
+        )
+        (CallNode:my_bar 26
+          (CallNode:new 26
+            (ConstNode:Bar 26)
+            null
+            null
+          )
+          null
+          null
+        )
+        (CallNode:my_baz 27
+          (CallNode:new 27
+            (ConstNode:Bar 27)
+            null
+            null
+          )
+          null
+          null
+        )
+        (ClassNode 31
+          (Colon2ImplicitNode:AnotherClass 31
+            null
+          )
+          (BlockNode 32
+            (DefnNode:get_foo_stuff 32
+              (ArgsNode 32
+                (ListNode 32)
+                (ListNode 32)
+                (ListNode 32)
+                (ListNode 32)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:get_bar_stuff 34
+              (ArgsNode 34
+                (ListNode 34)
+                (ListNode 34)
+                (ListNode 34)
+                (ListNode 34)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:get_baz_stuff 36
+              (ArgsNode 36
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+              )
+              NilImplicitNode
+            )
+          )
+          null
+        )
+        (ClassNode 38
+          (Colon2ImplicitNode:Baz 38
+            null
+          )
+          (BlockNode 39
+            (DefnNode:initialize 39
+              (ArgsNode 39
+                (ListNode 39
+                  (ArgumentNode:a_class 39)
+                )
+                (ListNode 39)
+                (ListNode 39)
+                (ListNode 39)
+              )
+              (CallNode:grep 40
+                (CallNode:methods 40
+                  (LocalVarNode:a_class 40)
+                  null
+                  null
+                )
+                (ArrayNode 40
+                  (RegexpNode 40)
+                )
+                (IterNode 40
+                  (ArgsNode 40
+                    (ListNode 40)
+                    (ListNode 40)
+                    (ListNode 40)
+                    (ListNode 40)
+                  )
+                  (CallNode:create_method 40
+                    (ConstNode:Baz 40)
+                    (ArrayNode 40
+                      (CallNode:last_match 40
+                        (ConstNode:Regexp 40)
+                        (ArrayNode 40
+                          (FixnumNode 40)
+                        )
+                        null
+                      )
+                    )
+                    null
+                  )
+                )
+              )
+            )
+            (DefsNode:create_method 43
+              (SelfNode 43)
+              (ArgsNode 43
+                (ListNode 43
+                  (ArgumentNode:method 43)
+                )
+                (ListNode 43)
+                (ListNode 43)
+                (ListNode 43)
+              )
+              (FCallNode:define_method 44
+                (ArrayNode 44
+                  (DStrNode 44
+                    (StrNode 44)
+                    (EvStrNode 44
+                      (LocalVarNode:method 44)
+                    )
+                  )
+                )
+                (IterNode 46
+                  (ArgsNode 45
+                    (ListNode 45)
+                    (ListNode 45)
+                    (ListNode 45)
+                    (ListNode 45)
+                  )
+                  (FCallNode:puts 45
+                    (ArrayNode 45
+                      (DStrNode 45
+                        (StrNode 45)
+                        (EvStrNode 45
+                          (LocalVarNode:method 45)
+                        )
+                        (StrNode 45)
+                      )
+                    )
+                    null
+                  )
+                )
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:another_class 49
+          (CallNode:new 49
+            (ConstNode:AnotherClass 49)
+            null
+            null
+          )
+        )
+        (CallNode:my_foo 50
+          (CallNode:new 50
+            (ConstNode:Baz 50)
+            (ArrayNode 50
+              (LocalVarNode:another_class 50)
+            )
+            null
+          )
+          null
+          null
+        )
+        (CallNode:my_bar 51
+          (CallNode:new 51
+            (ConstNode:Baz 51)
+            (ArrayNode 51
+              (LocalVarNode:another_class 51)
+            )
+            null
+          )
+          null
+          null
+        )
+        (CallNode:my_baz 52
+          (CallNode:new 52
+            (ConstNode:Baz 52)
+            (ArrayNode 52
+              (LocalVarNode:another_class 52)
+            )
+            null
+          )
+          null
+          null
+        )
+        (ClassNode 54
+          (Colon2ImplicitNode:Foo 54
+            null
+          )
+          (DefnNode:initialize 55
+            (ArgsNode 55
+              (ListNode 55
+                (ArgumentNode:bar 55)
+              )
+              (ListNode 55)
+              (ListNode 55)
+              (ListNode 55)
+            )
+            (CallNode:send 56
+              (CallNode:class 56
+                (SelfNode 56)
+                null
+                null
+              )
+              (ArrayNode 56
+                (SymbolNode:define_method 56)
+                (LocalVarNode:bar 56)
+              )
+              (IterNode 56
+                (ArgsNode 56
+                  (ListNode 56)
+                  (ListNode 56)
+                  (ListNode 56)
+                  (ListNode 56)
+                )
+                (FCallNode:p 56
+                  (ArrayNode 56
+                    (DStrNode 56
+                      (StrNode 56)
+                      (EvStrNode 56
+                        (LocalVarNode:bar 56)
+                      )
+                      (StrNode 56)
+                    )
+                  )
+                  null
+                )
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:foo 59
+          (CallNode:new 59
+            (ConstNode:Foo 59)
+            (ArrayNode 59
+              (StrNode 59)
+            )
+            null
+          )
+        )
+        (CallNode:world 60
+          (LocalVarNode:foo 60)
+          null
+          null
+        )
+      )
+    )

@@ -1,0 +1,24 @@
+    (RootNode 0
+      (BlockNode 0
+        (LocalAsgnNode:type 0
+          (StrNode 0)
+        )
+        (CallNode:new 1
+          (CallNode:const_get 1
+            (Colon2ConstNode:Bar 1
+              (ConstNode:Foo 1)
+            )
+            (ArrayNode 1
+              (CallNode:capitalize 1
+                (LocalVarNode:type 1)
+                null
+                null
+              )
+            )
+            null
+          )
+          null
+          null
+        )
+      )
+    )

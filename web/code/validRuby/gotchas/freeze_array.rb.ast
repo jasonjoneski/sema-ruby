@@ -1,0 +1,64 @@
+    (RootNode 4
+      (BlockNode 4
+        (LocalAsgnNode:arr 4
+          (ArrayNode 4
+            (StrNode 4)
+            (StrNode 4)
+            (StrNode 4)
+          )
+        )
+        (CallNode:freeze 5
+          (LocalVarNode:arr 5)
+          null
+          null
+        )
+        (CallNode:<< 6
+          (LocalVarNode:arr 6)
+          (ArrayNode 6
+            (StrNode 6)
+          )
+          null
+        )
+        (AttrAssignNode:[]= 9
+          (LocalVarNode:arr 9)
+          (ArrayNode 9
+            (FixnumNode 9)
+            (StrNode 9)
+          )
+        )
+        (CallNode:object_id 12
+          (CallNode:[] 12
+            (LocalVarNode:arr 12)
+            (ArrayNode 12
+              (FixnumNode 12)
+            )
+            null
+          )
+          null
+          null
+        )
+        (CallNode:reverse! 15
+          (CallNode:[] 15
+            (LocalVarNode:arr 15)
+            (ArrayNode 15
+              (FixnumNode 15)
+            )
+            null
+          )
+          null
+          null
+        )
+        (LocalVarNode:arr 16)
+        (CallNode:object_id 19
+          (CallNode:[] 19
+            (LocalVarNode:arr 19)
+            (ArrayNode 19
+              (FixnumNode 19)
+            )
+            null
+          )
+          null
+          null
+        )
+      )
+    )

@@ -1,0 +1,155 @@
+    (RootNode 4
+      (BlockNode 4
+        (FCallNode:puts 4
+          (ArrayNode 4
+            (CallNode:map 4
+              (ArrayNode 4
+                (FixnumNode 4)
+                (FixnumNode 4)
+                (FixnumNode 4)
+              )
+              null
+              (IterNode 4
+                (ArgsNode 4
+                  (ListNode 4
+                    (ArgumentNode:k 4)
+                  )
+                  (ListNode 4)
+                  (ListNode 4)
+                  (ListNode 4)
+                )
+                (CallNode:+ 4
+                  (DVarNode:k 4)
+                  (ArrayNode 4
+                    (FixnumNode 4)
+                  )
+                  null
+                )
+              )
+            )
+          )
+          null
+        )
+        (FCallNode:puts 10
+          (ArrayNode 10
+            (CallNode:map 10
+              (ArrayNode 10
+                (FixnumNode 10)
+                (FixnumNode 10)
+                (FixnumNode 10)
+              )
+              null
+              null
+            )
+          )
+          (IterNode 10
+            (ArgsNode 10
+              (ListNode 10
+                (ArgumentNode:k 10)
+              )
+              (ListNode 10)
+              (ListNode 10)
+              (ListNode 10)
+            )
+            (CallNode:+ 10
+              (DVarNode:k 10)
+              (ArrayNode 10
+                (FixnumNode 10)
+              )
+              null
+            )
+          )
+        )
+        (FCallNode:task 18
+          (ArrayNode 18
+            (HashNode 18
+              (SymbolNode:rake 18)
+              (VCallNode:pre_rake_task 18)
+            )
+          )
+          (IterNode 20
+            (ArgsNode 19
+              (ListNode 19)
+              (ListNode 19)
+              (ListNode 19)
+              (ListNode 19)
+            )
+            (VCallNode:something 19)
+          )
+        )
+        (FCallNode:task 24
+          (ArrayNode 24
+            (HashNode 24
+              (SymbolNode:rake 24)
+              (VCallNode:pre_rake_task 24)
+            )
+          )
+          (IterNode 24
+            (ArgsNode 24
+              (ListNode 24)
+              (ListNode 24)
+              (ListNode 24)
+              (ListNode 24)
+            )
+            (VCallNode:something 24)
+          )
+        )
+        (FCallNode:task 28
+          (ArrayNode 31
+            (HashNode 31
+              (SymbolNode:rake 28)
+              (FCallNode:pre_rake_task 28
+                null
+                (IterNode 30
+                  (ArgsNode 29
+                    (ListNode 29)
+                    (ListNode 29)
+                    (ListNode 29)
+                    (ListNode 29)
+                  )
+                  (VCallNode:something 29)
+                )
+              )
+            )
+          )
+          null
+        )
+        (FCallNode:task 34
+          (ArrayNode 35
+            (HashNode 35
+              (SymbolNode:rake 34)
+              (FCallNode:pre_rake_task 34
+                null
+                (IterNode 34
+                  (ArgsNode 34
+                    (ListNode 34)
+                    (ListNode 34)
+                    (ListNode 34)
+                    (ListNode 34)
+                  )
+                  (VCallNode:something 34)
+                )
+              )
+            )
+          )
+          null
+        )
+        (FCallNode:task 38
+          (ArrayNode 38
+            (HashNode 38
+              (SymbolNode:rake 38)
+              (VCallNode:pre_rake_task 38)
+            )
+          )
+          (IterNode 40
+            (ArgsNode 39
+              (ListNode 39)
+              (ListNode 39)
+              (ListNode 39)
+              (ListNode 39)
+            )
+            (VCallNode:something 39)
+          )
+        )
+      )
+    )

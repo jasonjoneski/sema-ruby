@@ -1,0 +1,71 @@
+    (RootNode 4
+      (BlockNode 4
+        (LocalAsgnNode:shared_array 4
+          (ZArrayNode 4)
+        )
+        (CallNode:each 6
+          (CallNode:map 6
+            (CallNode:times 6
+              (FixnumNode 6)
+              null
+              null
+            )
+            null
+            (IterNode 12
+              (ArgsNode 7
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+              )
+              (CallNode:new 7
+                (ConstNode:Thread 7)
+                null
+                (IterNode 11
+                  (ArgsNode 8
+                    (ListNode 8)
+                    (ListNode 8)
+                    (ListNode 8)
+                    (ListNode 8)
+                  )
+                  (CallNode:times 8
+                    (FixnumNode 8)
+                    null
+                    (IterNode 10
+                      (ArgsNode 9
+                        (ListNode 9)
+                        (ListNode 9)
+                        (ListNode 9)
+                        (ListNode 9)
+                      )
+                      (CallNode:<< 9
+                        (LocalVarNode:shared_array 9)
+                        (ArrayNode 9
+                          (NilNode 9)
+                        )
+                        null
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+          null
+          (BlockPassNode 12
+            null
+            (SymbolNode:join 12)
+          )
+        )
+        (FCallNode:puts 16
+          (ArrayNode 16
+            (CallNode:size 16
+              (LocalVarNode:shared_array 16)
+              null
+              null
+            )
+          )
+          null
+        )
+      )
+    )

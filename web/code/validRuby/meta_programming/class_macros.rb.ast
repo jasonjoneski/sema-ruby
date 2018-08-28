@@ -1,0 +1,135 @@
+    (RootNode 9
+      (ClassNode 9
+        (Colon2ImplicitNode:Foo 9
+          null
+        )
+        (BlockNode 10
+          (DefnNode:get_a 10
+            (ArgsNode 11
+              (ListNode 11)
+              (ListNode 11)
+              (ListNode 11)
+              (ListNode 11)
+            )
+            (FCallNode:puts 11
+              (ArrayNode 11
+                (StrNode 11)
+              )
+              null
+            )
+          )
+          (DefnNode:get_b 14
+            (ArgsNode 15
+              (ListNode 15)
+              (ListNode 15)
+              (ListNode 15)
+              (ListNode 15)
+            )
+            (FCallNode:puts 15
+              (ArrayNode 15
+                (StrNode 15)
+              )
+              null
+            )
+          )
+          (DefnNode:get_c 18
+            (ArgsNode 19
+              (ListNode 19)
+              (ListNode 19)
+              (ListNode 19)
+              (ListNode 19)
+            )
+            (FCallNode:puts 19
+              (ArrayNode 19
+                (StrNode 19)
+              )
+              null
+            )
+          )
+          (DefsNode:deprecate 23
+            (SelfNode 23)
+            (ArgsNode 23
+              (ListNode 23
+                (ArgumentNode:old_method 23)
+                (ArgumentNode:new_method 23)
+              )
+              (ListNode 23)
+              (ListNode 23)
+              (ListNode 23)
+            )
+            (FCallNode:define_method 24
+              (ArrayNode 24
+                (LocalVarNode:old_method 24)
+              )
+              (IterNode 27
+                (ArgsNode 24
+                  (ListNode 24)
+                  (ListNode 24)
+                  (RestArgNode:args 24)
+                  (ListNode 24)
+                  (ListNode 24)
+                  (BlockArgNode:block 24)
+                )
+                (BlockNode 25
+                  (FCallNode:puts 25
+                    (ArrayNode 25
+                      (DStrNode 25
+                        (StrNode 25)
+                        (EvStrNode 25
+                          (LocalVarNode:old_method 25)
+                        )
+                        (StrNode 25)
+                        (EvStrNode 25
+                          (LocalVarNode:new_method 25)
+                        )
+                        (StrNode 25)
+                      )
+                    )
+                    null
+                  )
+                  (FCallNode:send 26
+                    (ArgsCatNode 26
+                      (ArrayNode 26
+                        (LocalVarNode:new_method 26)
+                      )
+                      (DVarNode:args 26)
+                    )
+                    (BlockPassNode 26
+                      (ArgsCatNode 26
+                        (ArrayNode 26
+                          (LocalVarNode:new_method 26)
+                        )
+                        (DVarNode:args 26)
+                      )
+                      (DVarNode:block 26)
+                    )
+                  )
+                )
+              )
+            )
+          )
+          (FCallNode:deprecate 31
+            (ArrayNode 31
+              (SymbolNode:a 31)
+              (SymbolNode:get_a 31)
+            )
+            null
+          )
+          (FCallNode:deprecate 32
+            (ArrayNode 32
+              (SymbolNode:b 32)
+              (SymbolNode:get_b 32)
+            )
+            null
+          )
+          (FCallNode:deprecate 33
+            (ArrayNode 33
+              (SymbolNode:c 33)
+              (SymbolNode:get_c 33)
+            )
+            null
+          )
+        )
+        null
+      )
+    )

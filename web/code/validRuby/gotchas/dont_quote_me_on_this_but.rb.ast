@@ -1,0 +1,31 @@
+    (RootNode 4
+      (BlockNode 4
+        (LocalAsgnNode:x 4
+          (FixnumNode 4)
+        )
+        (FCallNode:puts 6
+          (ArrayNode 6
+            (StrNode 6)
+          )
+          null
+        )
+        (LocalAsgnNode:x 7
+          (FCallNode:puts 9
+            (ArrayNode 9
+              (DStrNode 9
+                (StrNode 9)
+                (EvStrNode 9
+                  (LocalVarNode:x 9)
+                )
+                (StrNode 9)
+              )
+            )
+            null
+          )
+        )
+        (LocalAsgnNode:x 10
+          (FixnumNode 10)
+        )
+        (LocalVarNode:x 11)
+      )
+    )

@@ -1,0 +1,178 @@
+    (RootNode 5
+      (BlockNode 5
+        (ClassNode 5
+          (Colon2ImplicitNode:CPU 5
+            null
+          )
+          (BlockNode 6
+            (DefnNode:freeze 6
+              (ArgsNode 7
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:jump 10
+              (ArgsNode 10
+                (ListNode 10
+                  (ArgumentNode:position 10)
+                )
+                (ListNode 10)
+                (ListNode 10)
+                (ListNode 10)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:execute 14
+              (ArgsNode 15
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+              )
+              NilImplicitNode
+            )
+          )
+          null
+        )
+        (ClassNode 19
+          (Colon2ImplicitNode:Memory 19
+            null
+          )
+          (DefnNode:load 20
+            (ArgsNode 20
+              (ListNode 20
+                (ArgumentNode:position 20)
+                (ArgumentNode:data 20)
+              )
+              (ListNode 20)
+              (ListNode 20)
+              (ListNode 20)
+            )
+            NilImplicitNode
+          )
+          null
+        )
+        (ClassNode 25
+          (Colon2ImplicitNode:HardDrive 25
+            null
+          )
+          (DefnNode:read 26
+            (ArgsNode 26
+              (ListNode 26
+                (ArgumentNode:lba 26)
+                (ArgumentNode:size 26)
+              )
+              (ListNode 26)
+              (ListNode 26)
+              (ListNode 26)
+            )
+            NilImplicitNode
+          )
+          null
+        )
+        (ClassNode 32
+          (Colon2ImplicitNode:ComputerFacade 32
+            null
+          )
+          (BlockNode 33
+            (FCallNode:attr_reader 33
+              (ArrayNode 33
+                (SymbolNode:processor 33)
+                (SymbolNode:ram 33)
+                (SymbolNode:hd 33)
+              )
+              null
+            )
+            (DefnNode:initialize 35
+              (ArgsNode 36
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+              )
+              (BlockNode 36
+                (InstAsgnNode:@processor 36
+                  (CallNode:new 36
+                    (ConstNode:CPU 36)
+                    null
+                    null
+                  )
+                )
+                (InstAsgnNode:@ram 37
+                  (CallNode:new 37
+                    (ConstNode:Memory 37)
+                    null
+                    null
+                  )
+                )
+                (InstAsgnNode:@hd 38
+                  (CallNode:new 38
+                    (ConstNode:HardDrive 38)
+                    null
+                    null
+                  )
+                )
+              )
+            )
+            (DefnNode:start 41
+              (ArgsNode 42
+                (ListNode 42)
+                (ListNode 42)
+                (ListNode 42)
+                (ListNode 42)
+              )
+              (BlockNode 42
+                (CallNode:freeze 42
+                  (VCallNode:processor 42)
+                  null
+                  null
+                )
+                (CallNode:jump 43
+                  (VCallNode:processor 43)
+                  (ArrayNode 43
+                    (ConstNode:BOOT_ADDRESS 43)
+                  )
+                  null
+                )
+                (CallNode:execute 44
+                  (VCallNode:processor 44)
+                  null
+                  null
+                )
+                (CallNode:load 45
+                  (VCallNode:ram 45)
+                  (ArrayNode 45
+                    (ConstNode:BOOT_ADDRESS 45)
+                    (CallNode:read 45
+                      (VCallNode:hd 45)
+                      (ArrayNode 45
+                        (ConstNode:BOOT_SECTOR 45)
+                        (ConstNode:SECTOR_SIZE 45)
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:computer_facade 50
+          (CallNode:new 50
+            (ConstNode:ComputerFacade 50)
+            null
+            null
+          )
+        )
+        (CallNode:start 51
+          (LocalVarNode:computer_facade 51)
+          null
+          null
+        )
+      )
+    )

@@ -1,0 +1,117 @@
+    (RootNode 5
+      (BlockNode 5
+        (LocalAsgnNode:langs 5
+          (CallNode:new 5
+            (ConstNode:Hash 5)
+            (ArrayNode 5
+              (ZArrayNode 5)
+            )
+            null
+          )
+        )
+        (CallNode:<< 6
+          (CallNode:[] 6
+            (LocalVarNode:langs 6)
+            (ArrayNode 6
+              (SymbolNode:jane 6)
+            )
+            null
+          )
+          (ArrayNode 6
+            (StrNode 6)
+          )
+          null
+        )
+        (CallNode:<< 7
+          (CallNode:[] 7
+            (LocalVarNode:langs 7)
+            (ArrayNode 7
+              (SymbolNode:rachel 7)
+            )
+            null
+          )
+          (ArrayNode 7
+            (StrNode 7)
+          )
+          null
+        )
+        (CallNode:[] 9
+          (LocalVarNode:langs 9)
+          (ArrayNode 9
+            (SymbolNode:jane 9)
+          )
+          null
+        )
+        (CallNode:[] 12
+          (LocalVarNode:langs 12)
+          (ArrayNode 12
+            (SymbolNode:rachel 12)
+          )
+          null
+        )
+        (LocalAsgnNode:langs 15
+          (CallNode:new 15
+            (ConstNode:Hash 15)
+            null
+            (IterNode 15
+              (ArgsNode 15
+                (ListNode 15
+                  (ArgumentNode:h 15)
+                  (ArgumentNode:k 15)
+                )
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+              )
+              (AttrAssignNode:[]= 15
+                (DVarNode:h 15)
+                (ArrayNode 15
+                  (DVarNode:k 15)
+                  (ZArrayNode 15)
+                )
+              )
+            )
+          )
+        )
+        (CallNode:<< 16
+          (CallNode:[] 16
+            (LocalVarNode:langs 16)
+            (ArrayNode 16
+              (SymbolNode:jane 16)
+            )
+            null
+          )
+          (ArrayNode 16
+            (StrNode 16)
+          )
+          null
+        )
+        (CallNode:<< 17
+          (CallNode:[] 17
+            (LocalVarNode:langs 17)
+            (ArrayNode 17
+              (SymbolNode:rachel 17)
+            )
+            null
+          )
+          (ArrayNode 17
+            (StrNode 17)
+          )
+          null
+        )
+        (CallNode:[] 19
+          (LocalVarNode:langs 19)
+          (ArrayNode 19
+            (SymbolNode:jane 19)
+          )
+          null
+        )
+        (CallNode:[] 22
+          (LocalVarNode:langs 22)
+          (ArrayNode 22
+            (SymbolNode:rachel 22)
+          )
+          null
+        )
+      )
+    )

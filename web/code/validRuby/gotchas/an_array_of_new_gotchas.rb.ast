@@ -1,0 +1,121 @@
+    (RootNode 4
+      (BlockNode 4
+        (ClassNode 4
+          (Colon2ImplicitNode:Person 4
+            null
+          )
+          (FCallNode:attr_accessor 5
+            (ArrayNode 5
+              (SymbolNode:name 5)
+            )
+            null
+          )
+          null
+        )
+        (LocalAsgnNode:people 8
+          (CallNode:new 8
+            (ConstNode:Array 8)
+            (ArrayNode 8
+              (FixnumNode 8)
+              (CallNode:new 8
+                (ConstNode:Person 8)
+                null
+                null
+              )
+            )
+            null
+          )
+        )
+        (AttrAssignNode:name= 9
+          (CallNode:[] 9
+            (LocalVarNode:people 9)
+            (ArrayNode 9
+              (FixnumNode 9)
+            )
+            null
+          )
+          (ArrayNode 9
+            (StrNode 9)
+          )
+        )
+        (AttrAssignNode:name= 10
+          (CallNode:[] 10
+            (LocalVarNode:people 10)
+            (ArrayNode 10
+              (FixnumNode 10)
+            )
+            null
+          )
+          (ArrayNode 10
+            (StrNode 10)
+          )
+        )
+        (CallNode:name 11
+          (CallNode:[] 11
+            (LocalVarNode:people 11)
+            (ArrayNode 11
+              (FixnumNode 11)
+            )
+            null
+          )
+          null
+          null
+        )
+        (LocalAsgnNode:people 14
+          (CallNode:new 14
+            (ConstNode:Array 14)
+            (ArrayNode 14
+              (FixnumNode 14)
+            )
+            (IterNode 15
+              (ArgsNode 15
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+              )
+              (CallNode:new 15
+                (ConstNode:Person 15)
+                null
+                null
+              )
+            )
+          )
+        )
+        (AttrAssignNode:name= 16
+          (CallNode:[] 16
+            (LocalVarNode:people 16)
+            (ArrayNode 16
+              (FixnumNode 16)
+            )
+            null
+          )
+          (ArrayNode 16
+            (StrNode 16)
+          )
+        )
+        (AttrAssignNode:name= 17
+          (CallNode:[] 17
+            (LocalVarNode:people 17)
+            (ArrayNode 17
+              (FixnumNode 17)
+            )
+            null
+          )
+          (ArrayNode 17
+            (StrNode 17)
+          )
+        )
+        (CallNode:name 18
+          (CallNode:[] 18
+            (LocalVarNode:people 18)
+            (ArrayNode 18
+              (FixnumNode 18)
+            )
+            null
+          )
+          null
+          null
+        )
+      )
+    )

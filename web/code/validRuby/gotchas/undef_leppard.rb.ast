@@ -1,0 +1,73 @@
+    (RootNode 5
+      (BlockNode 5
+        (CallNode:times 5
+          (FixnumNode 5)
+          null
+          (IterNode 9
+            (ArgsNode 5
+              (ListNode 5
+                (ArgumentNode:loop_num 5)
+              )
+              (ListNode 5)
+              (ListNode 5)
+              (ListNode 5)
+            )
+            (BlockNode 6
+              (OpAsgnOrNode 6
+                (DVarNode:sum 6)
+                (DAsgnNode:sum 6
+                  (FixnumNode 6)
+                )
+              )
+              (DAsgnNode:sum 7
+                (CallNode:+ 7
+                  (DVarNode:sum 7)
+                  (ArrayNode 7
+                    (FixnumNode 7)
+                  )
+                  null
+                )
+              )
+              (FCallNode:puts 8
+                (ArrayNode 8
+                  (DVarNode:sum 8)
+                )
+                null
+              )
+            )
+          )
+        )
+        (ForNode 14
+          (LocalAsgnNode:loop_num 14
+            NilImplicitNode
+          )
+          (BlockNode 15
+            (OpAsgnOrNode 15
+              (LocalVarNode:sum 15)
+              (LocalAsgnNode:sum 15
+                (FixnumNode 15)
+              )
+            )
+            (LocalAsgnNode:sum 16
+              (CallNode:+ 16
+                (LocalVarNode:sum 16)
+                (ArrayNode 16
+                  (FixnumNode 16)
+                )
+                null
+              )
+            )
+            (FCallNode:puts 17
+              (ArrayNode 17
+                (LocalVarNode:sum 17)
+              )
+              null
+            )
+          )
+          (DotNode 14
+            (FixnumNode 14)
+            (FixnumNode 14)
+          )
+        )
+      )
+    )

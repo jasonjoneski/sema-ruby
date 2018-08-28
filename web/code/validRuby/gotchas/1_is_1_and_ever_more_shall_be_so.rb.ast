@@ -1,0 +1,41 @@
+    (RootNode 5
+      (BlockNode 5
+        (LocalAsgnNode:arr 5
+          (ArrayNode 5
+            (FixnumNode 5)
+            (FixnumNode 5)
+            (FixnumNode 5)
+            (FixnumNode 5)
+          )
+        )
+        (CallNode:freeze 6
+          (LocalVarNode:arr 6)
+          null
+          null
+        )
+        (CallNode:<< 9
+          (LocalVarNode:arr 9)
+          (ArrayNode 9
+            (FixnumNode 9)
+          )
+          null
+        )
+        (OpElementAsgnNode 12
+          (LocalVarNode:arr 12)
+          (ArrayNode 12
+            (FixnumNode 12)
+          )
+          (FixnumNode 12)
+        )
+        (CallNode:object_id 15
+          (FixnumNode 15)
+          null
+          null
+        )
+        (CallNode:object_id 18
+          (FixnumNode 18)
+          null
+          null
+        )
+      )
+    )

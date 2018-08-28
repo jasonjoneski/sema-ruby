@@ -1,0 +1,133 @@
+    (RootNode 4
+      (BlockNode 4
+        (ClassNode 4
+          (Colon2ImplicitNode:StrategyOne 4
+            null
+          )
+          (DefnNode:use 5
+            (ArgsNode 6
+              (ListNode 6)
+              (ListNode 6)
+              (ListNode 6)
+              (ListNode 6)
+            )
+            (FCallNode:puts 6
+              (ArrayNode 6
+                (StrNode 6)
+              )
+              null
+            )
+          )
+          null
+        )
+        (ClassNode 10
+          (Colon2ImplicitNode:StrategyTwo 10
+            null
+          )
+          (DefnNode:use 11
+            (ArgsNode 12
+              (ListNode 12)
+              (ListNode 12)
+              (ListNode 12)
+              (ListNode 12)
+            )
+            (FCallNode:puts 12
+              (ArrayNode 12
+                (StrNode 12)
+              )
+              null
+            )
+          )
+          null
+        )
+        (ClassNode 16
+          (Colon2ImplicitNode:StrategyThree 16
+            null
+          )
+          (DefnNode:use 17
+            (ArgsNode 18
+              (ListNode 18)
+              (ListNode 18)
+              (ListNode 18)
+              (ListNode 18)
+            )
+            (FCallNode:puts 18
+              (ArrayNode 18
+                (StrNode 18)
+              )
+              null
+            )
+          )
+          null
+        )
+        (ClassNode 23
+          (Colon2ImplicitNode:Context 23
+            null
+          )
+          (BlockNode 24
+            (ClassVarAsgnNode:@@default_strategy 24
+              (CallNode:new 24
+                (ConstNode:StrategyOne 24)
+                null
+                null
+              )
+            )
+            (DefnNode:set_strategy 26
+              (ArgsNode 26
+                (ListNode 26
+                  (ArgumentNode:strategy 26)
+                )
+                (ListNode 26)
+                (ListNode 26)
+                (ListNode 26)
+              )
+              (InstAsgnNode:@strategy 27
+                (LocalVarNode:strategy 27)
+              )
+            )
+            (DefnNode:use 30
+              (ArgsNode 31
+                (ListNode 31)
+                (ListNode 31)
+                (ListNode 31)
+                (ListNode 31)
+              )
+              (CallNode:use 31
+                (InstVarNode:@strategy 31)
+                null
+                null
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:context 36
+          (CallNode:new 36
+            (ConstNode:Context 36)
+            null
+            null
+          )
+        )
+        (CallNode:use 37
+          (LocalVarNode:context 37)
+          null
+          null
+        )
+        (CallNode:set_strategy 39
+          (LocalVarNode:context 39)
+          (ArrayNode 39
+            (CallNode:new 39
+              (ConstNode:StrategyTwo 39)
+              null
+              null
+            )
+          )
+          null
+        )
+        (CallNode:use 40
+          (LocalVarNode:context 40)
+          null
+          null
+        )
+      )
+    )

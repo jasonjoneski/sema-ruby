@@ -1,0 +1,25 @@
+    (RootNode 3
+      (DefnNode:threadsafe! 3
+        (ArgsNode 4
+          (ListNode 4)
+          (ListNode 4)
+          (ListNode 4)
+          (ListNode 4)
+        )
+        (BlockNode 4
+          (InstAsgnNode:@preload_frameworks 4
+            (TrueNode 4)
+          )
+          (InstAsgnNode:@cache_classes 5
+            (TrueNode 5)
+          )
+          (InstAsgnNode:@dependency_loading 6
+            (FalseNode 6)
+          )
+          (InstAsgnNode:@allow_concurrency 7
+            (TrueNode 7)
+          )
+          (SelfNode 8)
+        )
+      )
+    )

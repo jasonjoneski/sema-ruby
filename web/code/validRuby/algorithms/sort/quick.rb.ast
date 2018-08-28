@@ -1,0 +1,138 @@
+    (RootNode 10
+      (ClassNode 10
+        (Colon2ImplicitNode:Array 10
+          null
+        )
+        (BlockNode 11
+          (DefnNode:swap 11
+            (ArgsNode 11
+              (ListNode 11
+                (ArgumentNode:first 11)
+                (ArgumentNode:second 11)
+              )
+              (ListNode 11)
+              (ListNode 11)
+              (ListNode 11)
+            )
+            (BlockNode 12
+              (MultipleAsgnNode 12
+                (ArrayNode 12
+                  (AttrAssignNode:[]= 12
+                    (SelfNode 12)
+                    (ArrayNode 12
+                      (LocalVarNode:first 12)
+                    )
+                  )
+                  (AttrAssignNode:[]= 12
+                    (SelfNode 12)
+                    (ArrayNode 12
+                      (LocalVarNode:second 12)
+                    )
+                  )
+                )
+                null
+                (ArrayNode 12
+                  (FCallNode:[] 12
+                    (ArrayNode 12
+                      (LocalVarNode:second 12)
+                    )
+                    null
+                  )
+                  (FCallNode:[] 12
+                    (ArrayNode 12
+                      (LocalVarNode:first 12)
+                    )
+                    null
+                  )
+                )
+              )
+              (SelfNode 13)
+            )
+          )
+          (DefnNode:quick_sort! 16
+            (ArgsNode 17
+              (ListNode 17)
+              (ListNode 17)
+              (ListNode 17)
+              (ListNode 17)
+            )
+            (BlockNode 17
+              (MultipleAsgnNode 17
+                (ArrayNode 17
+                  (LocalAsgnNode:h 17
+                    NilImplicitNode
+                  )
+                )
+                (LocalAsgnNode:t 17
+                  NilImplicitNode
+                )
+                (SelfNode 17)
+              )
+              (IfNode 18
+                (LocalVarNode:h 18)
+                (CallNode:inject 18
+                  (CallNode:partition 18
+                    (LocalVarNode:t 18)
+                    null
+                    (IterNode 18
+                      (ArgsNode 18
+                        (ListNode 18
+                          (ArgumentNode:e 18)
+                        )
+                        (ListNode 18)
+                        (ListNode 18)
+                        (ListNode 18)
+                      )
+                      (CallNode:< 18
+                        (DVarNode:e 18)
+                        (ArrayNode 18
+                          (LocalVarNode:h 18)
+                        )
+                        null
+                      )
+                    )
+                  )
+                  null
+                  (IterNode 18
+                    (ArgsNode 18
+                      (ListNode 18
+                        (ArgumentNode:l 18)
+                        (ArgumentNode:r 18)
+                      )
+                      (ListNode 18)
+                      (ListNode 18)
+                      (ListNode 18)
+                    )
+                    (CallNode:+ 18
+                      (CallNode:+ 18
+                        (CallNode:quick_sort! 18
+                          (DVarNode:l 18)
+                          null
+                          null
+                        )
+                        (ArrayNode 18
+                          (ArrayNode 18
+                            (LocalVarNode:h 18)
+                          )
+                        )
+                        null
+                      )
+                      (ArrayNode 18
+                        (CallNode:quick_sort! 18
+                          (DVarNode:r 18)
+                          null
+                          null
+                        )
+                      )
+                      null
+                    )
+                  )
+                )
+                (ZArrayNode 18)
+              )
+            )
+          )
+        )
+        null
+      )
+    )

@@ -1,0 +1,44 @@
+    (RootNode 4
+      (BlockNode 4
+        (IfNode 4
+          (TrueNode 4)
+          (StrNode 4)
+          (StrNode 4)
+        )
+        (IfNode 7
+          (FalseNode 7)
+          (StrNode 7)
+          (StrNode 7)
+        )
+        (IfNode 10
+          (NilNode 10)
+          (StrNode 10)
+          (StrNode 10)
+        )
+        (IfNode 13
+          (FixnumNode 13)
+          (StrNode 13)
+          (StrNode 13)
+        )
+        (IfNode 16
+          (FixnumNode 16)
+          (StrNode 16)
+          (StrNode 16)
+        )
+        (IfNode 19
+          (StrNode 19)
+          (StrNode 19)
+          (StrNode 19)
+        )
+        (IfNode 22
+          (StrNode 22)
+          (StrNode 22)
+          (StrNode 22)
+        )
+        (IfNode 25
+          (ZArrayNode 25)
+          (StrNode 25)
+          (StrNode 25)
+        )
+      )
+    )

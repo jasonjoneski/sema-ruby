@@ -1,0 +1,407 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:BinarySearchTree 7
+          null
+        )
+        (BlockNode 8
+          (FCallNode:include 8
+            (ArrayNode 8
+              (ConstNode:SearchTreeMethods 8)
+            )
+            null
+          )
+          (DefnNode:initialize 10
+            (ArgsNode 10
+              (ListNode 10)
+              (ListNode 10)
+              (RestArgNode:args 10)
+              (ListNode 10)
+              (ListNode 10)
+            )
+            (ZSuperNode 11)
+          )
+          (DefnNode:find 14
+            (ArgsNode 14
+              (ListNode 14
+                (ArgumentNode:obj 14)
+              )
+              (ListNode 14)
+              (ListNode 14)
+              (ListNode 14)
+            )
+            (BlockNode 15
+              (IfNode 15
+                (FCallNode:empty? 15
+                  null
+                  null
+                )
+                (ReturnNode 15
+                  (NilNode 15)
+                )
+                null
+              )
+              (LocalAsgnNode:diff 16
+                (CallNode:<=> 16
+                  (LocalVarNode:obj 16)
+                  (ArrayNode 16
+                    (InstVarNode:@key 16)
+                  )
+                  null
+                )
+              )
+              (IfNode 17
+                (CallNode:== 17
+                  (LocalVarNode:diff 17)
+                  (ArrayNode 17
+                    (FixnumNode 17)
+                  )
+                  null
+                )
+                (ReturnNode 18
+                  (InstVarNode:@key 18)
+                )
+                (IfNode 19
+                  (CallNode:< 19
+                    (LocalVarNode:diff 19)
+                    (ArrayNode 19
+                      (FixnumNode 19)
+                    )
+                    null
+                  )
+                  (ReturnNode 20
+                    (CallNode:find 20
+                      (InstVarNode:@left 20)
+                      (ArrayNode 20
+                        (LocalVarNode:obj 20)
+                      )
+                      null
+                    )
+                  )
+                  (IfNode 21
+                    (CallNode:> 21
+                      (LocalVarNode:diff 21)
+                      (ArrayNode 21
+                        (FixnumNode 21)
+                      )
+                      null
+                    )
+                    (ReturnNode 22
+                      (CallNode:find 22
+                        (InstVarNode:@right 22)
+                        (ArrayNode 22
+                          (LocalVarNode:obj 22)
+                        )
+                        null
+                      )
+                    )
+                    null
+                  )
+                )
+              )
+            )
+          )
+          (DefnNode:min 26
+            (ArgsNode 27
+              (ListNode 27)
+              (ListNode 27)
+              (ListNode 27)
+              (ListNode 27)
+            )
+            (IfNode 27
+              (FCallNode:empty? 27
+                null
+                null
+              )
+              (NilNode 28)
+              (IfNode 29
+                (CallNode:empty? 29
+                  (InstVarNode:@left 29)
+                  null
+                  null
+                )
+                (InstVarNode:@key 30)
+                (CallNode:min 32
+                  (InstVarNode:@left 32)
+                  null
+                  null
+                )
+              )
+            )
+          )
+          (DefnNode:insert 36
+            (ArgsNode 36
+              (ListNode 36
+                (ArgumentNode:obj 36)
+              )
+              (ListNode 36)
+              (ListNode 36)
+              (ListNode 36)
+            )
+            (BlockNode 37
+              (IfNode 37
+                (FCallNode:empty? 37
+                  null
+                  null
+                )
+                (FCallNode:attachKey 38
+                  (ArrayNode 38
+                    (LocalVarNode:obj 38)
+                  )
+                  null
+                )
+                (BlockNode 40
+                  (LocalAsgnNode:diff 40
+                    (CallNode:<=> 40
+                      (LocalVarNode:obj 40)
+                      (ArrayNode 40
+                        (InstVarNode:@key 40)
+                      )
+                      null
+                    )
+                  )
+                  (IfNode 41
+                    (CallNode:== 41
+                      (LocalVarNode:diff 41)
+                      (ArrayNode 41
+                        (FixnumNode 41)
+                      )
+                      null
+                    )
+                    (FCallNode:raise 42
+                      (ArrayNode 42
+                        (ConstNode:ArgumentError 42)
+                      )
+                      null
+                    )
+                    (IfNode 43
+                      (CallNode:< 43
+                        (LocalVarNode:diff 43)
+                        (ArrayNode 43
+                          (FixnumNode 43)
+                        )
+                        null
+                      )
+                      (CallNode:insert 44
+                        (InstVarNode:@left 44)
+                        (ArrayNode 44
+                          (LocalVarNode:obj 44)
+                        )
+                        null
+                      )
+                      (IfNode 45
+                        (CallNode:> 45
+                          (LocalVarNode:diff 45)
+                          (ArrayNode 45
+                            (FixnumNode 45)
+                          )
+                          null
+                        )
+                        (CallNode:insert 46
+                          (InstVarNode:@right 46)
+                          (ArrayNode 46
+                            (LocalVarNode:obj 46)
+                          )
+                          null
+                        )
+                        null
+                      )
+                    )
+                  )
+                )
+              )
+              (VCallNode:balance 49)
+            )
+          )
+          (DefnNode:attachKey 52
+            (ArgsNode 52
+              (ListNode 52
+                (ArgumentNode:obj 52)
+              )
+              (ListNode 52)
+              (ListNode 52)
+              (ListNode 52)
+            )
+            (BlockNode 53
+              (IfNode 53
+                (FCallNode:empty? 53
+                  null
+                  null
+                )
+                null
+                (FCallNode:raise 53
+                  (ArrayNode 53
+                    (ConstNode:StateError 53)
+                  )
+                  null
+                )
+              )
+              (InstAsgnNode:@key 54
+                (LocalVarNode:obj 54)
+              )
+              (InstAsgnNode:@left 55
+                (CallNode:new 55
+                  (ConstNode:BinarySearchTree 55)
+                  null
+                  null
+                )
+              )
+              (InstAsgnNode:@right 56
+                (CallNode:new 56
+                  (ConstNode:BinarySearchTree 56)
+                  null
+                  null
+                )
+              )
+            )
+          )
+          (DefnNode:balance 59
+            (ArgsNode 59
+              (ListNode 59)
+              (ListNode 59)
+              (ListNode 59)
+              (ListNode 59)
+            )
+            NilImplicitNode
+          )
+          (DefnNode:withdraw 61
+            (ArgsNode 61
+              (ListNode 61
+                (ArgumentNode:obj 61)
+              )
+              (ListNode 61)
+              (ListNode 61)
+              (ListNode 61)
+            )
+            (BlockNode 62
+              (IfNode 62
+                (FCallNode:empty? 62
+                  null
+                  null
+                )
+                (FCallNode:raise 62
+                  (ArrayNode 62
+                    (ConstNode:ArgumentError 62)
+                  )
+                  null
+                )
+                null
+              )
+              (LocalAsgnNode:diff 63
+                (CallNode:<=> 63
+                  (LocalVarNode:obj 63)
+                  (ArrayNode 63
+                    (InstVarNode:@key 63)
+                  )
+                  null
+                )
+              )
+              (IfNode 64
+                (CallNode:== 64
+                  (LocalVarNode:diff 64)
+                  (ArrayNode 64
+                    (FixnumNode 64)
+                  )
+                  null
+                )
+                (IfNode 65
+                  (CallNode:! 65
+                    (CallNode:empty? 65
+                      (InstVarNode:@left 65)
+                      null
+                      null
+                    )
+                    null
+                    null
+                  )
+                  (BlockNode 66
+                    (LocalAsgnNode:max 66
+                      (CallNode:max 66
+                        (InstVarNode:@left 66)
+                        null
+                        null
+                      )
+                    )
+                    (InstAsgnNode:@key 67
+                      (LocalVarNode:max 67)
+                    )
+                    (CallNode:withdraw 68
+                      (InstVarNode:@left 68)
+                      (ArrayNode 68
+                        (LocalVarNode:max 68)
+                      )
+                      null
+                    )
+                  )
+                  (IfNode 69
+                    (CallNode:! 69
+                      (CallNode:empty? 69
+                        (InstVarNode:@right 69)
+                        null
+                        null
+                      )
+                      null
+                      null
+                    )
+                    (BlockNode 70
+                      (LocalAsgnNode:min 70
+                        (CallNode:min 70
+                          (InstVarNode:@right 70)
+                          null
+                          null
+                        )
+                      )
+                      (InstAsgnNode:@key 71
+                        (LocalVarNode:min 71)
+                      )
+                      (CallNode:withdraw 72
+                        (InstVarNode:@right 72)
+                        (ArrayNode 72
+                          (LocalVarNode:min 72)
+                        )
+                        null
+                      )
+                    )
+                    (VCallNode:detachKey 74)
+                  )
+                )
+                (IfNode 76
+                  (CallNode:< 76
+                    (LocalVarNode:diff 76)
+                    (ArrayNode 76
+                      (FixnumNode 76)
+                    )
+                    null
+                  )
+                  (CallNode:withdraw 77
+                    (InstVarNode:@left 77)
+                    (ArrayNode 77
+                      (LocalVarNode:obj 77)
+                    )
+                    null
+                  )
+                  (IfNode 78
+                    (CallNode:> 78
+                      (LocalVarNode:diff 78)
+                      (ArrayNode 78
+                        (FixnumNode 78)
+                      )
+                      null
+                    )
+                    (CallNode:withdraw 79
+                      (InstVarNode:@right 79)
+                      (ArrayNode 79
+                        (LocalVarNode:obj 79)
+                      )
+                      null
+                    )
+                    null
+                  )
+                )
+              )
+              (VCallNode:balance 81)
+            )
+          )
+        )
+        (ConstNode:BinaryTree 7)
+      )
+    )

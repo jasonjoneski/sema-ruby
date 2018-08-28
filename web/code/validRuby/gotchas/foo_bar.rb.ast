@@ -1,0 +1,129 @@
+    (RootNode 1
+      (BlockNode 1
+        (ConstDeclNode:FOO 1
+          null
+          (FixnumNode 1)
+        )
+        (ModuleNode 3
+          (Colon2ImplicitNode:Foo 3
+            null
+          )
+          (ConstDeclNode:FOO 4
+            null
+            (FixnumNode 4)
+          )
+        )
+        (ModuleNode 7
+          (Colon2ImplicitNode:Foo 7
+            null
+          )
+          (ClassNode 8
+            (Colon2ImplicitNode:Bar 8
+              null
+            )
+            (DefnNode:baz 9
+              (ArgsNode 10
+                (ListNode 10)
+                (ListNode 10)
+                (ListNode 10)
+                (ListNode 10)
+              )
+              (FCallNode:puts 10
+                (ArrayNode 10
+                  (ConstNode:FOO 10)
+                )
+                null
+              )
+            )
+            null
+          )
+        )
+        (ClassNode 15
+          (Colon2ConstNode:Bar 15
+            (ConstNode:Foo 15)
+          )
+          (DefnNode:glorf 16
+            (ArgsNode 17
+              (ListNode 17)
+              (ListNode 17)
+              (ListNode 17)
+              (ListNode 17)
+            )
+            (FCallNode:puts 17
+              (ArrayNode 17
+                (ConstNode:FOO 17)
+              )
+              null
+            )
+          )
+          null
+        )
+        (CallNode:baz 21
+          (CallNode:new 21
+            (Colon2ConstNode:Bar 21
+              (ConstNode:Foo 21)
+            )
+            null
+            null
+          )
+          null
+          null
+        )
+        (CallNode:glorf 24
+          (CallNode:new 24
+            (Colon2ConstNode:Bar 24
+              (ConstNode:Foo 24)
+            )
+            null
+            null
+          )
+          null
+          null
+        )
+        (ModuleNode 34
+          (Colon2ImplicitNode:Foo 34
+            null
+          )
+          (ClassNode 35
+            (Colon2ImplicitNode:Bar 35
+              null
+            )
+            (DefnNode:baz 36
+              (ArgsNode 37
+                (ListNode 37)
+                (ListNode 37)
+                (ListNode 37)
+                (ListNode 37)
+              )
+              (FCallNode:puts 37
+                (ArrayNode 37
+                  (ConstNode:FOO 37)
+                )
+                null
+              )
+            )
+            null
+          )
+        )
+        (ClassNode 48
+          (Colon2ConstNode:Bar 48
+            (ConstNode:Foo 48)
+          )
+          (DefnNode:glorf 49
+            (ArgsNode 50
+              (ListNode 50)
+              (ListNode 50)
+              (ListNode 50)
+              (ListNode 50)
+            )
+            (FCallNode:puts 50
+              (ArrayNode 50
+                (ConstNode:FOO 50)
+              )
+              null
+            )
+          )
+          null
+        )
+      )
+    )

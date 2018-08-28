@@ -1,0 +1,46 @@
+    (RootNode 6
+      (BlockNode 6
+        (FCallNode:puts 6
+          (ArrayNode 6
+            (LocalVarNode:x 6)
+          )
+          null
+        )
+        (IfNode 12
+          (TrueNode 12)
+          (LocalAsgnNode:x 12
+            (FixnumNode 12)
+          )
+          null
+        )
+        (FCallNode:puts 13
+          (ArrayNode 13
+            (LocalVarNode:x 13)
+          )
+          null
+        )
+        (IfNode 18
+          (FalseNode 18)
+          (LocalAsgnNode:x 18
+            (FixnumNode 18)
+          )
+          null
+        )
+        (FCallNode:puts 19
+          (ArrayNode 19
+            (LocalVarNode:x 19)
+          )
+          null
+        )
+        (FCallNode:puts 26
+          (ArrayNode 26
+            (CallNode:class 26
+              (LocalVarNode:x 26)
+              null
+              null
+            )
+          )
+          null
+        )
+      )
+    )

@@ -1,7 +1,9 @@
 package com.sema.parser.web;
 
 import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHandler;
+import org.eclipse.jetty.servlet.ServletHolder;
 
 import java.util.Optional;
 
@@ -15,7 +17,11 @@ public class Main {
         ServletHandler servletHandler = new ServletHandler();
         server.setHandler(servletHandler);
 
-        servletHandler.addServletWithMapping(AstStatusServlet.class, "/parser/*");
+        servletHandler.addServletWithMapping(ParseServlet.class, "/parse/*");
+        servletHandler.addServletWithMapping(AstListServlet.class, "/astList/*");
+        servletHandler.addServletWithMapping(AstServlet.class, "/ast/*");
+
+
 
         server.setHandler(servletHandler);
         server.start();

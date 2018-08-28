@@ -1,0 +1,385 @@
+    (RootNode 8
+      (BlockNode 8
+        (ClassNode 8
+          (Colon2ImplicitNode:Buyer 8
+            null
+          )
+          (BlockNode 9
+            (FCallNode:attr_accessor 9
+              (ArrayNode 9
+                (SymbolNode:balance 9)
+              )
+              null
+            )
+            (DefnNode:initialize 11
+              (ArgsNode 11
+                (ListNode 11
+                  (ArgumentNode:balance 11)
+                )
+                (ListNode 11)
+                (ListNode 11)
+                (ListNode 11)
+              )
+              (InstAsgnNode:@balance 12
+                (LocalVarNode:balance 12)
+              )
+            )
+            (DefnNode:use_agency_for_buying_house 15
+              (ArgsNode 15
+                (ListNode 15
+                  (ArgumentNode:agency 15)
+                )
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+              )
+              (InstAsgnNode:@agency 16
+                (LocalVarNode:agency 16)
+              )
+            )
+            (DefnNode:buy 19
+              (ArgsNode 19
+                (ListNode 19
+                  (ArgumentNode:house 19)
+                )
+                (ListNode 19)
+                (ListNode 19)
+                (ListNode 19)
+              )
+              (CallNode:purchase 20
+                (InstVarNode:@agency 20)
+                (ArrayNode 20
+                  (LocalVarNode:house 20)
+                  (SelfNode 20)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 24
+          (Colon2ImplicitNode:Seller 24
+            null
+          )
+          (BlockNode 25
+            (FCallNode:attr_accessor 25
+              (ArrayNode 25
+                (SymbolNode:balance 25)
+              )
+              null
+            )
+            (DefnNode:initialize 27
+              (ArgsNode 27
+                (ListNode 27)
+                (ListNode 27
+                  (OptArgNode:balance 27
+                    (LocalAsgnNode:balance 27
+                      (FixnumNode 27)
+                    )
+                  )
+                )
+                (ListNode 27)
+                (ListNode 27)
+              )
+              (InstAsgnNode:@balance 28
+                (LocalVarNode:balance 28)
+              )
+            )
+            (DefnNode:use_agency_for_selling_house 31
+              (ArgsNode 31
+                (ListNode 31
+                  (ArgumentNode:agency 31)
+                  (ArgumentNode:house 31)
+                )
+                (ListNode 31)
+                (ListNode 31)
+                (ListNode 31)
+              )
+              (CallNode:register 32
+                (LocalVarNode:agency 32)
+                (ArrayNode 32
+                  (LocalVarNode:house 32)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 36
+          (Colon2ImplicitNode:House 36
+            null
+          )
+          (BlockNode 37
+            (FCallNode:attr_reader 37
+              (ArrayNode 37
+                (SymbolNode:price 37)
+                (SymbolNode:owner 37)
+              )
+              null
+            )
+            (DefnNode:initialize 39
+              (ArgsNode 39
+                (ListNode 39
+                  (ArgumentNode:price 39)
+                  (ArgumentNode:owner 39)
+                )
+                (ListNode 39)
+                (ListNode 39)
+                (ListNode 39)
+              )
+              (BlockNode 40
+                (InstAsgnNode:@price 40
+                  (LocalVarNode:price 40)
+                )
+                (InstAsgnNode:@owner 41
+                  (LocalVarNode:owner 41)
+                )
+              )
+            )
+            (DefnNode:new_owner 44
+              (ArgsNode 44
+                (ListNode 44
+                  (ArgumentNode:buyer 44)
+                )
+                (ListNode 44)
+                (ListNode 44)
+                (ListNode 44)
+              )
+              (InstAsgnNode:@owner 45
+                (LocalVarNode:buyer 45)
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 50
+          (Colon2ImplicitNode:Agency 50
+            null
+          )
+          (BlockNode 51
+            (DefnNode:initialize 51
+              (ArgsNode 52
+                (ListNode 52)
+                (ListNode 52)
+                (ListNode 52)
+                (ListNode 52)
+              )
+              (InstAsgnNode:@houses 52
+                (ZArrayNode 52)
+              )
+            )
+            (DefnNode:register 55
+              (ArgsNode 55
+                (ListNode 55
+                  (ArgumentNode:house 55)
+                )
+                (ListNode 55)
+                (ListNode 55)
+                (ListNode 55)
+              )
+              (CallNode:<< 56
+                (InstVarNode:@houses 56)
+                (ArrayNode 56
+                  (LocalVarNode:house 56)
+                )
+                null
+              )
+            )
+            (DefnNode:purchase 59
+              (ArgsNode 59
+                (ListNode 59
+                  (ArgumentNode:house 59)
+                  (ArgumentNode:buyer 59)
+                )
+                (ListNode 59)
+                (ListNode 59)
+                (ListNode 59)
+              )
+              (IfNode 60
+                (FCallNode:can_make_deal? 60
+                  (ArrayNode 60
+                    (LocalVarNode:house 60)
+                    (LocalVarNode:buyer 60)
+                  )
+                  null
+                )
+                (BlockNode 61
+                  (FCallNode:make_payment 61
+                    (ArrayNode 61
+                      (LocalVarNode:house 61)
+                      (LocalVarNode:buyer 61)
+                    )
+                    null
+                  )
+                  (FCallNode:change_owner 62
+                    (ArrayNode 62
+                      (LocalVarNode:house 62)
+                      (LocalVarNode:buyer 62)
+                    )
+                    null
+                  )
+                )
+                null
+              )
+            )
+            (VCallNode:private 66)
+            (DefnNode:can_make_deal? 68
+              (ArgsNode 68
+                (ListNode 68
+                  (ArgumentNode:house 68)
+                  (ArgumentNode:buyer 68)
+                )
+                (ListNode 68)
+                (ListNode 68)
+                (ListNode 68)
+              )
+              (AndNode 69
+                (CallNode:include? 69
+                  (InstVarNode:@houses 69)
+                  (ArrayNode 69
+                    (LocalVarNode:house 69)
+                  )
+                  null
+                )
+                (CallNode:>= 69
+                  (CallNode:balance 69
+                    (LocalVarNode:buyer 69)
+                    null
+                    null
+                  )
+                  (ArrayNode 69
+                    (CallNode:price 69
+                      (LocalVarNode:house 69)
+                      null
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+            )
+            (DefnNode:make_payment 72
+              (ArgsNode 72
+                (ListNode 72
+                  (ArgumentNode:house 72)
+                  (ArgumentNode:buyer 72)
+                )
+                (ListNode 72)
+                (ListNode 72)
+                (ListNode 72)
+              )
+              (BlockNode 73
+                (OpAsgnNode 73
+                  (CallNode:owner 73
+                    (LocalVarNode:house 73)
+                    null
+                    null
+                  )
+                  (CallNode:price 73
+                    (LocalVarNode:house 73)
+                    null
+                    null
+                  )
+                )
+                (OpAsgnNode 74
+                  (LocalVarNode:buyer 74)
+                  (CallNode:price 74
+                    (LocalVarNode:house 74)
+                    null
+                    null
+                  )
+                )
+              )
+            )
+            (DefnNode:change_owner 77
+              (ArgsNode 77
+                (ListNode 77
+                  (ArgumentNode:house 77)
+                  (ArgumentNode:buyer 77)
+                )
+                (ListNode 77)
+                (ListNode 77)
+                (ListNode 77)
+              )
+              (CallNode:new_owner 78
+                (LocalVarNode:house 78)
+                (ArrayNode 78
+                  (LocalVarNode:buyer 78)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:buyer 83
+          (CallNode:new 83
+            (ConstNode:Buyer 83)
+            (ArrayNode 83
+              (FixnumNode 83)
+            )
+            null
+          )
+        )
+        (LocalAsgnNode:seller 85
+          (CallNode:new 85
+            (ConstNode:Seller 85)
+            (ArrayNode 85
+              (FixnumNode 85)
+            )
+            null
+          )
+        )
+        (LocalAsgnNode:house 86
+          (CallNode:new 86
+            (ConstNode:House 86)
+            (ArrayNode 86
+              (FixnumNode 86)
+              (LocalVarNode:seller 86)
+            )
+            null
+          )
+        )
+        (LocalAsgnNode:agency 88
+          (CallNode:new 88
+            (ConstNode:Agency 88)
+            null
+            null
+          )
+        )
+        (CallNode:use_agency_for_buying_house 89
+          (LocalVarNode:buyer 89)
+          (ArrayNode 89
+            (LocalVarNode:agency 89)
+          )
+          null
+        )
+        (CallNode:use_agency_for_selling_house 90
+          (LocalVarNode:seller 90)
+          (ArrayNode 90
+            (LocalVarNode:agency 90)
+            (LocalVarNode:house 90)
+          )
+          null
+        )
+        (CallNode:buy 92
+          (LocalVarNode:buyer 92)
+          (ArrayNode 92
+            (LocalVarNode:house 92)
+          )
+          null
+        )
+        (FCallNode:puts 94
+          (ArrayNode 94
+            (CallNode:inspect 94
+              (LocalVarNode:house 94)
+              null
+              null
+            )
+          )
+          null
+        )
+      )
+    )

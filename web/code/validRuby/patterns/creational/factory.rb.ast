@@ -1,0 +1,113 @@
+    (RootNode 7
+      (BlockNode 7
+        (ClassNode 7
+          (Colon2ImplicitNode:Rectangle 7
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 11
+          (Colon2ImplicitNode:Square 11
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 15
+          (Colon2ImplicitNode:Circle 15
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 20
+          (Colon2ImplicitNode:ShapeFactory 20
+            null
+          )
+          (DefnNode:get_shape 21
+            (ArgsNode 21
+              (ListNode 21
+                (ArgumentNode:type 21)
+              )
+              (ListNode 21)
+              (ListNode 21)
+              (ListNode 21)
+            )
+            (CaseNode 22
+              (LocalVarNode:type 22)
+              (ArrayNode 23
+                (WhenOneArgNode 23
+                  (SymbolNode:rectangle 23)
+                  (CallNode:new 23
+                    (ConstNode:Rectangle 23)
+                    null
+                    null
+                  )
+                  (WhenOneArgNode 24
+                    (SymbolNode:square 24)
+                    (CallNode:new 24
+                      (ConstNode:Square 24)
+                      null
+                      null
+                    )
+                    (WhenOneArgNode 25
+                      (SymbolNode:circle 25)
+                      (CallNode:new 25
+                        (ConstNode:Circle 25)
+                        null
+                        null
+                      )
+                      null
+                    )
+                  )
+                )
+                (WhenOneArgNode 24
+                  (SymbolNode:square 24)
+                  (CallNode:new 24
+                    (ConstNode:Square 24)
+                    null
+                    null
+                  )
+                  (WhenOneArgNode 25
+                    (SymbolNode:circle 25)
+                    (CallNode:new 25
+                      (ConstNode:Circle 25)
+                      null
+                      null
+                    )
+                    null
+                  )
+                )
+                (WhenOneArgNode 25
+                  (SymbolNode:circle 25)
+                  (CallNode:new 25
+                    (ConstNode:Circle 25)
+                    null
+                    null
+                  )
+                  null
+                )
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:shape_factory 32
+          (CallNode:new 32
+            (ConstNode:ShapeFactory 32)
+            null
+            null
+          )
+        )
+        (LocalAsgnNode:square 33
+          (CallNode:get_shape 33
+            (LocalVarNode:shape_factory 33)
+            (ArrayNode 33
+              (SymbolNode:square 33)
+            )
+            null
+          )
+        )
+      )
+    )

@@ -1,0 +1,86 @@
+    (RootNode 7
+      (BlockNode 7
+        (ModuleNode 7
+          (Colon2ImplicitNode:PriorityQueueMethods 7
+            null
+          )
+          (BlockNode 8
+            (FCallNode:abstractmethod 8
+              (ArrayNode 8
+                (SymbolNode:enqueue 8)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 10
+              (ArrayNode 10
+                (SymbolNode:min 10)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 12
+              (ArrayNode 12
+                (SymbolNode:dequeueMin 12)
+              )
+              null
+            )
+          )
+        )
+        (ClassNode 15
+          (Colon2ImplicitNode:PriorityQueue 15
+            null
+          )
+          (BlockNode 16
+            (DefnNode:initialize 16
+              (ArgsNode 17
+                (ListNode 17)
+                (ListNode 17)
+                (ListNode 17)
+                (ListNode 17)
+              )
+              (ZSuperNode 17)
+            )
+            (FCallNode:include 20
+              (ArrayNode 20
+                (ConstNode:PriorityQueueMethods 20)
+              )
+              null
+            )
+          )
+          (ConstNode:Container 15)
+        )
+        (ModuleNode 23
+          (Colon2ImplicitNode:MergeablePriorityQueueMethods 23
+            null
+          )
+          (FCallNode:abstractmethod 24
+            (ArrayNode 24
+              (SymbolNode:merge! 24)
+            )
+            null
+          )
+        )
+        (ClassNode 27
+          (Colon2ImplicitNode:MergeablePriorityQueue 27
+            null
+          )
+          (BlockNode 28
+            (DefnNode:initialize 28
+              (ArgsNode 29
+                (ListNode 29)
+                (ListNode 29)
+                (ListNode 29)
+                (ListNode 29)
+              )
+              (ZSuperNode 29)
+            )
+            (FCallNode:include 32
+              (ArrayNode 32
+                (ConstNode:MergeablePriorityQueueMethods 32)
+              )
+              null
+            )
+          )
+          (ConstNode:PriorityQueue 27)
+        )
+      )
+    )

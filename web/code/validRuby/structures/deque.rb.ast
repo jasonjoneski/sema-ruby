@@ -1,0 +1,78 @@
+    (RootNode 7
+      (BlockNode 7
+        (ModuleNode 7
+          (Colon2ImplicitNode:DequeMethods 7
+            null
+          )
+          (BlockNode 8
+            (FCallNode:abstractmethod 8
+              (ArrayNode 8
+                (SymbolNode:enqueueHead 8)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 10
+              (ArrayNode 10
+                (SymbolNode:dequeueHead 10)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 12
+              (ArrayNode 12
+                (SymbolNode:head 12)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 14
+              (ArrayNode 14
+                (SymbolNode:enqueueTail 14)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 16
+              (ArrayNode 16
+                (SymbolNode:dequeueTail 16)
+              )
+              null
+            )
+            (FCallNode:abstractmethod 18
+              (ArrayNode 18
+                (SymbolNode:tail 18)
+              )
+              null
+            )
+          )
+        )
+        (ClassNode 21
+          (Colon2ImplicitNode:Deque 21
+            null
+          )
+          (BlockNode 22
+            (DefnNode:initialize 22
+              (ArgsNode 23
+                (ListNode 23)
+                (ListNode 23)
+                (ListNode 23)
+                (ListNode 23)
+              )
+              (ZSuperNode 23)
+            )
+            (AliasNode 26
+
+
+            )
+            (FCallNode:include 27
+              (ArrayNode 27
+                (ConstNode:DequeMethods 27)
+              )
+              null
+            )
+            (AliasNode 28
+
+
+            )
+          )
+          (ConstNode:Queue 21)
+        )
+      )
+    )

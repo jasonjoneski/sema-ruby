@@ -1,0 +1,157 @@
+    (RootNode 11
+      (ClassNode 11
+        (Colon2ImplicitNode:Array 11
+          null
+        )
+        (BlockNode 12
+          (DefnNode:swap 12
+            (ArgsNode 12
+              (ListNode 12
+                (ArgumentNode:first 12)
+                (ArgumentNode:second 12)
+              )
+              (ListNode 12)
+              (ListNode 12)
+              (ListNode 12)
+            )
+            (BlockNode 13
+              (MultipleAsgnNode 13
+                (ArrayNode 13
+                  (AttrAssignNode:[]= 13
+                    (SelfNode 13)
+                    (ArrayNode 13
+                      (LocalVarNode:first 13)
+                    )
+                  )
+                  (AttrAssignNode:[]= 13
+                    (SelfNode 13)
+                    (ArrayNode 13
+                      (LocalVarNode:second 13)
+                    )
+                  )
+                )
+                null
+                (ArrayNode 13
+                  (FCallNode:[] 13
+                    (ArrayNode 13
+                      (LocalVarNode:second 13)
+                    )
+                    null
+                  )
+                  (FCallNode:[] 13
+                    (ArrayNode 13
+                      (LocalVarNode:first 13)
+                    )
+                    null
+                  )
+                )
+              )
+              (SelfNode 14)
+            )
+          )
+          (DefnNode:selection_sort! 17
+            (ArgsNode 18
+              (ListNode 18)
+              (ListNode 18)
+              (ListNode 18)
+              (ListNode 18)
+            )
+            (BlockNode 18
+              (CallNode:upto 18
+                (FixnumNode 18)
+                (ArrayNode 18
+                  (CallNode:- 18
+                    (VCallNode:length 18)
+                    (ArrayNode 18
+                      (FixnumNode 18)
+                    )
+                    null
+                  )
+                )
+                (IterNode 24
+                  (ArgsNode 18
+                    (ListNode 18
+                      (ArgumentNode:i 18)
+                    )
+                    (ListNode 18)
+                    (ListNode 18)
+                    (ListNode 18)
+                  )
+                  (BlockNode 19
+                    (DAsgnNode:min 19
+                      (DVarNode:i 19)
+                    )
+                    (CallNode:upto 20
+                      (CallNode:+ 20
+                        (DVarNode:i 20)
+                        (ArrayNode 20
+                          (FixnumNode 20)
+                        )
+                        null
+                      )
+                      (ArrayNode 20
+                        (CallNode:- 20
+                          (VCallNode:length 20)
+                          (ArrayNode 20
+                            (FixnumNode 20)
+                          )
+                          null
+                        )
+                      )
+                      (IterNode 22
+                        (ArgsNode 20
+                          (ListNode 20
+                            (ArgumentNode:j 20)
+                          )
+                          (ListNode 20)
+                          (ListNode 20)
+                          (ListNode 20)
+                        )
+                        (IfNode 21
+                          (CallNode:== 21
+                            (CallNode:<=> 21
+                              (FCallNode:[] 21
+                                (ArrayNode 21
+                                  (DVarNode:j 21)
+                                )
+                                null
+                              )
+                              (ArrayNode 21
+                                (FCallNode:[] 21
+                                  (ArrayNode 21
+                                    (DVarNode:min 21)
+                                  )
+                                  null
+                                )
+                              )
+                              null
+                            )
+                            (ArrayNode 21
+                              (FixnumNode 21)
+                            )
+                            null
+                          )
+                          (DAsgnNode:min 21
+                            (DVarNode:j 21)
+                          )
+                          null
+                        )
+                      )
+                    )
+                    (FCallNode:swap 23
+                      (ArrayNode 23
+                        (DVarNode:min 23)
+                        (DVarNode:i 23)
+                      )
+                      null
+                    )
+                  )
+                )
+              )
+              (SelfNode 26)
+            )
+          )
+        )
+        null
+      )
+    )

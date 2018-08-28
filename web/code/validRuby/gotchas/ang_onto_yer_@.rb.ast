@@ -1,0 +1,70 @@
+    (RootNode 5
+      (BlockNode 5
+        (ClassNode 5
+          (Colon2ImplicitNode:Foo 5
+            null
+          )
+          (BlockNode 6
+            (FCallNode:attr_reader 6
+              (ArrayNode 6
+                (SymbolNode:value 6)
+              )
+              null
+            )
+            (DefnNode:initialize 8
+              (ArgsNode 8
+                (ListNode 8
+                  (ArgumentNode:v 8)
+                )
+                (ListNode 8)
+                (ListNode 8)
+                (ListNode 8)
+              )
+              (LocalAsgnNode:value 9
+                (LocalVarNode:v 9)
+              )
+            )
+            (DefnNode:set_val 12
+              (ArgsNode 12
+                (ListNode 12
+                  (ArgumentNode:v 12)
+                )
+                (ListNode 12)
+                (ListNode 12)
+                (ListNode 12)
+              )
+              (InstAsgnNode:@value 13
+                (LocalVarNode:v 13)
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:f 17
+          (CallNode:new 17
+            (ConstNode:Foo 17)
+            (ArrayNode 17
+              (FixnumNode 17)
+            )
+            null
+          )
+        )
+        (CallNode:value 18
+          (LocalVarNode:f 18)
+          null
+          null
+        )
+        (CallNode:set_val 21
+          (LocalVarNode:f 21)
+          (ArrayNode 21
+            (FixnumNode 21)
+          )
+          null
+        )
+        (CallNode:value 24
+          (LocalVarNode:f 24)
+          null
+          null
+        )
+      )
+    )

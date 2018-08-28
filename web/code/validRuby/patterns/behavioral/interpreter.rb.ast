@@ -1,0 +1,455 @@
+    (RootNode 4
+      (BlockNode 4
+        (ClassNode 4
+          (Colon2ImplicitNode:Number 4
+            null
+          )
+          (BlockNode 5
+            (FCallNode:attr_reader 5
+              (ArrayNode 5
+                (SymbolNode:value 5)
+              )
+              null
+            )
+            (DefnNode:initialize 7
+              (ArgsNode 7
+                (ListNode 7
+                  (ArgumentNode:value 7)
+                )
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+              )
+              (InstAsgnNode:@value 8
+                (LocalVarNode:value 8)
+              )
+            )
+            (DefnNode:execute 11
+              (ArgsNode 12
+                (ListNode 12)
+                (ListNode 12)
+                (ListNode 12)
+                (ListNode 12)
+              )
+              (VCallNode:value 12)
+            )
+          )
+          null
+        )
+        (ClassNode 17
+          (Colon2ImplicitNode:Operation 17
+            null
+          )
+          (BlockNode 18
+            (FCallNode:attr_reader 18
+              (ArrayNode 18
+                (SymbolNode:left 18)
+                (SymbolNode:right 18)
+              )
+              null
+            )
+            (DefnNode:initialize 20
+              (ArgsNode 20
+                (ListNode 20
+                  (ArgumentNode:left 20)
+                  (ArgumentNode:right 20)
+                )
+                (ListNode 20)
+                (ListNode 20)
+                (ListNode 20)
+              )
+              (BlockNode 21
+                (InstAsgnNode:@left 21
+                  (LocalVarNode:left 21)
+                )
+                (InstAsgnNode:@right 22
+                  (LocalVarNode:right 22)
+                )
+              )
+            )
+            (DefnNode:execute 25
+              (ArgsNode 26
+                (ListNode 26)
+                (ListNode 26)
+                (ListNode 26)
+                (ListNode 26)
+              )
+              (FCallNode:raise 26
+                (ArrayNode 26
+                  (ConstNode:NotImplementedError 26)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 31
+          (Colon2ImplicitNode:Plus 31
+            null
+          )
+          (DefnNode:execute 32
+            (ArgsNode 33
+              (ListNode 33)
+              (ListNode 33)
+              (ListNode 33)
+              (ListNode 33)
+            )
+            (CallNode:+ 33
+              (CallNode:execute 33
+                (VCallNode:left 33)
+                null
+                null
+              )
+              (ArrayNode 33
+                (CallNode:execute 33
+                  (VCallNode:right 33)
+                  null
+                  null
+                )
+              )
+              null
+            )
+          )
+          (ConstNode:Operation 31)
+        )
+        (ClassNode 37
+          (Colon2ImplicitNode:Minus 37
+            null
+          )
+          (DefnNode:execute 38
+            (ArgsNode 39
+              (ListNode 39)
+              (ListNode 39)
+              (ListNode 39)
+              (ListNode 39)
+            )
+            (CallNode:- 39
+              (CallNode:execute 39
+                (VCallNode:left 39)
+                null
+                null
+              )
+              (ArrayNode 39
+                (CallNode:execute 39
+                  (VCallNode:right 39)
+                  null
+                  null
+                )
+              )
+              null
+            )
+          )
+          (ConstNode:Operation 37)
+        )
+        (ClassNode 43
+          (Colon2ImplicitNode:Multiply 43
+            null
+          )
+          (DefnNode:execute 44
+            (ArgsNode 45
+              (ListNode 45)
+              (ListNode 45)
+              (ListNode 45)
+              (ListNode 45)
+            )
+            (CallNode:* 45
+              (CallNode:execute 45
+                (VCallNode:left 45)
+                null
+                null
+              )
+              (ArrayNode 45
+                (CallNode:execute 45
+                  (VCallNode:right 45)
+                  null
+                  null
+                )
+              )
+              null
+            )
+          )
+          (ConstNode:Operation 43)
+        )
+        (ClassNode 49
+          (Colon2ImplicitNode:Devide 49
+            null
+          )
+          (DefnNode:execute 50
+            (ArgsNode 51
+              (ListNode 51)
+              (ListNode 51)
+              (ListNode 51)
+              (ListNode 51)
+            )
+            (CallNode:/ 51
+              (CallNode:execute 51
+                (VCallNode:left 51)
+                null
+                null
+              )
+              (ArrayNode 51
+                (CallNode:execute 51
+                  (VCallNode:right 51)
+                  null
+                  null
+                )
+              )
+              null
+            )
+          )
+          (ConstNode:Operation 49)
+        )
+        (ClassNode 56
+          (Colon2ImplicitNode:Interpreter 56
+            null
+          )
+          (DefsNode:parse 57
+            (SelfNode 57)
+            (ArgsNode 57
+              (ListNode 57
+                (ArgumentNode:input 57)
+              )
+              (ListNode 57)
+              (ListNode 57)
+              (ListNode 57)
+            )
+            (BlockNode 58
+              (LocalAsgnNode:stack 58
+                (ZArrayNode 58)
+              )
+              (CallNode:lstrip! 60
+                (LocalVarNode:input 60)
+                null
+                null
+              )
+              (UntilNode 61
+                (CallNode:empty? 61
+                  (LocalVarNode:input 61)
+                  null
+                  null
+                )
+                (BlockNode 62
+                  (CaseNode 62
+                    (LocalVarNode:input 62)
+                    (ArrayNode 63
+                      (WhenOneArgNode 63
+                        (RegexpNode 63)
+                        (CallNode:<< 64
+                          (LocalVarNode:stack 64)
+                          (ArrayNode 64
+                            (CallNode:new 64
+                              (ConstNode:Number 64)
+                              (ArrayNode 64
+                                (CallNode:to_i 64
+                                  (BackRefNode 64)
+                                  null
+                                  null
+                                )
+                              )
+                              null
+                            )
+                          )
+                          null
+                        )
+                        (BlockNode 66
+                          (LocalAsgnNode:second 66
+                            (CallNode:pop 66
+                              (LocalVarNode:stack 66)
+                              null
+                              null
+                            )
+                          )
+                          (LocalAsgnNode:first 67
+                            (CallNode:pop 67
+                              (LocalVarNode:stack 67)
+                              null
+                              null
+                            )
+                          )
+                          (CaseNode 69
+                            (LocalVarNode:input 69)
+                            (ArrayNode 70
+                              (WhenOneArgNode 70
+                                (RegexpNode 70)
+                                (CallNode:<< 71
+                                  (LocalVarNode:stack 71)
+                                  (ArrayNode 71
+                                    (CallNode:new 71
+                                      (ConstNode:Plus 71)
+                                      (ArrayNode 71
+                                        (LocalVarNode:first 71)
+                                        (LocalVarNode:second 71)
+                                      )
+                                      null
+                                    )
+                                  )
+                                  null
+                                )
+                                (WhenOneArgNode 72
+                                  (RegexpNode 72)
+                                  (CallNode:<< 73
+                                    (LocalVarNode:stack 73)
+                                    (ArrayNode 73
+                                      (CallNode:new 73
+                                        (ConstNode:Minus 73)
+                                        (ArrayNode 73
+                                          (LocalVarNode:first 73)
+                                          (LocalVarNode:second 73)
+                                        )
+                                        null
+                                      )
+                                    )
+                                    null
+                                  )
+                                  (WhenOneArgNode 74
+                                    (RegexpNode 74)
+                                    (CallNode:<< 75
+                                      (LocalVarNode:stack 75)
+                                      (ArrayNode 75
+                                        (CallNode:new 75
+                                          (ConstNode:Multiply 75)
+                                          (ArrayNode 75
+                                            (LocalVarNode:first 75)
+                                            (LocalVarNode:second 75)
+                                          )
+                                          null
+                                        )
+                                      )
+                                      null
+                                    )
+                                    (FCallNode:raise 77
+                                      (ArrayNode 77
+                                        (ConstNode:SyntaxError 77)
+                                      )
+                                      null
+                                    )
+                                  )
+                                )
+                              )
+                              (WhenOneArgNode 72
+                                (RegexpNode 72)
+                                (CallNode:<< 73
+                                  (LocalVarNode:stack 73)
+                                  (ArrayNode 73
+                                    (CallNode:new 73
+                                      (ConstNode:Minus 73)
+                                      (ArrayNode 73
+                                        (LocalVarNode:first 73)
+                                        (LocalVarNode:second 73)
+                                      )
+                                      null
+                                    )
+                                  )
+                                  null
+                                )
+                                (WhenOneArgNode 74
+                                  (RegexpNode 74)
+                                  (CallNode:<< 75
+                                    (LocalVarNode:stack 75)
+                                    (ArrayNode 75
+                                      (CallNode:new 75
+                                        (ConstNode:Multiply 75)
+                                        (ArrayNode 75
+                                          (LocalVarNode:first 75)
+                                          (LocalVarNode:second 75)
+                                        )
+                                        null
+                                      )
+                                    )
+                                    null
+                                  )
+                                  (FCallNode:raise 77
+                                    (ArrayNode 77
+                                      (ConstNode:SyntaxError 77)
+                                    )
+                                    null
+                                  )
+                                )
+                              )
+                              (WhenOneArgNode 74
+                                (RegexpNode 74)
+                                (CallNode:<< 75
+                                  (LocalVarNode:stack 75)
+                                  (ArrayNode 75
+                                    (CallNode:new 75
+                                      (ConstNode:Multiply 75)
+                                      (ArrayNode 75
+                                        (LocalVarNode:first 75)
+                                        (LocalVarNode:second 75)
+                                      )
+                                      null
+                                    )
+                                  )
+                                  null
+                                )
+                                (FCallNode:raise 77
+                                  (ArrayNode 77
+                                    (ConstNode:SyntaxError 77)
+                                  )
+                                  null
+                                )
+                              )
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (LocalAsgnNode:input 81
+                    (BackRefNode 81)
+                  )
+                  (CallNode:lstrip! 82
+                    (LocalVarNode:input 82)
+                    null
+                    null
+                  )
+                )
+              )
+              (IfNode 85
+                (CallNode:== 85
+                  (CallNode:size 85
+                    (LocalVarNode:stack 85)
+                    null
+                    null
+                  )
+                  (ArrayNode 85
+                    (FixnumNode 85)
+                  )
+                  null
+                )
+                null
+                (FCallNode:raise 85
+                  (ArrayNode 85
+                    (ConstNode:SyntaxError 85)
+                  )
+                  null
+                )
+              )
+              (CallNode:execute 87
+                (CallNode:first 87
+                  (LocalVarNode:stack 87)
+                  null
+                  null
+                )
+                null
+                null
+              )
+            )
+          )
+          null
+        )
+        (FCallNode:puts 92
+          (ArrayNode 92
+            (CallNode:parse 92
+              (ConstNode:Interpreter 92)
+              (ArrayNode 92
+                (StrNode 92)
+              )
+              null
+            )
+          )
+          null
+        )
+      )
+    )

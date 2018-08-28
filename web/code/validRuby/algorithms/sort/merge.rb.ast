@@ -1,0 +1,167 @@
+    (RootNode 10
+      (ClassNode 10
+        (Colon2ImplicitNode:Array 10
+          null
+        )
+        (BlockNode 11
+          (DefnNode:merge_sort! 11
+            (ArgsNode 12
+              (ListNode 12)
+              (ListNode 12)
+              (ListNode 12)
+              (ListNode 12)
+            )
+            (BlockNode 12
+              (IfNode 12
+                (CallNode:<= 12
+                  (CallNode:size 12
+                    (SelfNode 12)
+                    null
+                    null
+                  )
+                  (ArrayNode 12
+                    (FixnumNode 12)
+                  )
+                  null
+                )
+                (ReturnNode 12
+                  (SelfNode 12)
+                )
+                null
+              )
+              (LocalAsgnNode:mid 13
+                (CallNode:/ 13
+                  (CallNode:size 13
+                    (SelfNode 13)
+                    null
+                    null
+                  )
+                  (ArrayNode 13
+                    (FixnumNode 13)
+                  )
+                  null
+                )
+              )
+              (LocalAsgnNode:left 14
+                (FCallNode:[] 14
+                  (ArrayNode 14
+                    (DotNode 14
+                      (FixnumNode 14)
+                      (LocalVarNode:mid 14)
+                    )
+                  )
+                  null
+                )
+              )
+              (LocalAsgnNode:right 15
+                (FCallNode:[] 15
+                  (ArrayNode 15
+                    (DotNode 15
+                      (LocalVarNode:mid 15)
+                      (CallNode:size 15
+                        (SelfNode 15)
+                        null
+                        null
+                      )
+                    )
+                  )
+                  null
+                )
+              )
+              (FCallNode:merge 16
+                (ArrayNode 16
+                  (CallNode:merge_sort! 16
+                    (LocalVarNode:left 16)
+                    null
+                    null
+                  )
+                  (CallNode:merge_sort! 16
+                    (LocalVarNode:right 16)
+                    null
+                    null
+                  )
+                )
+                null
+              )
+            )
+          )
+          (DefnNode:merge 19
+            (ArgsNode 19
+              (ListNode 19
+                (ArgumentNode:left 19)
+                (ArgumentNode:right 19)
+              )
+              (ListNode 19)
+              (ListNode 19)
+              (ListNode 19)
+            )
+            (BlockNode 20
+              (LocalAsgnNode:sorted 20
+                (ZArrayNode 20)
+              )
+              (UntilNode 21
+                (OrNode 21
+                  (CallNode:empty? 21
+                    (LocalVarNode:left 21)
+                    null
+                    null
+                  )
+                  (CallNode:empty? 21
+                    (LocalVarNode:right 21)
+                    null
+                    null
+                  )
+                )
+                (CallNode:<< 22
+                  (LocalVarNode:sorted 22)
+                  (ArrayNode 22
+                    (IfNode 22
+                      (CallNode:<= 22
+                        (CallNode:first 22
+                          (LocalVarNode:left 22)
+                          null
+                          null
+                        )
+                        (ArrayNode 22
+                          (CallNode:first 22
+                            (LocalVarNode:right 22)
+                            null
+                            null
+                          )
+                        )
+                        null
+                      )
+                      (CallNode:shift 22
+                        (LocalVarNode:left 22)
+                        null
+                        null
+                      )
+                      (CallNode:shift 22
+                        (LocalVarNode:right 22)
+                        null
+                        null
+                      )
+                    )
+                  )
+                  null
+                )
+              )
+              (CallNode:+ 24
+                (CallNode:+ 24
+                  (LocalVarNode:sorted 24)
+                  (ArrayNode 24
+                    (LocalVarNode:left 24)
+                  )
+                  null
+                )
+                (ArrayNode 24
+                  (LocalVarNode:right 24)
+                )
+                null
+              )
+            )
+          )
+        )
+        null
+      )
+    )

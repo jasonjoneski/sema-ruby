@@ -1,0 +1,415 @@
+    (RootNode 4
+      (BlockNode 4
+        (ModuleNode 4
+          (Colon2ImplicitNode:Node 4
+            null
+          )
+          (DefnNode:accept 5
+            (ArgsNode 5
+              (ListNode 5
+                (ArgumentNode:visitor 5)
+              )
+              (ListNode 5)
+              (ListNode 5)
+              (ListNode 5)
+            )
+            (IfNode 6
+              (FCallNode:is_a? 6
+                (ArrayNode 6
+                  (ConstNode:StringNode 6)
+                )
+                null
+              )
+              (IfNode 7
+                (CallNode:respond_to? 7
+                  (LocalVarNode:visitor 7)
+                  (ArrayNode 7
+                    (SymbolNode:visit_string 7)
+                  )
+                  null
+                )
+                (CallNode:visit_string 7
+                  (LocalVarNode:visitor 7)
+                  (ArrayNode 7
+                    (SelfNode 7)
+                  )
+                  null
+                )
+                null
+              )
+              (IfNode 8
+                (FCallNode:is_a? 8
+                  (ArrayNode 8
+                    (ConstNode:IntegerNode 8)
+                  )
+                  null
+                )
+                (IfNode 9
+                  (CallNode:respond_to? 9
+                    (LocalVarNode:visitor 9)
+                    (ArrayNode 9
+                      (SymbolNode:visit_int 9)
+                    )
+                    null
+                  )
+                  (CallNode:visit_int 9
+                    (LocalVarNode:visitor 9)
+                    (ArrayNode 9
+                      (SelfNode 9)
+                    )
+                    null
+                  )
+                  null
+                )
+                null
+              )
+            )
+          )
+        )
+        (ClassNode 14
+          (Colon2ImplicitNode:StringNode 14
+            null
+          )
+          (BlockNode 15
+            (FCallNode:include 15
+              (ArrayNode 15
+                (ConstNode:Node 15)
+              )
+              null
+            )
+            (FCallNode:attr_accessor 16
+              (ArrayNode 16
+                (SymbolNode:string 16)
+              )
+              null
+            )
+            (DefnNode:initialize 18
+              (ArgsNode 18
+                (ListNode 18
+                  (ArgumentNode:val 18)
+                )
+                (ListNode 18)
+                (ListNode 18)
+                (ListNode 18)
+              )
+              (InstAsgnNode:@string 19
+                (LocalVarNode:val 19)
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 23
+          (Colon2ImplicitNode:IntegerNode 23
+            null
+          )
+          (BlockNode 24
+            (FCallNode:include 24
+              (ArrayNode 24
+                (ConstNode:Node 24)
+              )
+              null
+            )
+            (FCallNode:attr_accessor 25
+              (ArrayNode 25
+                (SymbolNode:int 25)
+              )
+              null
+            )
+            (DefnNode:initialize 27
+              (ArgsNode 27
+                (ListNode 27
+                  (ArgumentNode:val 27)
+                )
+                (ListNode 27)
+                (ListNode 27)
+                (ListNode 27)
+              )
+              (InstAsgnNode:@int 28
+                (LocalVarNode:val 28)
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 32
+          (Colon2ImplicitNode:PrintingVisitor 32
+            null
+          )
+          (BlockNode 33
+            (DefnNode:visit_string 33
+              (ArgsNode 33
+                (ListNode 33
+                  (ArgumentNode:node 33)
+                )
+                (ListNode 33)
+                (ListNode 33)
+                (ListNode 33)
+              )
+              (FCallNode:puts 34
+                (ArrayNode 34
+                  (CallNode:string 34
+                    (LocalVarNode:node 34)
+                    null
+                    null
+                  )
+                )
+                null
+              )
+            )
+            (DefnNode:visit_int 37
+              (ArgsNode 37
+                (ListNode 37
+                  (ArgumentNode:node 37)
+                )
+                (ListNode 37)
+                (ListNode 37)
+                (ListNode 37)
+              )
+              (FCallNode:puts 38
+                (ArrayNode 38
+                  (CallNode:int 38
+                    (LocalVarNode:node 38)
+                    null
+                    null
+                  )
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 42
+          (Colon2ImplicitNode:RevertingVisitor 42
+            null
+          )
+          (DefnNode:visit_string 43
+            (ArgsNode 43
+              (ListNode 43
+                (ArgumentNode:node 43)
+              )
+              (ListNode 43)
+              (ListNode 43)
+              (ListNode 43)
+            )
+            (FCallNode:puts 44
+              (ArrayNode 44
+                (CallNode:reverse! 44
+                  (CallNode:string 44
+                    (LocalVarNode:node 44)
+                    null
+                    null
+                  )
+                  null
+                  null
+                )
+              )
+              null
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:myTreeRoot 49
+          (CallNode:new 49
+            (Colon2ConstNode:TreeNode 49
+              (ConstNode:Tree 49)
+            )
+            (ArrayNode 49
+              (StrNode 49)
+              (CallNode:new 49
+                (ConstNode:StringNode 49)
+                (ArrayNode 49
+                  (StrNode 49)
+                )
+                null
+              )
+            )
+            null
+          )
+        )
+        (CallNode:<< 51
+          (CallNode:<< 51
+            (CallNode:<< 51
+              (LocalVarNode:myTreeRoot 51)
+              (ArrayNode 51
+                (CallNode:new 51
+                  (Colon2ConstNode:TreeNode 51
+                    (ConstNode:Tree 51)
+                  )
+                  (ArrayNode 51
+                    (StrNode 51)
+                    (CallNode:new 51
+                      (ConstNode:StringNode 51)
+                      (ArrayNode 51
+                        (StrNode 51)
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+              null
+            )
+            (ArrayNode 51
+              (CallNode:new 51
+                (Colon2ConstNode:TreeNode 51
+                  (ConstNode:Tree 51)
+                )
+                (ArrayNode 51
+                  (StrNode 51)
+                  (CallNode:new 51
+                    (ConstNode:IntegerNode 51)
+                    (ArrayNode 51
+                      (FixnumNode 51)
+                    )
+                    null
+                  )
+                )
+                null
+              )
+            )
+            null
+          )
+          (ArrayNode 51
+            (CallNode:new 51
+              (Colon2ConstNode:TreeNode 51
+                (ConstNode:Tree 51)
+              )
+              (ArrayNode 51
+                (StrNode 51)
+                (CallNode:new 51
+                  (ConstNode:IntegerNode 51)
+                  (ArrayNode 51
+                    (FixnumNode 51)
+                  )
+                  null
+                )
+              )
+              null
+            )
+          )
+          null
+        )
+        (CallNode:<< 52
+          (CallNode:<< 52
+            (LocalVarNode:myTreeRoot 52)
+            (ArrayNode 52
+              (CallNode:new 52
+                (Colon2ConstNode:TreeNode 52
+                  (ConstNode:Tree 52)
+                )
+                (ArrayNode 52
+                  (StrNode 52)
+                  (CallNode:new 52
+                    (ConstNode:StringNode 52)
+                    (ArrayNode 52
+                      (StrNode 52)
+                    )
+                    null
+                  )
+                )
+                null
+              )
+            )
+            null
+          )
+          (ArrayNode 52
+            (CallNode:new 52
+              (Colon2ConstNode:TreeNode 52
+                (ConstNode:Tree 52)
+              )
+              (ArrayNode 52
+                (StrNode 52)
+                (CallNode:new 52
+                  (ConstNode:StringNode 52)
+                  (ArrayNode 52
+                    (StrNode 52)
+                  )
+                  null
+                )
+              )
+              null
+            )
+          )
+          null
+        )
+        (FCallNode:puts 54
+          (ArrayNode 54
+            (StrNode 54)
+          )
+          null
+        )
+        (InstAsgnNode:@pvisitor 55
+          (CallNode:new 55
+            (ConstNode:PrintingVisitor 55)
+            null
+            null
+          )
+        )
+        (CallNode:each 56
+          (LocalVarNode:myTreeRoot 56)
+          null
+          (IterNode 56
+            (ArgsNode 56
+              (ListNode 56
+                (ArgumentNode:node 56)
+              )
+              (ListNode 56)
+              (ListNode 56)
+              (ListNode 56)
+            )
+            (CallNode:accept 56
+              (CallNode:content 56
+                (DVarNode:node 56)
+                null
+                null
+              )
+              (ArrayNode 56
+                (InstVarNode:@pvisitor 56)
+              )
+              null
+            )
+          )
+        )
+        (FCallNode:puts 57
+          (ArrayNode 57
+            (StrNode 57)
+          )
+          null
+        )
+        (InstAsgnNode:@rvisitor 59
+          (CallNode:new 59
+            (ConstNode:RevertingVisitor 59)
+            null
+            null
+          )
+        )
+        (CallNode:each 60
+          (LocalVarNode:myTreeRoot 60)
+          null
+          (IterNode 60
+            (ArgsNode 60
+              (ListNode 60
+                (ArgumentNode:node 60)
+              )
+              (ListNode 60)
+              (ListNode 60)
+              (ListNode 60)
+            )
+            (CallNode:accept 60
+              (CallNode:content 60
+                (DVarNode:node 60)
+                null
+                null
+              )
+              (ArrayNode 60
+                (InstVarNode:@rvisitor 60)
+              )
+              null
+            )
+          )
+        )
+      )
+    )

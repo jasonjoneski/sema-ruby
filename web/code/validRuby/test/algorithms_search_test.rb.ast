@@ -1,0 +1,118 @@
+    (RootNode 0
+      (BlockNode 0
+        (FCallNode:require 0
+          (ArrayNode 0
+            (StrNode 0)
+          )
+          null
+        )
+        (FCallNode:require_relative 2
+          (ArrayNode 2
+            (StrNode 2)
+          )
+          null
+        )
+        (FCallNode:require_relative 3
+          (ArrayNode 3
+            (StrNode 3)
+          )
+          null
+        )
+        (ClassNode 5
+          (Colon2ImplicitNode:AlgorithmsTest 5
+            null
+          )
+          (BlockNode 6
+            (ConstDeclNode:IN_ARRAY 6
+              null
+              (ArrayNode 6
+                (FixnumNode 6)
+                (FixnumNode 6)
+                (FixnumNode 6)
+              )
+            )
+            (ConstDeclNode:IN_STRING 7
+              null
+              (StrNode 7)
+            )
+            (DefnNode:test_binary_search 9
+              (ArgsNode 10
+                (ListNode 10)
+                (ListNode 10)
+                (ListNode 10)
+                (ListNode 10)
+              )
+              (BlockNode 10
+                (FCallNode:assert_equal 10
+                  (ArrayNode 10
+                    (FixnumNode 10)
+                    (CallNode:binary_search 10
+                      (ConstNode:IN_ARRAY 10)
+                      (ArrayNode 10
+                        (FixnumNode 10)
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+                (FCallNode:assert_nil 11
+                  (ArrayNode 11
+                    (NilNode 11)
+                    (CallNode:binary_search 11
+                      (ConstNode:IN_ARRAY 11)
+                      (ArrayNode 11
+                        (FixnumNode 11)
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+            )
+            (DefnNode:test_khuth_morris_pratt_search 14
+              (ArgsNode 15
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+              )
+              (BlockNode 15
+                (FCallNode:assert_equal 15
+                  (ArrayNode 15
+                    (FixnumNode 15)
+                    (CallNode:kmp_search 15
+                      (ConstNode:IN_STRING 15)
+                      (ArrayNode 15
+                        (StrNode 15)
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+                (FCallNode:assert_nil 16
+                  (ArrayNode 16
+                    (NilNode 16)
+                    (CallNode:kmp_search 16
+                      (ConstNode:IN_STRING 16)
+                      (ArrayNode 16
+                        (StrNode 16)
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+            )
+          )
+          (Colon2ConstNode:TestCase 5
+            (Colon2ConstNode:Unit 5
+              (ConstNode:Test 5)
+            )
+          )
+        )
+      )
+    )

@@ -1,0 +1,3 @@
+File: /Users/joneski/IdeaProjects/ruby/web/code/validRuby/gotchas/instance_eval.rb had a syntax error, (SyntaxError) instance_eval.rb:186: syntax error, unexpected ':'
+fn gives you: %w[coffee script style]
+

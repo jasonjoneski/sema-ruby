@@ -1,0 +1,185 @@
+    (RootNode 10
+      (BlockNode 10
+        (ClassNode 10
+          (Colon2ImplicitNode:FileParser 10
+            null
+          )
+          (BlockNode 11
+            (FCallNode:attr_reader 11
+              (ArrayNode 11
+                (SymbolNode:file 11)
+              )
+              null
+            )
+            (DefnNode:initialize 13
+              (ArgsNode 13
+                (ListNode 13
+                  (ArgumentNode:file 13)
+                )
+                (ListNode 13)
+                (ListNode 13)
+                (ListNode 13)
+              )
+              (InstAsgnNode:@file 14
+                (LocalVarNode:file 14)
+              )
+            )
+            (DefnNode:parse 17
+              (ArgsNode 18
+                (ListNode 18)
+                (ListNode 18)
+                (ListNode 18)
+                (ListNode 18)
+              )
+              (CaseNode 19
+                (CallNode:format 19
+                  (VCallNode:file 19)
+                  null
+                  null
+                )
+                (ArrayNode 20
+                  (WhenOneArgNode 20
+                    (SymbolNode:xml 20)
+                    (VCallNode:parse_xml 21)
+                    (WhenOneArgNode 22
+                      (SymbolNode:cvs 22)
+                      (VCallNode:parse_cvs 23)
+                      null
+                    )
+                  )
+                  (WhenOneArgNode 22
+                    (SymbolNode:cvs 22)
+                    (VCallNode:parse_cvs 23)
+                    null
+                  )
+                )
+              )
+            )
+            (VCallNode:private 29)
+            (DefnNode:parse_xml 31
+              (ArgsNode 32
+                (ListNode 32)
+                (ListNode 32)
+                (ListNode 32)
+                (ListNode 32)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:parse_cvs 35
+              (ArgsNode 36
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+              )
+              NilImplicitNode
+            )
+          )
+          null
+        )
+        (ClassNode 49
+          (Colon2ImplicitNode:FileParser 49
+            null
+          )
+          (BlockNode 50
+            (FCallNode:attr_reader 50
+              (ArrayNode 50
+                (SymbolNode:parser 50)
+              )
+              null
+            )
+            (DefnNode:initialize 52
+              (ArgsNode 52
+                (ListNode 52
+                  (ArgumentNode:parser 52)
+                )
+                (ListNode 52)
+                (ListNode 52)
+                (ListNode 52)
+              )
+              (InstAsgnNode:@parser 53
+                (LocalVarNode:parser 53)
+              )
+            )
+            (DefnNode:parse 56
+              (ArgsNode 56
+                (ListNode 56
+                  (ArgumentNode:file 56)
+                )
+                (ListNode 56)
+                (ListNode 56)
+                (ListNode 56)
+              )
+              (CallNode:new 58
+                (ConstNode:Data 58)
+                (ArrayNode 58
+                  (CallNode:parse 58
+                    (VCallNode:parser 58)
+                    (ArrayNode 58
+                      (LocalVarNode:file 58)
+                    )
+                    null
+                  )
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 62
+          (Colon2ImplicitNode:JsonParser 62
+            null
+          )
+          (DefsNode:parse 64
+            (SelfNode 64)
+            (ArgsNode 64
+              (ListNode 64
+                (ArgumentNode:_file 64)
+              )
+              (ListNode 64)
+              (ListNode 64)
+              (ListNode 64)
+            )
+            NilImplicitNode
+          )
+          null
+        )
+        (ClassNode 69
+          (Colon2ImplicitNode:XmlParser 69
+            null
+          )
+          (DefsNode:parse 70
+            (SelfNode 70)
+            (ArgsNode 70
+              (ListNode 70
+                (ArgumentNode:_file 70)
+              )
+              (ListNode 70)
+              (ListNode 70)
+              (ListNode 70)
+            )
+            NilImplicitNode
+          )
+          null
+        )
+        (ClassNode 75
+          (Colon2ImplicitNode:CvsParser 75
+            null
+          )
+          (DefsNode:parse 76
+            (SelfNode 76)
+            (ArgsNode 76
+              (ListNode 76
+                (ArgumentNode:_file 76)
+              )
+              (ListNode 76)
+              (ListNode 76)
+              (ListNode 76)
+            )
+            NilImplicitNode
+          )
+          null
+        )
+      )
+    )

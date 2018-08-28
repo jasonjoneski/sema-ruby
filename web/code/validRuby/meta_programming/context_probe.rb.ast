@@ -1,0 +1,145 @@
+    (RootNode 2
+      (BlockNode 2
+        (ClassNode 2
+          (Colon2ImplicitNode:Foo 2
+            null
+          )
+          (DefnNode:initialize 3
+            (ArgsNode 4
+              (ListNode 4)
+              (ListNode 4)
+              (ListNode 4)
+              (ListNode 4)
+            )
+            (InstAsgnNode:@z 4
+              (FixnumNode 4)
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:foo 7
+          (CallNode:new 7
+            (ConstNode:Foo 7)
+            null
+            null
+          )
+        )
+        (CallNode:instance_eval 8
+          (LocalVarNode:foo 8)
+          null
+          (IterNode 11
+            (ArgsNode 9
+              (ListNode 9)
+              (ListNode 9)
+              (ListNode 9)
+              (ListNode 9)
+            )
+            (BlockNode 9
+              (FCallNode:puts 9
+                (ArrayNode 9
+                  (SelfNode 9)
+                )
+                null
+              )
+              (FCallNode:puts 10
+                (ArrayNode 10
+                  (InstVarNode:@z 10)
+                )
+                null
+              )
+            )
+          )
+        )
+        (LocalAsgnNode:new_value 12
+          (FixnumNode 12)
+        )
+        (CallNode:instance_eval 13
+          (LocalVarNode:foo 13)
+          null
+          (IterNode 13
+            (ArgsNode 13
+              (ListNode 13)
+              (ListNode 13)
+              (ListNode 13)
+              (ListNode 13)
+            )
+            (InstAsgnNode:@z 13
+              (LocalVarNode:new_value 13)
+            )
+          )
+        )
+        (CallNode:instance_eval 14
+          (LocalVarNode:foo 14)
+          null
+          (IterNode 14
+            (ArgsNode 14
+              (ListNode 14)
+              (ListNode 14)
+              (ListNode 14)
+              (ListNode 14)
+            )
+            (FCallNode:puts 14
+              (ArrayNode 14
+                (InstVarNode:@z 14)
+              )
+              null
+            )
+          )
+        )
+        (ClassNode 17
+          (Colon2ImplicitNode:Foo 17
+            null
+          )
+          (DefnNode:initialize 18
+            (ArgsNode 19
+              (ListNode 19)
+              (ListNode 19)
+              (ListNode 19)
+              (ListNode 19)
+            )
+            (BlockNode 19
+              (InstAsgnNode:@x 19
+                (FixnumNode 19)
+              )
+              (InstAsgnNode:@y 20
+                (FixnumNode 20)
+              )
+            )
+          )
+          null
+        )
+        (CallNode:instance_exec 23
+          (CallNode:new 23
+            (ConstNode:Foo 23)
+            null
+            null
+          )
+          (ArrayNode 23
+            (FixnumNode 23)
+          )
+          (IterNode 23
+            (ArgsNode 23
+              (ListNode 23
+                (ArgumentNode:arg 23)
+              )
+              (ListNode 23)
+              (ListNode 23)
+              (ListNode 23)
+            )
+            (CallNode:* 23
+              (CallNode:+ 23
+                (InstVarNode:@x 23)
+                (ArrayNode 23
+                  (InstVarNode:@y 23)
+                )
+                null
+              )
+              (ArrayNode 23
+                (DVarNode:arg 23)
+              )
+              null
+            )
+          )
+        )
+      )
+    )

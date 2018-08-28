@@ -1,0 +1,30 @@
+    (RootNode 3
+      (BlockNode 3
+        (ConstDeclNode:FOO 3
+          null
+          (FixnumNode 3)
+        )
+        (ConstDeclNode:FOO 6
+          null
+          (FixnumNode 6)
+        )
+        (ConstNode:FOO 10)
+        (ConstNode:FOO 16)
+        (CallNode:freeze 19
+          (ConstNode:FOO 19)
+          null
+          null
+        )
+        (ConstDeclNode:FOO 22
+          null
+          (CallNode:+ 22
+            (ConstNode:FOO 22)
+            (ArrayNode 22
+              (FixnumNode 22)
+            )
+            null
+          )
+        )
+        (ConstNode:FOO 26)
+      )
+    )

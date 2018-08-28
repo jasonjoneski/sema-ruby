@@ -1,0 +1,25 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:Visitor 7
+          null
+        )
+        (BlockNode 8
+          (FCallNode:abstractmethod 8
+            (ArrayNode 8
+              (SymbolNode:visit 8)
+            )
+            null
+          )
+          (DefnNode:done? 10
+            (ArgsNode 11
+              (ListNode 11)
+              (ListNode 11)
+              (ListNode 11)
+              (ListNode 11)
+            )
+            (FalseNode 11)
+          )
+        )
+        (ConstNode:AbstractObject 7)
+      )
+    )

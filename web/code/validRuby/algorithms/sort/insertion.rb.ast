@@ -1,0 +1,138 @@
+    (RootNode 9
+      (ClassNode 9
+        (Colon2ImplicitNode:Array 9
+          null
+        )
+        (DefnNode:insertion_sort! 10
+          (ArgsNode 11
+            (ListNode 11)
+            (ListNode 11)
+            (ListNode 11)
+            (ListNode 11)
+          )
+          (BlockNode 11
+            (IfNode 11
+              (CallNode:< 11
+                (VCallNode:length 11)
+                (ArrayNode 11
+                  (FixnumNode 11)
+                )
+                null
+              )
+              (ReturnNode 11
+                (SelfNode 11)
+              )
+              null
+            )
+            (CallNode:upto 13
+              (FixnumNode 13)
+              (ArrayNode 13
+                (CallNode:- 13
+                  (VCallNode:length 13)
+                  (ArrayNode 13
+                    (FixnumNode 13)
+                  )
+                  null
+                )
+              )
+              (IterNode 21
+                (ArgsNode 13
+                  (ListNode 13
+                    (ArgumentNode:i 13)
+                  )
+                  (ListNode 13)
+                  (ListNode 13)
+                  (ListNode 13)
+                )
+                (BlockNode 14
+                  (DAsgnNode:value 14
+                    (FCallNode:[] 14
+                      (ArrayNode 14
+                        (DVarNode:i 14)
+                      )
+                      null
+                    )
+                  )
+                  (DAsgnNode:j 15
+                    (CallNode:- 15
+                      (DVarNode:i 15)
+                      (ArrayNode 15
+                        (FixnumNode 15)
+                      )
+                      null
+                    )
+                  )
+                  (WhileNode 16
+                    (AndNode 16
+                      (CallNode:>= 16
+                        (DVarNode:j 16)
+                        (ArrayNode 16
+                          (FixnumNode 16)
+                        )
+                        null
+                      )
+                      (CallNode:> 16
+                        (FCallNode:[] 16
+                          (ArrayNode 16
+                            (DVarNode:j 16)
+                          )
+                          null
+                        )
+                        (ArrayNode 16
+                          (DVarNode:value 16)
+                        )
+                        null
+                      )
+                    )
+                    (BlockNode 17
+                      (AttrAssignNode:[]= 17
+                        (SelfNode 17)
+                        (ArrayNode 17
+                          (CallNode:+ 17
+                            (DVarNode:j 17)
+                            (ArrayNode 17
+                              (FixnumNode 17)
+                            )
+                            null
+                          )
+                          (FCallNode:[] 17
+                            (ArrayNode 17
+                              (DVarNode:j 17)
+                            )
+                            null
+                          )
+                        )
+                      )
+                      (DAsgnNode:j 18
+                        (CallNode:- 18
+                          (DVarNode:j 18)
+                          (ArrayNode 18
+                            (FixnumNode 18)
+                          )
+                          null
+                        )
+                      )
+                    )
+                  )
+                  (AttrAssignNode:[]= 20
+                    (SelfNode 20)
+                    (ArrayNode 20
+                      (CallNode:+ 20
+                        (DVarNode:j 20)
+                        (ArrayNode 20
+                          (FixnumNode 20)
+                        )
+                        null
+                      )
+                      (DVarNode:value 20)
+                    )
+                  )
+                )
+              )
+            )
+            (SelfNode 23)
+          )
+        )
+        null
+      )
+    )

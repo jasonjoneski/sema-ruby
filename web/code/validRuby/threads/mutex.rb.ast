@@ -1,0 +1,90 @@
+    (RootNode 10
+      (BlockNode 10
+        (LocalAsgnNode:shared_array 10
+          (ZArrayNode 10)
+        )
+        (LocalAsgnNode:mutex 14
+          (CallNode:new 14
+            (ConstNode:Mutex 14)
+            null
+            null
+          )
+        )
+        (CallNode:each 16
+          (CallNode:map 16
+            (CallNode:times 16
+              (FixnumNode 16)
+              null
+              null
+            )
+            null
+            (IterNode 30
+              (ArgsNode 17
+                (ListNode 17)
+                (ListNode 17)
+                (ListNode 17)
+                (ListNode 17)
+              )
+              (CallNode:new 17
+                (ConstNode:Thread 17)
+                null
+                (IterNode 29
+                  (ArgsNode 18
+                    (ListNode 18)
+                    (ListNode 18)
+                    (ListNode 18)
+                    (ListNode 18)
+                  )
+                  (CallNode:times 18
+                    (FixnumNode 18)
+                    null
+                    (IterNode 28
+                      (ArgsNode 21
+                        (ListNode 21)
+                        (ListNode 21)
+                        (ListNode 21)
+                        (ListNode 21)
+                      )
+                      (BlockNode 21
+                        (CallNode:lock 21
+                          (LocalVarNode:mutex 21)
+                          null
+                          null
+                        )
+                        (CallNode:<< 22
+                          (LocalVarNode:shared_array 22)
+                          (ArrayNode 22
+                            (NilNode 22)
+                          )
+                          null
+                        )
+                        (CallNode:unlock 23
+                          (LocalVarNode:mutex 23)
+                          null
+                          null
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+          null
+          (BlockPassNode 30
+            null
+            (SymbolNode:join 30)
+          )
+        )
+        (FCallNode:puts 34
+          (ArrayNode 34
+            (CallNode:size 34
+              (LocalVarNode:shared_array 34)
+              null
+              null
+            )
+          )
+          null
+        )
+      )
+    )

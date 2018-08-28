@@ -1,0 +1,95 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:Matrix 7
+          null
+        )
+        (BlockNode 8
+          (DefnNode:initialize 8
+            (ArgsNode 8
+              (ListNode 8
+                (ArgumentNode:numberOfRows 8)
+                (ArgumentNode:numberOfColumns 8)
+              )
+              (ListNode 8)
+              (ListNode 8)
+              (ListNode 8)
+            )
+            (BlockNode 9
+              (FCallNode:assert 9
+                null
+                (IterNode 9
+                  (ArgsNode 9
+                    (ListNode 9)
+                    (ListNode 9)
+                    (ListNode 9)
+                    (ListNode 9)
+                  )
+                  (CallNode:>= 9
+                    (LocalVarNode:numberOfRows 9)
+                    (ArrayNode 9
+                      (FixnumNode 9)
+                    )
+                    null
+                  )
+                )
+              )
+              (FCallNode:assert 10
+                null
+                (IterNode 10
+                  (ArgsNode 10
+                    (ListNode 10)
+                    (ListNode 10)
+                    (ListNode 10)
+                    (ListNode 10)
+                  )
+                  (CallNode:>= 10
+                    (LocalVarNode:numberOfColumns 10)
+                    (ArrayNode 10
+                      (FixnumNode 10)
+                    )
+                    null
+                  )
+                )
+              )
+              (InstAsgnNode:@numberOfRows 12
+                (LocalVarNode:numberOfRows 12)
+              )
+              (InstAsgnNode:@numberOfColumns 13
+                (LocalVarNode:numberOfColumns 13)
+              )
+            )
+          )
+          (FCallNode:attr_reader 16
+            (ArrayNode 16
+              (SymbolNode:numberOfRows 16)
+            )
+            null
+          )
+          (FCallNode:attr_reader 18
+            (ArrayNode 18
+              (SymbolNode:numberOfColumns 18)
+            )
+            null
+          )
+          (FCallNode:abstractmethod 20
+            (ArrayNode 20
+              (SymbolNode:+ 20)
+            )
+            null
+          )
+          (FCallNode:abstractmethod 22
+            (ArrayNode 22
+              (SymbolNode:* 22)
+            )
+            null
+          )
+          (FCallNode:abstractmethod 24
+            (ArrayNode 24
+              (SymbolNode:transpose 24)
+            )
+            null
+          )
+        )
+        null
+      )
+    )

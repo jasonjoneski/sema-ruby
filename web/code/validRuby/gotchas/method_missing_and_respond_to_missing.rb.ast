@@ -1,0 +1,125 @@
+    (RootNode 6
+      (BlockNode 6
+        (ClassNode 6
+          (Colon2ImplicitNode:Dog 6
+            null
+          )
+          (DefnNode:method_missing 7
+            (ArgsNode 7
+              (ListNode 7
+                (ArgumentNode:method_name 7)
+              )
+              (ListNode 7)
+              (RestArgNode:args 7)
+              (ListNode 7)
+              (ListNode 7)
+              (BlockArgNode:block 7)
+            )
+            (IfNode 8
+              (CallNode:== 8
+                (LocalVarNode:method_name 8)
+                (ArrayNode 8
+                  (SymbolNode:bark 8)
+                )
+                null
+              )
+              (StrNode 9)
+              (ZSuperNode 11)
+            )
+          )
+          null
+        )
+        (CallNode:bark 18
+          (CallNode:new 18
+            (ConstNode:Dog 18)
+            null
+            null
+          )
+          null
+          null
+        )
+        (CallNode:respond_to? 21
+          (CallNode:new 21
+            (ConstNode:Dog 21)
+            null
+            null
+          )
+          (ArrayNode 21
+            (SymbolNode:bark 21)
+          )
+          null
+        )
+        (ClassNode 27
+          (Colon2ImplicitNode:Dog 27
+            null
+          )
+          (BlockNode 28
+            (DefnNode:method_missing 28
+              (ArgsNode 28
+                (ListNode 28
+                  (ArgumentNode:method_name 28)
+                )
+                (ListNode 28)
+                (RestArgNode:args 28)
+                (ListNode 28)
+                (ListNode 28)
+                (BlockArgNode:block 28)
+              )
+              (IfNode 29
+                (CallNode:== 29
+                  (LocalVarNode:method_name 29)
+                  (ArrayNode 29
+                    (SymbolNode:bark 29)
+                  )
+                  null
+                )
+                (StrNode 30)
+                (ZSuperNode 32)
+              )
+            )
+            (DefnNode:respond_to_missing? 36
+              (ArgsNode 36
+                (ListNode 36
+                  (ArgumentNode:method_name 36)
+                )
+                (ListNode 36)
+                (RestArgNode:args 36)
+                (ListNode 36)
+                (ListNode 36)
+              )
+              (OrNode 37
+                (CallNode:== 37
+                  (LocalVarNode:method_name 37)
+                  (ArrayNode 37
+                    (SymbolNode:bark 37)
+                  )
+                  null
+                )
+                (ZSuperNode 37)
+              )
+            )
+          )
+          null
+        )
+        (CallNode:bark 41
+          (CallNode:new 41
+            (ConstNode:Dog 41)
+            null
+            null
+          )
+          null
+          null
+        )
+        (CallNode:respond_to? 44
+          (CallNode:new 44
+            (ConstNode:Dog 44)
+            null
+            null
+          )
+          (ArrayNode 44
+            (SymbolNode:bark 44)
+          )
+          null
+        )
+      )
+    )

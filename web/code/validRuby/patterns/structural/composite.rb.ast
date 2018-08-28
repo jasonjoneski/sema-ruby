@@ -1,0 +1,167 @@
+    (RootNode 8
+      (BlockNode 8
+        (ClassNode 8
+          (Colon2ImplicitNode:MonsterTask 8
+            null
+          )
+          (BlockNode 9
+            (FCallNode:attr_reader 9
+              (ArrayNode 9
+                (SymbolNode:reward 9)
+              )
+              null
+            )
+            (DefnNode:initialize 11
+              (ArgsNode 12
+                (ListNode 12)
+                (ListNode 12)
+                (ListNode 12)
+                (ListNode 12)
+              )
+              (InstAsgnNode:@reward 12
+                (FixnumNode 12)
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 16
+          (Colon2ImplicitNode:PuzzleTask 16
+            null
+          )
+          (BlockNode 17
+            (FCallNode:attr_reader 17
+              (ArrayNode 17
+                (SymbolNode:reward 17)
+              )
+              null
+            )
+            (DefnNode:initialize 19
+              (ArgsNode 20
+                (ListNode 20)
+                (ListNode 20)
+                (ListNode 20)
+                (ListNode 20)
+              )
+              (InstAsgnNode:@reward 20
+                (FixnumNode 20)
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 25
+          (Colon2ImplicitNode:Quest 25
+            null
+          )
+          (BlockNode 26
+            (DefnNode:initialize 26
+              (ArgsNode 27
+                (ListNode 27)
+                (ListNode 27)
+                (ListNode 27)
+                (ListNode 27)
+              )
+              (InstAsgnNode:@tasks 28
+                (ZArrayNode 28)
+              )
+            )
+            (DefnNode:<< 31
+              (ArgsNode 31
+                (ListNode 31
+                  (ArgumentNode:task 31)
+                )
+                (ListNode 31)
+                (ListNode 31)
+                (ListNode 31)
+              )
+              (CallNode:<< 32
+                (InstVarNode:@tasks 32)
+                (ArrayNode 32
+                  (LocalVarNode:task 32)
+                )
+                null
+              )
+            )
+            (DefnNode:reward 35
+              (ArgsNode 36
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+              )
+              (CallNode:inject 36
+                (InstVarNode:@tasks 36)
+                (ArrayNode 36
+                  (FixnumNode 36)
+                )
+                (IterNode 36
+                  (ArgsNode 36
+                    (ListNode 36
+                      (ArgumentNode:sum 36)
+                      (ArgumentNode:task 36)
+                    )
+                    (ListNode 36)
+                    (ListNode 36)
+                    (ListNode 36)
+                  )
+                  (DAsgnNode:sum 36
+                    (CallNode:+ 36
+                      (DVarNode:sum 36)
+                      (ArrayNode 36
+                        (CallNode:reward 36
+                          (DVarNode:task 36)
+                          null
+                          null
+                        )
+                      )
+                      null
+                    )
+                  )
+                )
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:quest 41
+          (CallNode:new 41
+            (ConstNode:Quest 41)
+            null
+            null
+          )
+        )
+        (CallNode:<< 42
+          (LocalVarNode:quest 42)
+          (ArrayNode 42
+            (CallNode:new 42
+              (ConstNode:MonsterTask 42)
+              null
+              null
+            )
+          )
+          null
+        )
+        (CallNode:<< 43
+          (LocalVarNode:quest 43)
+          (ArrayNode 43
+            (CallNode:new 43
+              (ConstNode:PuzzleTask 43)
+              null
+              null
+            )
+          )
+          null
+        )
+        (FCallNode:puts 44
+          (ArrayNode 44
+            (CallNode:reward 44
+              (LocalVarNode:quest 44)
+              null
+              null
+            )
+          )
+          null
+        )
+      )
+    )

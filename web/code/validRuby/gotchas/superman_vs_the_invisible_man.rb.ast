@@ -1,0 +1,109 @@
+    (RootNode 4
+      (BlockNode 4
+        (ClassNode 4
+          (Colon2ImplicitNode:Parent 4
+            null
+          )
+          (DefnNode:add 5
+            (ArgsNode 5
+              (ListNode 5)
+              (ListNode 5)
+              (RestArgNode:args 5)
+              (ListNode 5)
+              (ListNode 5)
+            )
+            (CallNode:inject 6
+              (LocalVarNode:args 6)
+              (ArrayNode 6
+                (SymbolNode:+ 6)
+              )
+              null
+            )
+          )
+          null
+        )
+        (ClassNode 10
+          (Colon2ImplicitNode:Child2 10
+            null
+          )
+          (DefnNode:add 11
+            (ArgsNode 11
+              (ListNode 11
+                (ArgumentNode:arg1 11)
+                (ArgumentNode:arg2 11)
+              )
+              (ListNode 11)
+              (ListNode 11)
+              (ListNode 11)
+            )
+            (SuperNode 12
+              (ArrayNode 12
+                (LocalVarNode:arg1 12)
+                (LocalVarNode:arg2 12)
+              )
+            )
+          )
+          (ConstNode:Parent 10)
+        )
+        (ClassNode 16
+          (Colon2ImplicitNode:Child4 16
+            null
+          )
+          (DefnNode:add 17
+            (ArgsNode 17
+              (ListNode 17
+                (ArgumentNode:a1 17)
+                (ArgumentNode:a2 17)
+                (ArgumentNode:a3 17)
+                (ArgumentNode:a4 17)
+              )
+              (ListNode 17)
+              (ListNode 17)
+              (ListNode 17)
+            )
+            (ZSuperNode 18)
+          )
+          (ConstNode:Parent 16)
+        )
+        (CallNode:add 22
+          (CallNode:new 22
+            (ConstNode:Child2 22)
+            null
+            null
+          )
+          (ArrayNode 22
+            (FixnumNode 22)
+            (FixnumNode 22)
+            (FixnumNode 22)
+            (FixnumNode 22)
+          )
+          null
+        )
+        (CallNode:add 25
+          (CallNode:new 25
+            (ConstNode:Child2 25)
+            null
+            null
+          )
+          (ArrayNode 25
+            (FixnumNode 25)
+            (FixnumNode 25)
+          )
+          null
+        )
+        (CallNode:add 28
+          (CallNode:new 28
+            (ConstNode:Child4 28)
+            null
+            null
+          )
+          (ArrayNode 28
+            (FixnumNode 28)
+            (FixnumNode 28)
+            (FixnumNode 28)
+            (FixnumNode 28)
+          )
+          null
+        )
+      )
+    )

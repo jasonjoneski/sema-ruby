@@ -1,0 +1,266 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:Array 7
+          null
+        )
+        (BlockNode 8
+          (FCallNode:attr_accessor 8
+            (ArrayNode 8
+              (SymbolNode:baseIndex 8)
+            )
+            null
+          )
+          (AliasNode 9
+
+
+          )
+          (AliasNode 10
+
+
+          )
+          (AliasNode 11
+
+
+          )
+          (DefnNode:initialize 13
+            (ArgsNode 13
+              (ListNode 13)
+              (ListNode 13
+                (OptArgNode:size 13
+                  (LocalAsgnNode:size 13
+                    (FixnumNode 13)
+                  )
+                )
+                (OptArgNode:baseIndex 13
+                  (LocalAsgnNode:baseIndex 13
+                    (FixnumNode 13)
+                  )
+                )
+              )
+              (ListNode 13)
+              (ListNode 13)
+            )
+            (BlockNode 14
+              (FCallNode:init 14
+                (ArrayNode 14
+                  (LocalVarNode:size 14)
+                  (NilNode 14)
+                )
+                null
+              )
+              (InstAsgnNode:@baseIndex 15
+                (LocalVarNode:baseIndex 15)
+              )
+            )
+          )
+          (DefnNode:length= 18
+            (ArgsNode 18
+              (ListNode 18
+                (ArgumentNode:value 18)
+              )
+              (ListNode 18)
+              (ListNode 18)
+              (ListNode 18)
+            )
+            (BlockNode 19
+              (LocalAsgnNode:tmp 19
+                (CallNode:new 19
+                  (ConstNode:Array 19)
+                  (ArrayNode 19
+                    (LocalVarNode:value 19)
+                    (NilNode 19)
+                  )
+                  null
+                )
+              )
+              (ForNode 21
+                (LocalAsgnNode:i 21
+                  NilImplicitNode
+                )
+                (CallNode:setitem 22
+                  (LocalVarNode:tmp 22)
+                  (ArrayNode 22
+                    (LocalVarNode:i 22)
+                    (FCallNode:getitem 22
+                      (ArrayNode 22
+                        (LocalVarNode:i 22)
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+                (DotNode 21
+                  (FixnumNode 21)
+                  (CallNode:min 21
+                    (ArrayNode 21
+                      (VCallNode:length 21)
+                      (LocalVarNode:value 21)
+                    )
+                    null
+                    null
+                  )
+                )
+              )
+              (VCallNode:clear 25)
+              (IfNode 26
+                (CallNode:> 26
+                  (LocalVarNode:value 26)
+                  (ArrayNode 26
+                    (FixnumNode 26)
+                  )
+                  null
+                )
+                (FCallNode:setitem 26
+                  (ArrayNode 26
+                    (CallNode:- 26
+                      (LocalVarNode:value 26)
+                      (ArrayNode 26
+                        (FixnumNode 26)
+                      )
+                      null
+                    )
+                    (NilNode 26)
+                  )
+                  null
+                )
+                null
+              )
+              (ForNode 28
+                (LocalAsgnNode:i 28
+                  NilImplicitNode
+                )
+                (FCallNode:setitem 29
+                  (ArrayNode 29
+                    (LocalVarNode:i 29)
+                    (CallNode:getitem 29
+                      (LocalVarNode:tmp 29)
+                      (ArrayNode 29
+                        (LocalVarNode:i 29)
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+                (DotNode 28
+                  (FixnumNode 28)
+                  (CallNode:length 28
+                    (LocalVarNode:tmp 28)
+                    null
+                    null
+                  )
+                )
+              )
+            )
+          )
+          (FCallNode:protected 33
+            (ArrayNode 33
+              (SymbolNode:getitem 33)
+              (SymbolNode:setitem 33)
+            )
+            null
+          )
+          (DefnNode:getOffset 35
+            (ArgsNode 35
+              (ListNode 35
+                (ArgumentNode:index 35)
+              )
+              (ListNode 35)
+              (ListNode 35)
+              (ListNode 35)
+            )
+            (BlockNode 36
+              (IfNode 36
+                (CallNode:nil? 36
+                  (InstVarNode:@baseIndex 36)
+                  null
+                  null
+                )
+                (InstAsgnNode:@baseIndex 36
+                  (FixnumNode 36)
+                )
+                null
+              )
+              (IfNode 37
+                (CallNode:=== 37
+                  (DotNode 37
+                    (InstVarNode:@baseIndex 37)
+                    (CallNode:+ 37
+                      (InstVarNode:@baseIndex 37)
+                      (ArrayNode 37
+                        (VCallNode:length 37)
+                      )
+                      null
+                    )
+                  )
+                  (ArrayNode 37
+                    (LocalVarNode:index 37)
+                  )
+                  null
+                )
+                null
+                (FCallNode:raise 37
+                  (ArrayNode 37
+                    (ConstNode:IndexError 37)
+                  )
+                  null
+                )
+              )
+              (CallNode:- 38
+                (LocalVarNode:index 38)
+                (ArrayNode 38
+                  (InstVarNode:@baseIndex 38)
+                )
+                null
+              )
+            )
+          )
+          (DefnNode:[] 41
+            (ArgsNode 41
+              (ListNode 41
+                (ArgumentNode:index 41)
+              )
+              (ListNode 41)
+              (ListNode 41)
+              (ListNode 41)
+            )
+            (FCallNode:getitem 42
+              (ArrayNode 42
+                (FCallNode:getOffset 42
+                  (ArrayNode 42
+                    (LocalVarNode:index 42)
+                  )
+                  null
+                )
+              )
+              null
+            )
+          )
+          (DefnNode:[]= 45
+            (ArgsNode 45
+              (ListNode 45
+                (ArgumentNode:index 45)
+                (ArgumentNode:value 45)
+              )
+              (ListNode 45)
+              (ListNode 45)
+              (ListNode 45)
+            )
+            (FCallNode:setitem 46
+              (ArrayNode 46
+                (FCallNode:getOffset 46
+                  (ArrayNode 46
+                    (LocalVarNode:index 46)
+                  )
+                  null
+                )
+                (LocalVarNode:value 46)
+              )
+              null
+            )
+          )
+        )
+        null
+      )
+    )

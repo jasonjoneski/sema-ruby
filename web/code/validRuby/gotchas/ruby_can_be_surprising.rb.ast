@@ -1,0 +1,61 @@
+    (RootNode 5
+      (BlockNode 5
+        (ConstDeclNode:We 5
+          null
+          (FixnumNode 5)
+        )
+        (ClassNode 6
+          (Colon2ImplicitNode:Fixnum 6
+            null
+          )
+          (DefnNode:rb 7
+            (ArgsNode 7
+              (ListNode 7)
+              (ListNode 7)
+              (ListNode 7)
+              (ListNode 7)
+            )
+            (SelfNode 7)
+          )
+          null
+        )
+        (CallNode:< 10
+          (ConstNode:We 10)
+          (ArrayNode 10
+            (CallNode:rb 10
+              (FixnumNode 10)
+              null
+              null
+            )
+          )
+          null
+        )
+        (ConstDeclNode:But 13
+          null
+          (FixnumNode 13)
+        )
+        (LocalAsgnNode:still 14
+          (FixnumNode 14)
+        )
+        (LocalAsgnNode:perfect 15
+          (FixnumNode 15)
+        )
+        (CallNode:< 17
+          (CallNode:- 17
+            (ConstNode:But 17)
+            (ArrayNode 17
+              (CallNode:rb 17
+                (LocalVarNode:still 17)
+                null
+                null
+              )
+            )
+            null
+          )
+          (ArrayNode 17
+            (LocalVarNode:perfect 17)
+          )
+          null
+        )
+      )
+    )

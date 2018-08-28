@@ -1,0 +1,445 @@
+    (RootNode 4
+      (BlockNode 4
+        (ClassNode 4
+          (Colon2ImplicitNode:Lamp 4
+            null
+          )
+          (BlockNode 5
+            (FCallNode:attr_reader 5
+              (ArrayNode 5
+                (SymbolNode:color 5)
+              )
+              null
+            )
+            (DefnNode:initialize 7
+              (ArgsNode 7
+                (ListNode 7
+                  (ArgumentNode:color 7)
+                )
+                (ListNode 7)
+                (ListNode 7)
+                (ListNode 7)
+              )
+              (InstAsgnNode:@color 8
+                (LocalVarNode:color 8)
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 12
+          (Colon2ImplicitNode:TreeBranch 12
+            null
+          )
+          (BlockNode 13
+            (FCallNode:attr_reader 13
+              (ArrayNode 13
+                (SymbolNode:branch_number 13)
+              )
+              null
+            )
+            (DefnNode:initialize 15
+              (ArgsNode 15
+                (ListNode 15
+                  (ArgumentNode:branch_number 15)
+                )
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+              )
+              (InstAsgnNode:@branch_number 16
+                (LocalVarNode:branch_number 16)
+              )
+            )
+            (DefnNode:hang 19
+              (ArgsNode 19
+                (ListNode 19
+                  (ArgumentNode:lamp 19)
+                )
+                (ListNode 19)
+                (ListNode 19)
+                (ListNode 19)
+              )
+              (FCallNode:puts 20
+                (ArrayNode 20
+                  (DStrNode 20
+                    (StrNode 20)
+                    (EvStrNode 20
+                      (CallNode:color 20
+                        (LocalVarNode:lamp 20)
+                        null
+                        null
+                      )
+                    )
+                    (StrNode 20)
+                    (EvStrNode 20
+                      (VCallNode:branch_number 20)
+                    )
+                  )
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 25
+          (Colon2ImplicitNode:LampFactory 25
+            null
+          )
+          (BlockNode 26
+            (FCallNode:attr_reader 26
+              (ArrayNode 26
+                (SymbolNode:lamps 26)
+              )
+              null
+            )
+            (DefnNode:initialize 28
+              (ArgsNode 29
+                (ListNode 29)
+                (ListNode 29)
+                (ListNode 29)
+                (ListNode 29)
+              )
+              (InstAsgnNode:@lamps 29
+                (HashNode 29)
+              )
+            )
+            (DefnNode:find_lamp 32
+              (ArgsNode 32
+                (ListNode 32
+                  (ArgumentNode:color 32)
+                )
+                (ListNode 32)
+                (ListNode 32)
+                (ListNode 32)
+              )
+              (BlockNode 33
+                (IfNode 33
+                  (CallNode:key? 33
+                    (VCallNode:lamps 33)
+                    (ArrayNode 33
+                      (LocalVarNode:color 33)
+                    )
+                    null
+                  )
+                  (LocalAsgnNode:lamp 34
+                    (CallNode:[] 34
+                      (VCallNode:lamps 34)
+                      (ArrayNode 34
+                        (LocalVarNode:color 34)
+                      )
+                      null
+                    )
+                  )
+                  (BlockNode 36
+                    (LocalAsgnNode:lamp 36
+                      (CallNode:new 36
+                        (ConstNode:Lamp 36)
+                        (ArrayNode 36
+                          (LocalVarNode:color 36)
+                        )
+                        null
+                      )
+                    )
+                    (AttrAssignNode:[]= 37
+                      (VCallNode:lamps 37)
+                      (ArrayNode 37
+                        (LocalVarNode:color 37)
+                        (LocalVarNode:lamp 37)
+                      )
+                    )
+                  )
+                )
+                (LocalVarNode:lamp 39)
+              )
+            )
+            (DefnNode:total_number_of_lamps_made 42
+              (ArgsNode 43
+                (ListNode 43)
+                (ListNode 43)
+                (ListNode 43)
+                (ListNode 43)
+              )
+              (CallNode:size 43
+                (VCallNode:lamps 43)
+                null
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 47
+          (Colon2ImplicitNode:ChristmasTree 47
+            null
+          )
+          (BlockNode 48
+            (FCallNode:attr_reader 48
+              (ArrayNode 48
+                (SymbolNode:lamp_factory 48)
+                (SymbolNode:lamps_hung 48)
+              )
+              null
+            )
+            (DefnNode:initialize 50
+              (ArgsNode 50
+                (ListNode 50)
+                (ListNode 50
+                  (OptArgNode:lamp_factory 50
+                    (LocalAsgnNode:lamp_factory 50
+                      (CallNode:new 50
+                        (ConstNode:LampFactory 50)
+                        null
+                        null
+                      )
+                    )
+                  )
+                )
+                (ListNode 50)
+                (ListNode 50)
+              )
+              (BlockNode 51
+                (InstAsgnNode:@lamp_factory 51
+                  (LocalVarNode:lamp_factory 51)
+                )
+                (InstAsgnNode:@lamps_hung 52
+                  (FixnumNode 52)
+                )
+                (VCallNode:dress_up_the_tree 54)
+              )
+            )
+            (DefnNode:hang_lamp 57
+              (ArgsNode 57
+                (ListNode 57
+                  (ArgumentNode:color 57)
+                  (ArgumentNode:branch_number 57)
+                )
+                (ListNode 57)
+                (ListNode 57)
+                (ListNode 57)
+              )
+              (BlockNode 58
+                (CallNode:hang 58
+                  (CallNode:new 58
+                    (ConstNode:TreeBranch 58)
+                    (ArrayNode 58
+                      (LocalVarNode:branch_number 58)
+                    )
+                    null
+                  )
+                  (ArrayNode 58
+                    (CallNode:find_lamp 58
+                      (VCallNode:lamp_factory 58)
+                      (ArrayNode 58
+                        (LocalVarNode:color 58)
+                      )
+                      null
+                    )
+                  )
+                  null
+                )
+                (LocalAsgnNode:lamps_hung 59
+                  (CallNode:+ 59
+                    (LocalVarNode:lamps_hung 59)
+                    (ArrayNode 59
+                      (FixnumNode 59)
+                    )
+                    null
+                  )
+                )
+              )
+            )
+            (DefnNode:dress_up_the_tree 62
+              (ArgsNode 63
+                (ListNode 63)
+                (ListNode 63)
+                (ListNode 63)
+                (ListNode 63)
+              )
+              (IfNode 63
+                (FCallNode:block_given? 63
+                  null
+                  null
+                )
+                (YieldNode 63
+                  (ArrayNode 63
+                    (SelfNode 63)
+                  )
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:christmas_tree 68
+          (CallNode:new 68
+            (ConstNode:ChristmasTree 68)
+            null
+            null
+          )
+        )
+        (CallNode:dress_up_the_tree 69
+          (LocalVarNode:christmas_tree 69)
+          null
+          (IterNode 91
+            (ArgsNode 70
+              (ListNode 70)
+              (ListNode 70)
+              (ListNode 70)
+              (ListNode 70)
+            )
+            (BlockNode 70
+              (FCallNode:hang_lamp 70
+                (ArrayNode 70
+                  (StrNode 70)
+                  (FixnumNode 70)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 71
+                (ArrayNode 71
+                  (StrNode 71)
+                  (FixnumNode 71)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 72
+                (ArrayNode 72
+                  (StrNode 72)
+                  (FixnumNode 72)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 73
+                (ArrayNode 73
+                  (StrNode 73)
+                  (FixnumNode 73)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 74
+                (ArrayNode 74
+                  (StrNode 74)
+                  (FixnumNode 74)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 75
+                (ArrayNode 75
+                  (StrNode 75)
+                  (FixnumNode 75)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 76
+                (ArrayNode 76
+                  (StrNode 76)
+                  (FixnumNode 76)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 77
+                (ArrayNode 77
+                  (StrNode 77)
+                  (FixnumNode 77)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 78
+                (ArrayNode 78
+                  (StrNode 78)
+                  (FixnumNode 78)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 79
+                (ArrayNode 79
+                  (StrNode 79)
+                  (FixnumNode 79)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 80
+                (ArrayNode 80
+                  (StrNode 80)
+                  (FixnumNode 80)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 81
+                (ArrayNode 81
+                  (StrNode 81)
+                  (FixnumNode 81)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 82
+                (ArrayNode 82
+                  (StrNode 82)
+                  (FixnumNode 82)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 83
+                (ArrayNode 83
+                  (StrNode 83)
+                  (FixnumNode 83)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 84
+                (ArrayNode 84
+                  (StrNode 84)
+                  (FixnumNode 84)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 85
+                (ArrayNode 85
+                  (StrNode 85)
+                  (FixnumNode 85)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 86
+                (ArrayNode 86
+                  (StrNode 86)
+                  (FixnumNode 86)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 87
+                (ArrayNode 87
+                  (StrNode 87)
+                  (FixnumNode 87)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 88
+                (ArrayNode 88
+                  (StrNode 88)
+                  (FixnumNode 88)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 89
+                (ArrayNode 89
+                  (StrNode 89)
+                  (FixnumNode 89)
+                )
+                null
+              )
+              (FCallNode:hang_lamp 90
+                (ArrayNode 90
+                  (StrNode 90)
+                  (FixnumNode 90)
+                )
+                null
+              )
+            )
+          )
+        )
+      )
+    )

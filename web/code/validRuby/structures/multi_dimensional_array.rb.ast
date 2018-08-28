@@ -1,0 +1,303 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:MultiDimensionalArray 7
+          null
+        )
+        (BlockNode 8
+          (DefnNode:initialize 8
+            (ArgsNode 8
+              (ListNode 8)
+              (ListNode 8)
+              (RestArgNode:dimensions 8)
+              (ListNode 8)
+              (ListNode 8)
+            )
+            (BlockNode 9
+              (InstAsgnNode:@dimensions 9
+                (CallNode:new 9
+                  (ConstNode:Array 9)
+                  (ArrayNode 9
+                    (CallNode:length 9
+                      (LocalVarNode:dimensions 9)
+                      null
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+              (InstAsgnNode:@factors 10
+                (CallNode:new 10
+                  (ConstNode:Array 10)
+                  (ArrayNode 10
+                    (CallNode:length 10
+                      (LocalVarNode:dimensions 10)
+                      null
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+              (LocalAsgnNode:product 12
+                (FixnumNode 12)
+              )
+              (LocalAsgnNode:i 13
+                (CallNode:- 13
+                  (CallNode:length 13
+                    (LocalVarNode:dimensions 13)
+                    null
+                    null
+                  )
+                  (ArrayNode 13
+                    (FixnumNode 13)
+                  )
+                  null
+                )
+              )
+              (WhileNode 14
+                (CallNode:>= 14
+                  (LocalVarNode:i 14)
+                  (ArrayNode 14
+                    (FixnumNode 14)
+                  )
+                  null
+                )
+                (BlockNode 15
+                  (AttrAssignNode:[]= 15
+                    (InstVarNode:@dimensions 15)
+                    (ArrayNode 15
+                      (LocalVarNode:i 15)
+                      (CallNode:[] 15
+                        (LocalVarNode:dimensions 15)
+                        (ArrayNode 15
+                          (LocalVarNode:i 15)
+                        )
+                        null
+                      )
+                    )
+                  )
+                  (AttrAssignNode:[]= 16
+                    (InstVarNode:@factors 16)
+                    (ArrayNode 16
+                      (LocalVarNode:i 16)
+                      (LocalVarNode:product 16)
+                    )
+                  )
+                  (LocalAsgnNode:product 17
+                    (CallNode:* 17
+                      (LocalVarNode:product 17)
+                      (ArrayNode 17
+                        (CallNode:[] 17
+                          (InstVarNode:@dimensions 17)
+                          (ArrayNode 17
+                            (LocalVarNode:i 17)
+                          )
+                          null
+                        )
+                      )
+                      null
+                    )
+                  )
+                  (LocalAsgnNode:i 18
+                    (CallNode:- 18
+                      (LocalVarNode:i 18)
+                      (ArrayNode 18
+                        (FixnumNode 18)
+                      )
+                      null
+                    )
+                  )
+                )
+              )
+              (InstAsgnNode:@data 21
+                (CallNode:new 21
+                  (ConstNode:Array 21)
+                  (ArrayNode 21
+                    (LocalVarNode:product 21)
+                  )
+                  null
+                )
+              )
+            )
+          )
+          (DefnNode:getOffset 24
+            (ArgsNode 24
+              (ListNode 24
+                (ArgumentNode:indices 24)
+              )
+              (ListNode 24)
+              (ListNode 24)
+              (ListNode 24)
+            )
+            (BlockNode 25
+              (IfNode 25
+                (CallNode:!= 25
+                  (CallNode:length 25
+                    (LocalVarNode:indices 25)
+                    null
+                    null
+                  )
+                  (ArrayNode 25
+                    (CallNode:length 25
+                      (InstVarNode:@dimensions 25)
+                      null
+                      null
+                    )
+                  )
+                  null
+                )
+                (FCallNode:raise 25
+                  (ArrayNode 25
+                    (ConstNode:IndexError 25)
+                  )
+                  null
+                )
+                null
+              )
+              (LocalAsgnNode:offset 27
+                (FixnumNode 27)
+              )
+              (ForNode 28
+                (LocalAsgnNode:i 28
+                  NilImplicitNode
+                )
+                (BlockNode 29
+                  (IfNode 29
+                    (OrNode 29
+                      (CallNode:< 29
+                        (CallNode:[] 29
+                          (LocalVarNode:indices 29)
+                          (ArrayNode 29
+                            (LocalVarNode:i 29)
+                          )
+                          null
+                        )
+                        (ArrayNode 29
+                          (FixnumNode 29)
+                        )
+                        null
+                      )
+                      (CallNode:>= 29
+                        (CallNode:[] 29
+                          (LocalVarNode:indices 29)
+                          (ArrayNode 29
+                            (LocalVarNode:i 29)
+                          )
+                          null
+                        )
+                        (ArrayNode 29
+                          (CallNode:[] 29
+                            (InstVarNode:@dimensions 29)
+                            (ArrayNode 29
+                              (LocalVarNode:i 29)
+                            )
+                            null
+                          )
+                        )
+                        null
+                      )
+                    )
+                    (FCallNode:raise 29
+                      (ArrayNode 29
+                        (ConstNode:IndexError 29)
+                      )
+                      null
+                    )
+                    null
+                  )
+                  (LocalAsgnNode:offset 30
+                    (CallNode:+ 30
+                      (LocalVarNode:offset 30)
+                      (ArrayNode 30
+                        (CallNode:* 30
+                          (CallNode:[] 30
+                            (InstVarNode:@factors 30)
+                            (ArrayNode 30
+                              (LocalVarNode:i 30)
+                            )
+                            null
+                          )
+                          (ArrayNode 30
+                            (CallNode:[] 30
+                              (LocalVarNode:indices 30)
+                              (ArrayNode 30
+                                (LocalVarNode:i 30)
+                              )
+                              null
+                            )
+                          )
+                          null
+                        )
+                      )
+                      null
+                    )
+                  )
+                )
+                (DotNode 28
+                  (FixnumNode 28)
+                  (CallNode:length 28
+                    (InstVarNode:@dimensions 28)
+                    null
+                    null
+                  )
+                )
+              )
+              (LocalVarNode:offset 33)
+            )
+          )
+          (DefnNode:[] 36
+            (ArgsNode 36
+              (ListNode 36)
+              (ListNode 36)
+              (RestArgNode:indices 36)
+              (ListNode 36)
+              (ListNode 36)
+            )
+            (CallNode:[] 37
+              (InstVarNode:@data 37)
+              (ArrayNode 37
+                (FCallNode:getOffset 37
+                  (ArrayNode 37
+                    (LocalVarNode:indices 37)
+                  )
+                  null
+                )
+              )
+              null
+            )
+          )
+          (DefnNode:[]= 40
+            (ArgsNode 40
+              (ListNode 40)
+              (ListNode 40)
+              (RestArgNode:indicesAndValue 40)
+              (ListNode 40)
+              (ListNode 40)
+            )
+            (BlockNode 41
+              (LocalAsgnNode:value 41
+                (CallNode:pop 41
+                  (LocalVarNode:indicesAndValue 41)
+                  null
+                  null
+                )
+              )
+              (AttrAssignNode:[]= 42
+                (InstVarNode:@data 42)
+                (ArrayNode 42
+                  (FCallNode:getOffset 42
+                    (ArrayNode 42
+                      (LocalVarNode:indicesAndValue 42)
+                    )
+                    null
+                  )
+                  (LocalVarNode:value 42)
+                )
+              )
+            )
+          )
+        )
+        null
+      )
+    )

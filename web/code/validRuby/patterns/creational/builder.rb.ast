@@ -1,0 +1,251 @@
+    (RootNode 8
+      (BlockNode 8
+        (ClassNode 8
+          (Colon2ImplicitNode:Computer 8
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 12
+          (Colon2ImplicitNode:TurboCPU 12
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 16
+          (Colon2ImplicitNode:Drive 16
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 21
+          (Colon2ImplicitNode:ComputerBuilder 21
+            null
+          )
+          (BlockNode 22
+            (FCallNode:attr_reader 22
+              (ArrayNode 22
+                (SymbolNode:computer 22)
+              )
+              null
+            )
+            (DefnNode:initialize 24
+              (ArgsNode 25
+                (ListNode 25)
+                (ListNode 25)
+                (ListNode 25)
+                (ListNode 25)
+              )
+              (InstAsgnNode:@computer 25
+                (CallNode:new 25
+                  (ConstNode:Computer 25)
+                  null
+                  null
+                )
+              )
+            )
+            (DefnNode:turbo 28
+              (ArgsNode 28
+                (ListNode 28)
+                (ListNode 28
+                  (OptArgNode:_has_turbo_cpu 28
+                    (LocalAsgnNode:_has_turbo_cpu 28
+                      (TrueNode 28)
+                    )
+                  )
+                )
+                (ListNode 28)
+                (ListNode 28)
+              )
+              (AttrAssignNode:cpu= 29
+                (VCallNode:computer 29)
+                (ArrayNode 29
+                  (CallNode:new 29
+                    (ConstNode:TurboCPU 29)
+                    null
+                    null
+                  )
+                )
+              )
+            )
+            (DefnNode:display= 32
+              (ArgsNode 32
+                (ListNode 32
+                  (ArgumentNode:display 32)
+                )
+                (ListNode 32)
+                (ListNode 32)
+                (ListNode 32)
+              )
+              (AttrAssignNode:display= 33
+                (VCallNode:computer 33)
+                (ArrayNode 33
+                  (LocalVarNode:display 33)
+                )
+              )
+            )
+            (DefnNode:memory_size= 36
+              (ArgsNode 36
+                (ListNode 36
+                  (ArgumentNode:size_in_mb 36)
+                )
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+              )
+              (AttrAssignNode:memory_size= 37
+                (VCallNode:computer 37)
+                (ArrayNode 37
+                  (LocalVarNode:size_in_mb 37)
+                )
+              )
+            )
+            (DefnNode:add_cd 40
+              (ArgsNode 40
+                (ListNode 40)
+                (ListNode 40
+                  (OptArgNode:writer 40
+                    (LocalAsgnNode:writer 40
+                      (FalseNode 40)
+                    )
+                  )
+                )
+                (ListNode 40)
+                (ListNode 40)
+              )
+              (CallNode:<< 41
+                (CallNode:drives 41
+                  (VCallNode:computer 41)
+                  null
+                  null
+                )
+                (ArrayNode 41
+                  (CallNode:new 41
+                    (ConstNode:Drive 41)
+                    (ArrayNode 41
+                      (SymbolNode:cd 41)
+                      (FixnumNode 41)
+                      (LocalVarNode:writer 41)
+                    )
+                    null
+                  )
+                )
+                null
+              )
+            )
+            (DefnNode:add_dvd 44
+              (ArgsNode 44
+                (ListNode 44)
+                (ListNode 44
+                  (OptArgNode:writer 44
+                    (LocalAsgnNode:writer 44
+                      (FalseNode 44)
+                    )
+                  )
+                )
+                (ListNode 44)
+                (ListNode 44)
+              )
+              (CallNode:<< 45
+                (CallNode:drives 45
+                  (VCallNode:computer 45)
+                  null
+                  null
+                )
+                (ArrayNode 45
+                  (CallNode:new 45
+                    (ConstNode:Drive 45)
+                    (ArrayNode 45
+                      (SymbolNode:dvd 45)
+                      (FixnumNode 45)
+                      (LocalVarNode:writer 45)
+                    )
+                    null
+                  )
+                )
+                null
+              )
+            )
+            (DefnNode:add_hard_disk 48
+              (ArgsNode 48
+                (ListNode 48
+                  (ArgumentNode:size_in_mb 48)
+                )
+                (ListNode 48)
+                (ListNode 48)
+                (ListNode 48)
+              )
+              (CallNode:<< 49
+                (CallNode:drives 49
+                  (VCallNode:computer 49)
+                  null
+                  null
+                )
+                (ArrayNode 49
+                  (CallNode:new 49
+                    (ConstNode:Drive 49)
+                    (ArrayNode 49
+                      (SymbolNode:hard_disk 49)
+                      (LocalVarNode:size_in_mb 49)
+                      (TrueNode 49)
+                    )
+                    null
+                  )
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:computer_builder 55
+          (CallNode:new 55
+            (ConstNode:ComputerBuilder 55)
+            null
+            null
+          )
+        )
+        (CallNode:turbo 57
+          (LocalVarNode:computer_builder 57)
+          (ArrayNode 57
+            (FalseNode 57)
+          )
+          null
+        )
+        (AttrAssignNode:display= 58
+          (LocalVarNode:computer_builder 58)
+          (ArrayNode 58
+            (StrNode 58)
+          )
+        )
+        (CallNode:add_dvd 59
+          (LocalVarNode:computer_builder 59)
+          (ArrayNode 59
+            (FalseNode 59)
+          )
+          null
+        )
+        (AttrAssignNode:add_cd= 60
+          (LocalVarNode:computer_builder 60)
+          (ArrayNode 60
+            (FalseNode 60)
+          )
+        )
+        (AttrAssignNode:memory_size= 61
+          (LocalVarNode:computer_builder 61)
+          (ArrayNode 61
+            (StrNode 61)
+          )
+        )
+        (LocalAsgnNode:computer 63
+          (CallNode:computer 63
+            (LocalVarNode:computer_builder 63)
+            null
+            null
+          )
+        )
+      )
+    )

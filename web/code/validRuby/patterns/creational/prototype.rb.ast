@@ -1,0 +1,229 @@
+    (RootNode 6
+      (BlockNode 6
+        (ClassNode 6
+          (Colon2ImplicitNode:Note 6
+            null
+          )
+          (BlockNode 7
+            (FCallNode:attr_accessor 7
+              (ArrayNode 7
+                (SymbolNode:duration 7)
+              )
+              null
+            )
+            (DefnNode:initialize 9
+              (ArgsNode 9
+                (ListNode 9
+                  (ArgumentNode:duration 9)
+                )
+                (ListNode 9)
+                (ListNode 9)
+                (ListNode 9)
+              )
+              (InstAsgnNode:@duration 10
+                (LocalVarNode:duration 10)
+              )
+            )
+            (DefnNode:deep_copy 13
+              (ArgsNode 14
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+              )
+              (CallNode:load 14
+                (ConstNode:Marshal 14)
+                (ArrayNode 14
+                  (CallNode:dump 14
+                    (ConstNode:Marshal 14)
+                    (ArrayNode 14
+                      (SelfNode 14)
+                    )
+                    null
+                  )
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 18
+          (Colon2ImplicitNode:Clef 18
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 22
+          (Colon2ImplicitNode:PrototypeManager 22
+            null
+          )
+          (BlockNode 23
+            (DefnNode:initialize 23
+              (ArgsNode 24
+                (ListNode 24)
+                (ListNode 24)
+                (ListNode 24)
+                (ListNode 24)
+              )
+              (InstAsgnNode:@prototypes 24
+                (HashNode 24)
+              )
+            )
+            (DefnNode:set 27
+              (ArgsNode 27
+                (ListNode 27
+                  (ArgumentNode:key 27)
+                  (ArgumentNode:prototype 27)
+                )
+                (ListNode 27)
+                (ListNode 27)
+                (ListNode 27)
+              )
+              (IfNode 28
+                (CallNode:include? 28
+                  (InstVarNode:@prototypes 28)
+                  (ArrayNode 28
+                    (LocalVarNode:key 28)
+                  )
+                  null
+                )
+                (FCallNode:raise 29
+                  (ArrayNode 29
+                    (ConstNode:IndexError 29)
+                    (DStrNode 29
+                      (StrNode 29)
+                      (EvStrNode 29
+                        (LocalVarNode:key 29)
+                      )
+                    )
+                  )
+                  null
+                )
+                (AttrAssignNode:[]= 31
+                  (InstVarNode:@prototypes 31)
+                  (ArrayNode 31
+                    (LocalVarNode:key 31)
+                    (LocalVarNode:prototype 31)
+                  )
+                )
+              )
+            )
+            (DefnNode:unset 35
+              (ArgsNode 35
+                (ListNode 35
+                  (ArgumentNode:key 35)
+                )
+                (ListNode 35)
+                (ListNode 35)
+                (ListNode 35)
+              )
+              (IfNode 36
+                (CallNode:! 36
+                  (CallNode:include? 36
+                    (InstVarNode:@prototypes 36)
+                    (ArrayNode 36
+                      (LocalVarNode:key 36)
+                    )
+                    null
+                  )
+                  null
+                  null
+                )
+                (FCallNode:raise 37
+                  (ArrayNode 37
+                    (ConstNode:IndexError 37)
+                    (DStrNode 37
+                      (StrNode 37)
+                      (EvStrNode 37
+                        (LocalVarNode:key 37)
+                      )
+                    )
+                  )
+                  null
+                )
+                (CallNode:delete 39
+                  (InstVarNode:@prototypes 39)
+                  (ArrayNode 39
+                    (LocalVarNode:key 39)
+                  )
+                  null
+                )
+              )
+            )
+            (DefnNode:get 43
+              (ArgsNode 43
+                (ListNode 43
+                  (ArgumentNode:key 43)
+                )
+                (ListNode 43)
+                (ListNode 43)
+                (ListNode 43)
+              )
+              (CallNode:deep_copy 44
+                (CallNode:[] 44
+                  (InstVarNode:@prototypes 44)
+                  (ArrayNode 44
+                    (LocalVarNode:key 44)
+                  )
+                  null
+                )
+                null
+                null
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:prototype 50
+          (CallNode:new 50
+            (ConstNode:PrototypeManager 50)
+            null
+            null
+          )
+        )
+        (CallNode:set 51
+          (LocalVarNode:prototype 51)
+          (ArrayNode 51
+            (SymbolNode:half_note 51)
+            (CallNode:new 51
+              (ConstNode:Note 51)
+              (ArrayNode 51
+                (FloatNode 51)
+              )
+              null
+            )
+          )
+          null
+        )
+        (CallNode:set 52
+          (LocalVarNode:prototype 52)
+          (ArrayNode 52
+            (SymbolNode:full_note 52)
+            (CallNode:new 52
+              (ConstNode:Note 52)
+              (ArrayNode 52
+                (FixnumNode 52)
+              )
+              null
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:note 54
+          (CallNode:get 54
+            (LocalVarNode:prototype 54)
+            (ArrayNode 54
+              (SymbolNode:full_note 54)
+            )
+            null
+          )
+        )
+        (CallNode:duration 55
+          (LocalVarNode:note 55)
+          null
+          null
+        )
+      )
+    )

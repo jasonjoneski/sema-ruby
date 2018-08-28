@@ -1,0 +1,239 @@
+    (RootNode 13
+      (BlockNode 13
+        (ClassNode 13
+          (Colon2ImplicitNode:Computer 13
+            null
+          )
+          (BlockNode 14
+            (DefnNode:turn_on 14
+              (ArgsNode 15
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+                (ListNode 15)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:type 18
+              (ArgsNode 19
+                (ListNode 19)
+                (ListNode 19)
+                (ListNode 19)
+                (ListNode 19)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:change_hard_drive 22
+              (ArgsNode 23
+                (ListNode 23)
+                (ListNode 23)
+                (ListNode 23)
+                (ListNode 23)
+              )
+              NilImplicitNode
+            )
+          )
+          null
+        )
+        (ClassNode 27
+          (Colon2ImplicitNode:User 27
+            null
+          )
+          (BlockNode 28
+            (FCallNode:attr_reader 28
+              (ArrayNode 28
+                (SymbolNode:computer 28)
+              )
+              null
+            )
+            (DefnNode:initialize 30
+              (ArgsNode 30
+                (ListNode 30
+                  (ArgumentNode:computer 30)
+                )
+                (ListNode 30)
+                (ListNode 30)
+                (ListNode 30)
+              )
+              (InstAsgnNode:@computer 31
+                (LocalVarNode:computer 31)
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 35
+          (Colon2ImplicitNode:Programmer 35
+            null
+          )
+          (DefnNode:use_computer 36
+            (ArgsNode 37
+              (ListNode 37)
+              (ListNode 37)
+              (ListNode 37)
+              (ListNode 37)
+            )
+            (BlockNode 37
+              (CallNode:turn_on 37
+                (VCallNode:computer 37)
+                null
+                null
+              )
+              (CallNode:type 38
+                (VCallNode:computer 38)
+                null
+                null
+              )
+            )
+          )
+          (ConstNode:User 35)
+        )
+        (ClassNode 42
+          (Colon2ImplicitNode:Technician 42
+            null
+          )
+          (DefnNode:fix_computer 43
+            (ArgsNode 44
+              (ListNode 44)
+              (ListNode 44)
+              (ListNode 44)
+              (ListNode 44)
+            )
+            (CallNode:change_hard_drive 44
+              (VCallNode:computer 44)
+              null
+              null
+            )
+          )
+          (ConstNode:User 42)
+        )
+        (ClassNode 55
+          (Colon2ImplicitNode:Computer 55
+            null
+          )
+          (BlockNode 56
+            (DefnNode:turn_on 56
+              (ArgsNode 57
+                (ListNode 57)
+                (ListNode 57)
+                (ListNode 57)
+                (ListNode 57)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:type 60
+              (ArgsNode 61
+                (ListNode 61)
+                (ListNode 61)
+                (ListNode 61)
+                (ListNode 61)
+              )
+              NilImplicitNode
+            )
+          )
+          null
+        )
+        (ClassNode 65
+          (Colon2ImplicitNode:ComputerInternals 65
+            null
+          )
+          (DefnNode:change_hard_drive 66
+            (ArgsNode 67
+              (ListNode 67)
+              (ListNode 67)
+              (ListNode 67)
+              (ListNode 67)
+            )
+            NilImplicitNode
+          )
+          null
+        )
+        (ClassNode 71
+          (Colon2ImplicitNode:Programmer 71
+            null
+          )
+          (BlockNode 72
+            (FCallNode:attr_reader 72
+              (ArrayNode 72
+                (SymbolNode:computer 72)
+              )
+              null
+            )
+            (DefnNode:initialize 74
+              (ArgsNode 74
+                (ListNode 74
+                  (ArgumentNode:computer 74)
+                )
+                (ListNode 74)
+                (ListNode 74)
+                (ListNode 74)
+              )
+              (InstAsgnNode:@computer 75
+                (LocalVarNode:computer 75)
+              )
+            )
+            (DefnNode:use_computer 78
+              (ArgsNode 79
+                (ListNode 79)
+                (ListNode 79)
+                (ListNode 79)
+                (ListNode 79)
+              )
+              (BlockNode 79
+                (CallNode:turn_on 79
+                  (VCallNode:computer 79)
+                  null
+                  null
+                )
+                (CallNode:type 80
+                  (VCallNode:computer 80)
+                  null
+                  null
+                )
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 84
+          (Colon2ImplicitNode:Technician 84
+            null
+          )
+          (BlockNode 85
+            (FCallNode:attr_reader 85
+              (ArrayNode 85
+                (SymbolNode:computer_internals 85)
+              )
+              null
+            )
+            (DefnNode:initialize 87
+              (ArgsNode 87
+                (ListNode 87
+                  (ArgumentNode:computer_internals 87)
+                )
+                (ListNode 87)
+                (ListNode 87)
+                (ListNode 87)
+              )
+              (InstAsgnNode:@computer_internals 88
+                (LocalVarNode:computer_internals 88)
+              )
+            )
+            (DefnNode:fix_computer 91
+              (ArgsNode 92
+                (ListNode 92)
+                (ListNode 92)
+                (ListNode 92)
+                (ListNode 92)
+              )
+              (CallNode:change_hard_drive 92
+                (VCallNode:computer_internals 92)
+                null
+                null
+              )
+            )
+          )
+          null
+        )
+      )
+    )

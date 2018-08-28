@@ -1,0 +1,541 @@
+    (RootNode 7
+      (BlockNode 7
+        (ClassNode 7
+          (Colon2ImplicitNode:PurchaseApprover 7
+            null
+          )
+          (BlockNode 8
+            (FCallNode:attr_reader 8
+              (ArrayNode 8
+                (SymbolNode:successor 8)
+              )
+              null
+            )
+            (DefnNode:initialize 10
+              (ArgsNode 10
+                (ListNode 10
+                  (ArgumentNode:successor 10)
+                )
+                (ListNode 10)
+                (ListNode 10)
+                (ListNode 10)
+              )
+              (InstAsgnNode:@successor 11
+                (LocalVarNode:successor 11)
+              )
+            )
+            (DefnNode:process_request 14
+              (ArgsNode 14
+                (ListNode 14
+                  (ArgumentNode:request 14)
+                )
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+              )
+              (IfNode 15
+                (FCallNode:approve_request 15
+                  (ArrayNode 15
+                    (LocalVarNode:request 15)
+                  )
+                  null
+                )
+                (NilNode 16)
+                (IfNode 17
+                  (VCallNode:successor 17)
+                  (CallNode:process_request 18
+                    (VCallNode:successor 18)
+                    (ArrayNode 18
+                      (LocalVarNode:request 18)
+                    )
+                    null
+                  )
+                  (FCallNode:deny_request 20
+                    (ArrayNode 20
+                      (LocalVarNode:request 20)
+                    )
+                    null
+                  )
+                )
+              )
+            )
+            (DefnNode:deny_request 26
+              (ArgsNode 26
+                (ListNode 26
+                  (ArgumentNode:request 26)
+                )
+                (ListNode 26)
+                (ListNode 26)
+                (ListNode 26)
+              )
+              NilImplicitNode
+            )
+          )
+          null
+        )
+        (ClassNode 33
+          (Colon2ImplicitNode:AmountApprover 33
+            null
+          )
+          (BlockNode 34
+            (ConstDeclNode:BASE 34
+              null
+              (FixnumNode 34)
+            )
+            (DefnNode:approve_request 36
+              (ArgsNode 36
+                (ListNode 36
+                  (ArgumentNode:request 36)
+                )
+                (ListNode 36)
+                (ListNode 36)
+                (ListNode 36)
+              )
+              (IfNode 37
+                (CallNode:< 37
+                  (CallNode:amount 37
+                    (LocalVarNode:request 37)
+                    null
+                    null
+                  )
+                  (ArrayNode 37
+                    (Colon2ConstNode:ALLOWABLE 37
+                      (CallNode:class 37
+                        (SelfNode 37)
+                        null
+                        null
+                      )
+                    )
+                  )
+                  null
+                )
+                (BlockNode 38
+                  (FCallNode:print_approval 38
+                    (ArrayNode 38
+                      (LocalVarNode:request 38)
+                    )
+                    null
+                  )
+                  (TrueNode 39)
+                )
+                (FalseNode 41)
+              )
+            )
+          )
+          (ConstNode:PurchaseApprover 33)
+        )
+        (ClassNode 46
+          (Colon2ImplicitNode:Manager 46
+            null
+          )
+          (BlockNode 47
+            (ConstDeclNode:ALLOWABLE 47
+              null
+              (CallNode:* 47
+                (FixnumNode 47)
+                (ArrayNode 47
+                  (ConstNode:BASE 47)
+                )
+                null
+              )
+            )
+            (DefnNode:print_approval 49
+              (ArgsNode 49
+                (ListNode 49
+                  (ArgumentNode:request 49)
+                )
+                (ListNode 49)
+                (ListNode 49)
+                (ListNode 49)
+              )
+              (FCallNode:puts 50
+                (ArrayNode 50
+                  (DStrNode 50
+                    (StrNode 50)
+                    (EvStrNode 50
+                      (CallNode:amount 50
+                        (LocalVarNode:request 50)
+                        null
+                        null
+                      )
+                    )
+                  )
+                )
+                null
+              )
+            )
+          )
+          (ConstNode:AmountApprover 46)
+        )
+        (ClassNode 54
+          (Colon2ImplicitNode:Director 54
+            null
+          )
+          (BlockNode 55
+            (ConstDeclNode:ALLOWABLE 55
+              null
+              (CallNode:* 55
+                (FixnumNode 55)
+                (ArrayNode 55
+                  (ConstNode:BASE 55)
+                )
+                null
+              )
+            )
+            (DefnNode:print_approval 57
+              (ArgsNode 57
+                (ListNode 57
+                  (ArgumentNode:request 57)
+                )
+                (ListNode 57)
+                (ListNode 57)
+                (ListNode 57)
+              )
+              (FCallNode:puts 58
+                (ArrayNode 58
+                  (DStrNode 58
+                    (StrNode 58)
+                    (EvStrNode 58
+                      (CallNode:amount 58
+                        (LocalVarNode:request 58)
+                        null
+                        null
+                      )
+                    )
+                  )
+                )
+                null
+              )
+            )
+          )
+          (ConstNode:AmountApprover 54)
+        )
+        (ClassNode 62
+          (Colon2ImplicitNode:VicePresident 62
+            null
+          )
+          (BlockNode 63
+            (ConstDeclNode:ALLOWABLE 63
+              null
+              (CallNode:* 63
+                (FixnumNode 63)
+                (ArrayNode 63
+                  (ConstNode:BASE 63)
+                )
+                null
+              )
+            )
+            (DefnNode:print_approval 65
+              (ArgsNode 65
+                (ListNode 65
+                  (ArgumentNode:request 65)
+                )
+                (ListNode 65)
+                (ListNode 65)
+                (ListNode 65)
+              )
+              (FCallNode:puts 66
+                (ArrayNode 66
+                  (DStrNode 66
+                    (StrNode 66)
+                    (EvStrNode 66
+                      (CallNode:amount 66
+                        (LocalVarNode:request 66)
+                        null
+                        null
+                      )
+                    )
+                  )
+                )
+                null
+              )
+            )
+          )
+          (ConstNode:AmountApprover 62)
+        )
+        (ClassNode 70
+          (Colon2ImplicitNode:President 70
+            null
+          )
+          (BlockNode 71
+            (ConstDeclNode:ALLOWABLE 71
+              null
+              (CallNode:* 71
+                (FixnumNode 71)
+                (ArrayNode 71
+                  (ConstNode:BASE 71)
+                )
+                null
+              )
+            )
+            (DefnNode:print_approval 73
+              (ArgsNode 73
+                (ListNode 73
+                  (ArgumentNode:request 73)
+                )
+                (ListNode 73)
+                (ListNode 73)
+                (ListNode 73)
+              )
+              (FCallNode:puts 74
+                (ArrayNode 74
+                  (DStrNode 74
+                    (StrNode 74)
+                    (EvStrNode 74
+                      (CallNode:amount 74
+                        (LocalVarNode:request 74)
+                        null
+                        null
+                      )
+                    )
+                  )
+                )
+                null
+              )
+            )
+          )
+          (ConstNode:AmountApprover 70)
+        )
+        (ClassNode 78
+          (Colon2ImplicitNode:ChiefFinancialOperations 78
+            null
+          )
+          (BlockNode 80
+            (DefnNode:approve_request 80
+              (ArgsNode 80
+                (ListNode 80
+                  (ArgumentNode:request 80)
+                )
+                (ListNode 80)
+                (ListNode 80)
+                (ListNode 80)
+              )
+              (IfNode 81
+                (FCallNode:within_annual_budget? 81
+                  (ArrayNode 81
+                    (LocalVarNode:request 81)
+                  )
+                  null
+                )
+                (BlockNode 82
+                  (FCallNode:puts 82
+                    (ArrayNode 82
+                      (DStrNode 82
+                        (StrNode 82)
+                        (EvStrNode 82
+                          (CallNode:amount 82
+                            (LocalVarNode:request 82)
+                            null
+                            null
+                          )
+                        )
+                      )
+                    )
+                    null
+                  )
+                  (TrueNode 83)
+                )
+                (FalseNode 85)
+              )
+            )
+            (DefnNode:within_annual_budget? 89
+              (ArgsNode 89
+                (ListNode 89
+                  (ArgumentNode:request 89)
+                )
+                (ListNode 89)
+                (ListNode 89)
+                (ListNode 89)
+              )
+              NilImplicitNode
+            )
+          )
+          (ConstNode:PurchaseApprover 78)
+        )
+        (ClassNode 94
+          (Colon2ImplicitNode:PurchaseRequest 94
+            null
+          )
+          (BlockNode 95
+            (FCallNode:attr_reader 95
+              (ArrayNode 95
+                (SymbolNode:amount 95)
+                (SymbolNode:amount 95)
+                (SymbolNode:purpose 95)
+              )
+              null
+            )
+            (DefnNode:initialize 97
+              (ArgsNode 97
+                (ListNode 97
+                  (ArgumentNode:number 97)
+                  (ArgumentNode:amount 97)
+                  (ArgumentNode:purpose 97)
+                )
+                (ListNode 97)
+                (ListNode 97)
+                (ListNode 97)
+              )
+              (BlockNode 98
+                (InstAsgnNode:@number 98
+                  (LocalVarNode:number 98)
+                )
+                (InstAsgnNode:@amount 99
+                  (LocalVarNode:amount 99)
+                )
+                (InstAsgnNode:@purpose 100
+                  (LocalVarNode:purpose 100)
+                )
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 105
+          (Colon2ImplicitNode:CLP 105
+            null
+          )
+          (BlockNode 106
+            (DefnNode:initialize 106
+              (ArgsNode 106
+                (ListNode 106)
+                (ListNode 106)
+                (RestArgNode:approvers 106)
+                (ListNode 106)
+                (ListNode 106)
+              )
+              (InstAsgnNode:@authority 107
+                (CallNode:first 107
+                  (FCallNode:build_approvers 107
+                    (ArrayNode 107
+                      (LocalVarNode:approvers 107)
+                    )
+                    null
+                  )
+                  null
+                  null
+                )
+              )
+            )
+            (DefnNode:process_request 110
+              (ArgsNode 110
+                (ListNode 110
+                  (ArgumentNode:request 110)
+                )
+                (ListNode 110)
+                (ListNode 110)
+                (ListNode 110)
+              )
+              (CallNode:process_request 111
+                (InstVarNode:@authority 111)
+                (ArrayNode 111
+                  (LocalVarNode:request 111)
+                )
+                null
+              )
+            )
+            (VCallNode:private 114)
+            (DefnNode:build_approvers 116
+              (ArgsNode 116
+                (ListNode 116
+                  (ArgumentNode:approver_classes 116)
+                )
+                (ListNode 116)
+                (ListNode 116)
+                (ListNode 116)
+              )
+              (CallNode:tap 117
+                (ZArrayNode 117)
+                null
+                (IterNode 121
+                  (ArgsNode 117
+                    (ListNode 117
+                      (ArgumentNode:approvers 117)
+                    )
+                    (ListNode 117)
+                    (ListNode 117)
+                    (ListNode 117)
+                  )
+                  (CallNode:inject 118
+                    (CallNode:reverse 118
+                      (LocalVarNode:approver_classes 118)
+                      null
+                      null
+                    )
+                    (ArrayNode 118
+                      (NilNode 118)
+                    )
+                    (IterNode 120
+                      (ArgsNode 118
+                        (ListNode 118
+                          (ArgumentNode:successor 118)
+                          (ArgumentNode:approver 118)
+                        )
+                        (ListNode 118)
+                        (ListNode 118)
+                        (ListNode 118)
+                      )
+                      (CallNode:tap 119
+                        (CallNode:new 119
+                          (DVarNode:approver 119)
+                          (ArrayNode 119
+                            (DVarNode:successor 119)
+                          )
+                          null
+                        )
+                        null
+                        (IterNode 119
+                          (ArgsNode 119
+                            (ListNode 119
+                              (ArgumentNode:approver 119)
+                            )
+                            (ListNode 119)
+                            (ListNode 119)
+                            (ListNode 119)
+                          )
+                          (CallNode:unshift 119
+                            (DVarNode:approvers 119)
+                            (ArrayNode 119
+                              (DVarNode:approver 119)
+                            )
+                            null
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:approvers 126
+          (CallNode:new 126
+            (ConstNode:CLP 126)
+            (ArrayNode 126
+              (ConstNode:Manager 126)
+              (ConstNode:Director 126)
+              (ConstNode:VicePresident 126)
+              (ConstNode:President 126)
+            )
+            null
+          )
+        )
+        (CallNode:process_request 127
+          (LocalVarNode:approvers 127)
+          (ArrayNode 127
+            (CallNode:new 127
+              (ConstNode:PurchaseRequest 127)
+              (ArrayNode 127
+                (FixnumNode 127)
+                (VCallNode:amount 127)
+                (StrNode 127)
+              )
+              null
+            )
+          )
+          null
+        )
+      )
+    )

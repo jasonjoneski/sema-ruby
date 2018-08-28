@@ -1,0 +1,42 @@
+    (RootNode 2
+      (BlockNode 2
+        (ClassNode 2
+          (Colon2ImplicitNode:String 2
+            null
+          )
+          (DefsNode:inherited 3
+            (SelfNode 3)
+            (ArgsNode 3
+              (ListNode 3
+                (ArgumentNode:subclass 3)
+              )
+              (ListNode 3)
+              (ListNode 3)
+              (ListNode 3)
+            )
+            (FCallNode:puts 4
+              (ArrayNode 4
+                (DStrNode 4
+                  (EvStrNode 4
+                    (SelfNode 4)
+                  )
+                  (StrNode 4)
+                  (EvStrNode 4
+                    (LocalVarNode:subclass 4)
+                  )
+                )
+              )
+              null
+            )
+          )
+          null
+        )
+        (ClassNode 7
+          (Colon2ImplicitNode:MyString 7
+            null
+          )
+          NilImplicitNode
+          (ConstNode:String 7)
+        )
+      )
+    )

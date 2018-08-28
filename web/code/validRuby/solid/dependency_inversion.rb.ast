@@ -1,0 +1,99 @@
+    (RootNode 12
+      (BlockNode 12
+        (ClassNode 12
+          (Colon2ImplicitNode:Report 12
+            null
+          )
+          (BlockNode 13
+            (DefnNode:body 13
+              (ArgsNode 14
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+                (ListNode 14)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:print 17
+              (ArgsNode 18
+                (ListNode 18)
+                (ListNode 18)
+                (ListNode 18)
+                (ListNode 18)
+              )
+              (CallNode:format 18
+                (CallNode:new 18
+                  (ConstNode:JSONFormatter 18)
+                  null
+                  null
+                )
+                (ArrayNode 18
+                  (VCallNode:body 18)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 22
+          (Colon2ImplicitNode:JSONFormatter 22
+            null
+          )
+          (DefnNode:format 23
+            (ArgsNode 23
+              (ListNode 23
+                (ArgumentNode:body 23)
+              )
+              (ListNode 23)
+              (ListNode 23)
+              (ListNode 23)
+            )
+            NilImplicitNode
+          )
+          null
+        )
+        (ClassNode 38
+          (Colon2ImplicitNode:Report 38
+            null
+          )
+          (BlockNode 39
+            (DefnNode:body 39
+              (ArgsNode 40
+                (ListNode 40)
+                (ListNode 40)
+                (ListNode 40)
+                (ListNode 40)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:print 43
+              (ArgsNode 43
+                (ListNode 43)
+                (ListNode 43)
+                (ListNode 43)
+                (ListNode 43
+                  (KeywordArgNode 43
+                    (LocalAsgnNode:formatter 43
+                      (CallNode:new 43
+                        (ConstNode:JSONFormatter 43)
+                        null
+                        null
+                      )
+                    )
+                  )
+                )
+              )
+              (CallNode:format 44
+                (LocalVarNode:formatter 44)
+                (ArrayNode 44
+                  (VCallNode:body 44)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+      )
+    )

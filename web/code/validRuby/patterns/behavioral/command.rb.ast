@@ -1,0 +1,295 @@
+    (RootNode 9
+      (BlockNode 9
+        (ClassNode 9
+          (Colon2ImplicitNode:Switch 9
+            null
+          )
+          (BlockNode 10
+            (FCallNode:attr_reader 10
+              (ArrayNode 10
+                (SymbolNode:history 10)
+              )
+              null
+            )
+            (DefnNode:execute 12
+              (ArgsNode 12
+                (ListNode 12
+                  (ArgumentNode:cmd 12)
+                )
+                (ListNode 12)
+                (ListNode 12)
+                (ListNode 12)
+              )
+              (BlockNode 13
+                (OpAsgnOrNode 13
+                  (InstVarNode:@history 13)
+                  (InstAsgnNode:@history 13
+                    (ZArrayNode 13)
+                  )
+                )
+                (CallNode:<< 14
+                  (InstVarNode:@history 14)
+                  (ArrayNode 14
+                    (CallNode:execute 14
+                      (LocalVarNode:cmd 14)
+                      null
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 19
+          (Colon2ImplicitNode:Command 19
+            null
+          )
+          (BlockNode 20
+            (FCallNode:attr_reader 20
+              (ArrayNode 20
+                (SymbolNode:obj 20)
+              )
+              null
+            )
+            (DefnNode:initialize 22
+              (ArgsNode 22
+                (ListNode 22
+                  (ArgumentNode:obj 22)
+                )
+                (ListNode 22)
+                (ListNode 22)
+                (ListNode 22)
+              )
+              (InstAsgnNode:@obj 23
+                (LocalVarNode:obj 23)
+              )
+            )
+            (DefnNode:execute 26
+              (ArgsNode 27
+                (ListNode 27)
+                (ListNode 27)
+                (ListNode 27)
+                (ListNode 27)
+              )
+              (FCallNode:raise 27
+                (ArrayNode 27
+                  (ConstNode:NotImplementedError 27)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 32
+          (Colon2ImplicitNode:TurnOnCommand 32
+            null
+          )
+          (DefnNode:execute 33
+            (ArgsNode 34
+              (ListNode 34)
+              (ListNode 34)
+              (ListNode 34)
+              (ListNode 34)
+            )
+            (CallNode:turn_on 34
+              (VCallNode:obj 34)
+              null
+              null
+            )
+          )
+          (ConstNode:Command 32)
+        )
+        (ClassNode 39
+          (Colon2ImplicitNode:TurnOffCommand 39
+            null
+          )
+          (DefnNode:execute 40
+            (ArgsNode 41
+              (ListNode 41)
+              (ListNode 41)
+              (ListNode 41)
+              (ListNode 41)
+            )
+            (CallNode:turn_off 41
+              (VCallNode:obj 41)
+              null
+              null
+            )
+          )
+          (ConstNode:Command 39)
+        )
+        (ClassNode 46
+          (Colon2ImplicitNode:Light 46
+            null
+          )
+          (BlockNode 47
+            (DefnNode:turn_on 47
+              (ArgsNode 48
+                (ListNode 48)
+                (ListNode 48)
+                (ListNode 48)
+                (ListNode 48)
+              )
+              (StrNode 48)
+            )
+            (DefnNode:turn_off 51
+              (ArgsNode 52
+                (ListNode 52)
+                (ListNode 52)
+                (ListNode 52)
+                (ListNode 52)
+              )
+              (StrNode 52)
+            )
+          )
+          null
+        )
+        (ClassNode 57
+          (Colon2ImplicitNode:LightSwitchClient 57
+            null
+          )
+          (BlockNode 58
+            (FCallNode:attr_reader 58
+              (ArrayNode 58
+                (SymbolNode:switch 58)
+              )
+              null
+            )
+            (DefnNode:initialize 60
+              (ArgsNode 61
+                (ListNode 61)
+                (ListNode 61)
+                (ListNode 61)
+                (ListNode 61)
+              )
+              (BlockNode 61
+                (InstAsgnNode:@lamp 61
+                  (CallNode:new 61
+                    (ConstNode:Light 61)
+                    null
+                    null
+                  )
+                )
+                (InstAsgnNode:@switch 62
+                  (CallNode:new 62
+                    (ConstNode:Switch 62)
+                    null
+                    null
+                  )
+                )
+              )
+            )
+            (DefnNode:switch_for 65
+              (ArgsNode 65
+                (ListNode 65
+                  (ArgumentNode:cmd 65)
+                )
+                (ListNode 65)
+                (ListNode 65)
+                (ListNode 65)
+              )
+              (CaseNode 66
+                (LocalVarNode:cmd 66)
+                (ArrayNode 67
+                  (WhenOneArgNode 67
+                    (StrNode 67)
+                    (CallNode:execute 67
+                      (InstVarNode:@switch 67)
+                      (ArrayNode 67
+                        (CallNode:new 67
+                          (ConstNode:TurnOnCommand 67)
+                          (ArrayNode 67
+                            (InstVarNode:@lamp 67)
+                          )
+                          null
+                        )
+                      )
+                      null
+                    )
+                    (WhenOneArgNode 68
+                      (StrNode 68)
+                      (CallNode:execute 68
+                        (InstVarNode:@switch 68)
+                        (ArrayNode 68
+                          (CallNode:new 68
+                            (ConstNode:TurnOffCommand 68)
+                            (ArrayNode 68
+                              (InstVarNode:@lamp 68)
+                            )
+                            null
+                          )
+                        )
+                        null
+                      )
+                      (FCallNode:puts 69
+                        (ArrayNode 69
+                          (StrNode 69)
+                        )
+                        null
+                      )
+                    )
+                  )
+                  (WhenOneArgNode 68
+                    (StrNode 68)
+                    (CallNode:execute 68
+                      (InstVarNode:@switch 68)
+                      (ArrayNode 68
+                        (CallNode:new 68
+                          (ConstNode:TurnOffCommand 68)
+                          (ArrayNode 68
+                            (InstVarNode:@lamp 68)
+                          )
+                          null
+                        )
+                      )
+                      null
+                    )
+                    (FCallNode:puts 69
+                      (ArrayNode 69
+                        (StrNode 69)
+                      )
+                      null
+                    )
+                  )
+                )
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:client 74
+          (CallNode:new 74
+            (ConstNode:LightSwitchClient 74)
+            null
+            null
+          )
+        )
+        (CallNode:switch_for 75
+          (LocalVarNode:client 75)
+          (ArrayNode 75
+            (StrNode 75)
+          )
+          null
+        )
+        (CallNode:switch_for 76
+          (LocalVarNode:client 76)
+          (ArrayNode 76
+            (StrNode 76)
+          )
+          null
+        )
+        (CallNode:history 77
+          (CallNode:switch 77
+            (LocalVarNode:client 77)
+            null
+            null
+          )
+          null
+          null
+        )
+      )
+    )

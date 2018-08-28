@@ -1,0 +1,42 @@
+    (RootNode 16
+      (ClassNode 16
+        (Colon2ImplicitNode:ImBlank 16
+          null
+        )
+        (CallNode:each 17
+          (VCallNode:instance_methods 17)
+          null
+          (IterNode 19
+            (ArgsNode 17
+              (ListNode 17
+                (ArgumentNode:m 17)
+              )
+              (ListNode 17)
+              (ListNode 17)
+              (ListNode 17)
+            )
+            (IfNode 18
+              (CallNode:match? 18
+                (CallNode:to_s 18
+                  (DVarNode:m 18)
+                  null
+                  null
+                )
+                (ArrayNode 18
+                  (RegexpNode 18)
+                )
+                null
+              )
+              null
+              (FCallNode:undef_method 18
+                (ArrayNode 18
+                  (DVarNode:m 18)
+                )
+                null
+              )
+            )
+          )
+        )
+        null
+      )
+    )

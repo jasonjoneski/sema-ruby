@@ -1,0 +1,219 @@
+    (RootNode 11
+      (BlockNode 11
+        (ClassNode 11
+          (Colon2ImplicitNode:Frog 11
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 15
+          (Colon2ImplicitNode:Algae 15
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 19
+          (Colon2ImplicitNode:Tiger 19
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 23
+          (Colon2ImplicitNode:Tree 23
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 28
+          (Colon2ImplicitNode:PondFactory 28
+            null
+          )
+          (BlockNode 29
+            (DefnNode:new_animal 29
+              (ArgsNode 30
+                (ListNode 30)
+                (ListNode 30)
+                (ListNode 30)
+                (ListNode 30)
+              )
+              (CallNode:new 30
+                (ConstNode:Frog 30)
+                null
+                null
+              )
+            )
+            (DefnNode:new_plant 33
+              (ArgsNode 34
+                (ListNode 34)
+                (ListNode 34)
+                (ListNode 34)
+                (ListNode 34)
+              )
+              (CallNode:new 34
+                (ConstNode:Algae 34)
+                null
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 39
+          (Colon2ImplicitNode:JungleFactory 39
+            null
+          )
+          (BlockNode 40
+            (DefnNode:new_animal 40
+              (ArgsNode 41
+                (ListNode 41)
+                (ListNode 41)
+                (ListNode 41)
+                (ListNode 41)
+              )
+              (CallNode:new 41
+                (ConstNode:Tiger 41)
+                null
+                null
+              )
+            )
+            (DefnNode:new_plant 44
+              (ArgsNode 45
+                (ListNode 45)
+                (ListNode 45)
+                (ListNode 45)
+                (ListNode 45)
+              )
+              (CallNode:new 45
+                (ConstNode:Tree 45)
+                null
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 50
+          (Colon2ImplicitNode:EnvironmentFactory 50
+            null
+          )
+          (BlockNode 51
+            (FCallNode:attr_reader 51
+              (ArrayNode 51
+                (SymbolNode:factories 51)
+              )
+              null
+            )
+            (DefnNode:initialize 53
+              (ArgsNode 54
+                (ListNode 54)
+                (ListNode 54)
+                (ListNode 54)
+                (ListNode 54)
+              )
+              (InstAsgnNode:@factories 54
+                (ArrayNode 54
+                  (StrNode 54)
+                  (StrNode 54)
+                )
+              )
+            )
+            (DefnNode:get_factory 57
+              (ArgsNode 57
+                (ListNode 57
+                  (ArgumentNode:method 57)
+                )
+                (ListNode 57)
+                (ListNode 57)
+                (ListNode 57)
+              )
+              (BlockNode 58
+                (LocalAsgnNode:factory_class 58
+                  (FCallNode:get_factory_class 58
+                    (ArrayNode 58
+                      (LocalVarNode:method 58)
+                    )
+                    null
+                  )
+                )
+                (IfNode 60
+                  (CallNode:include? 60
+                    (VCallNode:factories 60)
+                    (ArrayNode 60
+                      (LocalVarNode:factory_class 60)
+                    )
+                    null
+                  )
+                  (CallNode:new 61
+                    (CallNode:const_get 61
+                      (CallNode:class 61
+                        (SelfNode 61)
+                        null
+                        null
+                      )
+                      (ArrayNode 61
+                        (LocalVarNode:factory_class 61)
+                      )
+                      null
+                    )
+                    null
+                    null
+                  )
+                  (ZSuperNode 63)
+                )
+              )
+            )
+            (VCallNode:private 67)
+            (DefnNode:get_factory_class 69
+              (ArgsNode 69
+                (ListNode 69
+                  (ArgumentNode:method 69)
+                )
+                (ListNode 69)
+                (ListNode 69)
+                (ListNode 69)
+              )
+              (DStrNode 70
+                (EvStrNode 70
+                  (CallNode:capitalize 70
+                    (CallNode:to_s 70
+                      (LocalVarNode:method 70)
+                      null
+                      null
+                    )
+                    null
+                    null
+                  )
+                )
+                (StrNode 70)
+              )
+            )
+          )
+          null
+        )
+        (LocalAsgnNode:environment 75
+          (CallNode:new 75
+            (ConstNode:EnvironmentFactory 75)
+            null
+            null
+          )
+        )
+        (LocalAsgnNode:jungle 76
+          (CallNode:get_factory 76
+            (LocalVarNode:environment 76)
+            (ArrayNode 76
+              (SymbolNode:jungle 76)
+            )
+            null
+          )
+        )
+        (CallNode:new_animal 77
+          (LocalVarNode:jungle 77)
+          null
+          null
+        )
+      )
+    )

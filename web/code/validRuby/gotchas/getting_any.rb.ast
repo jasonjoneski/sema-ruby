@@ -1,0 +1,46 @@
+    (RootNode 4
+      (BlockNode 4
+        (CallNode:any? 4
+          (ZArrayNode 4)
+          null
+          null
+        )
+        (CallNode:any? 7
+          (ArrayNode 7
+            (FixnumNode 7)
+          )
+          null
+          null
+        )
+        (CallNode:any? 10
+          (ArrayNode 10
+            (SymbolNode:foo 10)
+            (SymbolNode:bar 10)
+          )
+          null
+          null
+        )
+        (CallNode:any? 15
+          (ArrayNode 15
+            (NilNode 15)
+          )
+          null
+          null
+        )
+        (CallNode:any? 18
+          (ArrayNode 18
+            (FalseNode 18)
+          )
+          null
+          null
+        )
+        (CallNode:any? 21
+          (ArrayNode 21
+            (FalseNode 21)
+            (NilNode 21)
+          )
+          null
+          null
+        )
+      )
+    )

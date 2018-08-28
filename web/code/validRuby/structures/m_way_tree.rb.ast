@@ -1,0 +1,3 @@
+File: /Users/joneski/IdeaProjects/ruby/web/code/validRuby/structures/m_way_tree.rb had a syntax error, (SyntaxError) m_way_tree.rb:24: dynamic constant assignment
+        yield (@key[i], PREVISIT)
+

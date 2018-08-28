@@ -1,0 +1,194 @@
+    (RootNode 7
+      (ClassNode 7
+        (Colon2ImplicitNode:DenseMatrix 7
+          null
+        )
+        (BlockNode 8
+          (DefnNode:initialize 8
+            (ArgsNode 8
+              (ListNode 8
+                (ArgumentNode:rows 8)
+                (ArgumentNode:cols 8)
+              )
+              (ListNode 8)
+              (ListNode 8)
+              (ListNode 8)
+            )
+            (BlockNode 9
+              (ZSuperNode 9)
+              (InstAsgnNode:@array 10
+                (CallNode:new 10
+                  (ConstNode:MultiDimensionalArray 10)
+                  (ArrayNode 10
+                    (LocalVarNode:rows 10)
+                    (LocalVarNode:cols 10)
+                  )
+                  null
+                )
+              )
+            )
+          )
+          (DefnNode:[] 13
+            (ArgsNode 13
+              (ListNode 13
+                (ArgumentNode:i 13)
+                (ArgumentNode:j 13)
+              )
+              (ListNode 13)
+              (ListNode 13)
+              (ListNode 13)
+            )
+            (CallNode:[] 14
+              (InstVarNode:@array 14)
+              (ArrayNode 14
+                (LocalVarNode:i 14)
+                (LocalVarNode:j 14)
+              )
+              null
+            )
+          )
+          (DefnNode:[]= 17
+            (ArgsNode 17
+              (ListNode 17
+                (ArgumentNode:i 17)
+                (ArgumentNode:j 17)
+                (ArgumentNode:value 17)
+              )
+              (ListNode 17)
+              (ListNode 17)
+              (ListNode 17)
+            )
+            (AttrAssignNode:[]= 18
+              (InstVarNode:@array 18)
+              (ArrayNode 18
+                (LocalVarNode:i 18)
+                (LocalVarNode:j 18)
+                (LocalVarNode:value 18)
+              )
+            )
+          )
+          (DefnNode:* 21
+            (ArgsNode 21
+              (ListNode 21
+                (ArgumentNode:mat 21)
+              )
+              (ListNode 21)
+              (ListNode 21)
+              (ListNode 21)
+            )
+            (BlockNode 22
+              (FCallNode:assert 22
+                null
+                (IterNode 22
+                  (ArgsNode 22
+                    (ListNode 22)
+                    (ListNode 22)
+                    (ListNode 22)
+                    (ListNode 22)
+                  )
+                  (CallNode:== 22
+                    (VCallNode:numberOfColumns 22)
+                    (ArrayNode 22
+                      (CallNode:numberOfRows 22
+                        (LocalVarNode:mat 22)
+                        null
+                        null
+                      )
+                    )
+                    null
+                  )
+                )
+              )
+              (LocalAsgnNode:result 23
+                (CallNode:new 23
+                  (ConstNode:DenseMatrix 23)
+                  (ArrayNode 23
+                    (VCallNode:numberOfRows 24)
+                    (CallNode:numberOfColumns 24
+                      (LocalVarNode:mat 24)
+                      null
+                      null
+                    )
+                  )
+                  null
+                )
+              )
+              (ForNode 26
+                (LocalAsgnNode:i 26
+                  NilImplicitNode
+                )
+                (ForNode 27
+                  (LocalAsgnNode:j 27
+                    NilImplicitNode
+                  )
+                  (BlockNode 28
+                    (LocalAsgnNode:sum 28
+                      (FixnumNode 28)
+                    )
+                    (ForNode 29
+                      (LocalAsgnNode:k 29
+                        NilImplicitNode
+                      )
+                      (LocalAsgnNode:sum 30
+                        (CallNode:+ 30
+                          (LocalVarNode:sum 30)
+                          (ArrayNode 30
+                            (CallNode:* 30
+                              (FCallNode:[] 30
+                                (ArrayNode 30
+                                  (LocalVarNode:i 30)
+                                  (LocalVarNode:k 30)
+                                )
+                                null
+                              )
+                              (ArrayNode 30
+                                (CallNode:[] 30
+                                  (LocalVarNode:mat 30)
+                                  (ArrayNode 30
+                                    (LocalVarNode:k 30)
+                                    (LocalVarNode:j 30)
+                                  )
+                                  null
+                                )
+                              )
+                              null
+                            )
+                          )
+                          null
+                        )
+                      )
+                      (DotNode 29
+                        (FixnumNode 29)
+                        (VCallNode:numberOfColumns 29)
+                      )
+                    )
+                    (AttrAssignNode:[]= 32
+                      (LocalVarNode:result 32)
+                      (ArrayNode 32
+                        (LocalVarNode:i 32)
+                        (LocalVarNode:j 32)
+                        (LocalVarNode:sum 32)
+                      )
+                    )
+                  )
+                  (DotNode 27
+                    (FixnumNode 27)
+                    (CallNode:numberOfColumns 27
+                      (LocalVarNode:mat 27)
+                      null
+                      null
+                    )
+                  )
+                )
+                (DotNode 26
+                  (FixnumNode 26)
+                  (VCallNode:numberOfRows 26)
+                )
+              )
+              (LocalVarNode:result 36)
+            )
+          )
+        )
+        (ConstNode:Matrix 7)
+      )
+    )

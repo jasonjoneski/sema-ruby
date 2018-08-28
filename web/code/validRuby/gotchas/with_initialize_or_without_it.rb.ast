@@ -1,0 +1,95 @@
+    (RootNode 3
+      (BlockNode 3
+        (ClassNode 3
+          (Colon2ImplicitNode:Parent 3
+            null
+          )
+          (DefnNode:initialize 4
+            (ArgsNode 5
+              (ListNode 5)
+              (ListNode 5)
+              (ListNode 5)
+              (ListNode 5)
+            )
+            (FCallNode:puts 5
+              (ArrayNode 5
+                (StrNode 5)
+              )
+              null
+            )
+          )
+          null
+        )
+        (ClassNode 9
+          (Colon2ImplicitNode:NoInitChild 9
+            null
+          )
+          NilImplicitNode
+          (ConstNode:Parent 9)
+        )
+        (CallNode:new 12
+          (ConstNode:NoInitChild 12)
+          null
+          null
+        )
+        (ClassNode 15
+          (Colon2ImplicitNode:NormalChild 15
+            null
+          )
+          (DefnNode:initialize 16
+            (ArgsNode 17
+              (ListNode 17)
+              (ListNode 17)
+              (ListNode 17)
+              (ListNode 17)
+            )
+            (FCallNode:puts 17
+              (ArrayNode 17
+                (StrNode 17)
+              )
+              null
+            )
+          )
+          (ConstNode:Parent 15)
+        )
+        (CallNode:new 21
+          (ConstNode:NormalChild 21)
+          null
+          null
+        )
+        (ClassNode 24
+          (Colon2ImplicitNode:SuperChild 24
+            null
+          )
+          (DefnNode:initialize 25
+            (ArgsNode 26
+              (ListNode 26)
+              (ListNode 26)
+              (ListNode 26)
+              (ListNode 26)
+            )
+            (BlockNode 26
+              (FCallNode:puts 26
+                (ArrayNode 26
+                  (StrNode 26)
+                )
+                null
+              )
+              (ZSuperNode 27)
+              (FCallNode:puts 28
+                (ArrayNode 28
+                  (StrNode 28)
+                )
+                null
+              )
+            )
+          )
+          (ConstNode:Parent 24)
+        )
+        (CallNode:new 32
+          (ConstNode:SuperChild 32)
+          null
+          null
+        )
+      )
+    )

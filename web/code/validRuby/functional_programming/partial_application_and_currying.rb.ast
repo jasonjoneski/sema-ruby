@@ -1,0 +1,273 @@
+    (RootNode 13
+      (BlockNode 13
+        (FCallNode:proc 13
+          null
+          (IterNode 13
+            (ArgsNode 13
+              (ListNode 13
+                (ArgumentNode:x 13)
+                (ArgumentNode:y 13)
+                (ArgumentNode:z 13)
+              )
+              (ListNode 13)
+              (ListNode 13)
+              (ListNode 13)
+            )
+            (CallNode:+ 13
+              (CallNode:+ 13
+                (DVarNode:x 13)
+                (ArrayNode 13
+                  (DVarNode:y 13)
+                )
+                null
+              )
+              (ArrayNode 13
+                (DVarNode:z 13)
+              )
+              null
+            )
+          )
+        )
+        (FCallNode:proc 18
+          null
+          (IterNode 18
+            (ArgsNode 18
+              (ListNode 18
+                (ArgumentNode:x 18)
+                (ArgumentNode:y 18)
+              )
+              (ListNode 18)
+              (ListNode 18)
+              (ListNode 18)
+            )
+            (FCallNode:proc 18
+              null
+              (IterNode 18
+                (ArgsNode 18
+                  (ListNode 18
+                    (ArgumentNode:z 18)
+                  )
+                  (ListNode 18)
+                  (ListNode 18)
+                  (ListNode 18)
+                )
+                (CallNode:+ 18
+                  (CallNode:+ 18
+                    (DVarNode:x 18)
+                    (ArrayNode 18
+                      (DVarNode:y 18)
+                    )
+                    null
+                  )
+                  (ArrayNode 18
+                    (DVarNode:z 18)
+                  )
+                  null
+                )
+              )
+            )
+          )
+        )
+        (FCallNode:proc 23
+          null
+          (IterNode 23
+            (ArgsNode 23
+              (ListNode 23
+                (ArgumentNode:x 23)
+              )
+              (ListNode 23)
+              (ListNode 23)
+              (ListNode 23)
+            )
+            (FCallNode:proc 23
+              null
+              (IterNode 23
+                (ArgsNode 23
+                  (ListNode 23
+                    (ArgumentNode:y 23)
+                  )
+                  (ListNode 23)
+                  (ListNode 23)
+                  (ListNode 23)
+                )
+                (FCallNode:proc 23
+                  null
+                  (IterNode 23
+                    (ArgsNode 23
+                      (ListNode 23
+                        (ArgumentNode:z 23)
+                      )
+                      (ListNode 23)
+                      (ListNode 23)
+                      (ListNode 23)
+                    )
+                    (CallNode:+ 23
+                      (CallNode:+ 23
+                        (DVarNode:x 23)
+                        (ArrayNode 23
+                          (DVarNode:y 23)
+                        )
+                        null
+                      )
+                      (ArrayNode 23
+                        (DVarNode:z 23)
+                      )
+                      null
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (LocalAsgnNode:l 31
+          (LambdaNode 31
+            (ArgsNode 31
+              (ListNode 31
+                (ArgumentNode:x 31)
+                (ArgumentNode:y 31)
+                (ArgumentNode:z 31)
+              )
+              (ListNode 31)
+              (ListNode 31)
+              (ListNode 31)
+            )
+            (CallNode:+ 31
+              (CallNode:+ 31
+                (DVarNode:x 31)
+                (ArrayNode 31
+                  (DVarNode:y 31)
+                )
+                null
+              )
+              (ArrayNode 31
+                (DVarNode:z 31)
+              )
+              null
+            )
+          )
+        )
+        (CallNode:[] 32
+          (CallNode:[] 32
+            (CallNode:[] 32
+              (CallNode:curry 32
+                (LocalVarNode:l 32)
+                null
+                null
+              )
+              (ArrayNode 32
+                (FixnumNode 32)
+              )
+              null
+            )
+            (ArrayNode 32
+              (FixnumNode 32)
+            )
+            null
+          )
+          (ArrayNode 32
+            (FixnumNode 32)
+          )
+          null
+        )
+        (LocalAsgnNode:a 35
+          (CallNode:[] 35
+            (CallNode:curry 35
+              (LocalVarNode:l 35)
+              null
+              null
+            )
+            (ArrayNode 35
+              (FixnumNode 35)
+            )
+            null
+          )
+        )
+        (LocalAsgnNode:b 38
+          (CallNode:[] 38
+            (LocalVarNode:a 38)
+            (ArrayNode 38
+              (FixnumNode 38)
+            )
+            null
+          )
+        )
+        (CallNode:[] 41
+          (LocalVarNode:b 41)
+          (ArrayNode 41
+            (FixnumNode 41)
+          )
+          null
+        )
+        (LocalAsgnNode:apply_math 44
+          (LambdaNode 44
+            (ArgsNode 44
+              (ListNode 44
+                (ArgumentNode:fn 44)
+                (ArgumentNode:a 44)
+                (ArgumentNode:b 44)
+              )
+              (ListNode 44)
+              (ListNode 44)
+              (ListNode 44)
+            )
+            (CallNode:send 44
+              (DVarNode:a 44)
+              (ArrayNode 44
+                (DVarNode:fn 44)
+                (DVarNode:b 44)
+              )
+              null
+            )
+          )
+        )
+        (LocalAsgnNode:add 45
+          (CallNode:call 45
+            (CallNode:curry 45
+              (LocalVarNode:apply_math 45)
+              null
+              null
+            )
+            (ArrayNode 45
+              (SymbolNode:+ 45)
+            )
+            null
+          )
+        )
+        (CallNode:call 46
+          (LocalVarNode:add 46)
+          (ArrayNode 46
+            (FixnumNode 46)
+            (FixnumNode 46)
+          )
+          null
+        )
+        (LocalAsgnNode:increment 49
+          (CallNode:call 49
+            (CallNode:curry 49
+              (LocalVarNode:add 49)
+              null
+              null
+            )
+            (ArrayNode 49
+              (FixnumNode 49)
+            )
+            null
+          )
+        )
+        (CallNode:call 50
+          (LocalVarNode:increment 50)
+          (ArrayNode 50
+            (FixnumNode 50)
+          )
+          null
+        )
+        (CallNode:call 53
+          (LocalVarNode:increment 53)
+          (ArrayNode 53
+            (FixnumNode 53)
+          )
+          null
+        )
+      )
+    )

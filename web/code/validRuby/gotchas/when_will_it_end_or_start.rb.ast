@@ -1,0 +1,23 @@
+    (RootNode 10
+      (BlockNode 10
+        (LocalAsgnNode:str 10
+          (StrNode 10)
+        )
+        (Match3Node 12
+          (LocalVarNode:str 12)
+          (RegexpNode 12)
+        )
+        (Match3Node 15
+          (LocalVarNode:str 15)
+          (RegexpNode 15)
+        )
+        (Match3Node 18
+          (LocalVarNode:str 18)
+          (RegexpNode 18)
+        )
+        (Match3Node 21
+          (LocalVarNode:str 21)
+          (RegexpNode 21)
+        )
+      )
+    )

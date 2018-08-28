@@ -2,5 +2,6 @@ dependencies {
     implementation group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.11.v20180605'
     implementation group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '9.4.11.v20180605'
     implementation group: 'org.eclipse.jetty', name: 'jetty-annotations', version: '9.4.11.v20180605'
+    implementation project(':core')
     implementation project(':jruby')
 }

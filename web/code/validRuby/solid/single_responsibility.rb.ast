@@ -1,0 +1,247 @@
+    (RootNode 23
+      (BlockNode 23
+        (ClassNode 23
+          (Colon2ImplicitNode:DealProcessor 23
+            null
+          )
+          (BlockNode 24
+            (FCallNode:attr_reader 24
+              (ArrayNode 24
+                (SymbolNode:deals 24)
+              )
+              null
+            )
+            (DefnNode:initialize 26
+              (ArgsNode 26
+                (ListNode 26
+                  (ArgumentNode:deals 26)
+                )
+                (ListNode 26)
+                (ListNode 26)
+                (ListNode 26)
+              )
+              (InstAsgnNode:@deals 27
+                (LocalVarNode:deals 27)
+              )
+            )
+            (DefnNode:process 30
+              (ArgsNode 31
+                (ListNode 31)
+                (ListNode 31)
+                (ListNode 31)
+                (ListNode 31)
+              )
+              (CallNode:each 31
+                (VCallNode:deals 31)
+                null
+                (IterNode 35
+                  (ArgsNode 31
+                    (ListNode 31
+                      (ArgumentNode:deal 31)
+                    )
+                    (ListNode 31)
+                    (ListNode 31)
+                    (ListNode 31)
+                  )
+                  (BlockNode 33
+                    (CallNode:create 33
+                      (ConstNode:Commission 33)
+                      (ArrayNode 33
+                        (HashNode 33
+                          (SymbolNode:deal 33)
+                          (DVarNode:deal 33)
+                          (SymbolNode:amount 33)
+                          (FCallNode:calculate_commission 33
+                            (ArrayNode 33
+                              (DVarNode:deal 33)
+                            )
+                            null
+                          )
+                        )
+                      )
+                      null
+                    )
+                    (VCallNode:mark_deal_processed 34)
+                  )
+                )
+              )
+            )
+            (VCallNode:private 38)
+            (DefnNode:mark_deal_processed 40
+              (ArgsNode 41
+                (ListNode 41)
+                (ListNode 41)
+                (ListNode 41)
+                (ListNode 41)
+              )
+              NilImplicitNode
+            )
+            (DefnNode:calculate_commission 44
+              (ArgsNode 44
+                (ListNode 44
+                  (ArgumentNode:deal 44)
+                )
+                (ListNode 44)
+                (ListNode 44)
+                (ListNode 44)
+              )
+              (CallNode:* 45
+                (CallNode:amount 45
+                  (LocalVarNode:deal 45)
+                  null
+                  null
+                )
+                (ArrayNode 45
+                  (FloatNode 45)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 49
+          (Colon2ImplicitNode:Commission 49
+            null
+          )
+          NilImplicitNode
+          null
+        )
+        (ClassNode 55
+          (Colon2ImplicitNode:DealProcessor 55
+            null
+          )
+          (BlockNode 56
+            (FCallNode:attr_reader 56
+              (ArrayNode 56
+                (SymbolNode:deals 56)
+              )
+              null
+            )
+            (DefnNode:initialize 58
+              (ArgsNode 58
+                (ListNode 58
+                  (ArgumentNode:deals 58)
+                )
+                (ListNode 58)
+                (ListNode 58)
+                (ListNode 58)
+              )
+              (InstAsgnNode:@deals 59
+                (LocalVarNode:deals 59)
+              )
+            )
+            (DefnNode:process 62
+              (ArgsNode 63
+                (ListNode 63)
+                (ListNode 63)
+                (ListNode 63)
+                (ListNode 63)
+              )
+              (CallNode:each 63
+                (VCallNode:deals 63)
+                null
+                (IterNode 66
+                  (ArgsNode 63
+                    (ListNode 63
+                      (ArgumentNode:deal 63)
+                    )
+                    (ListNode 63)
+                    (ListNode 63)
+                    (ListNode 63)
+                  )
+                  (IfNode 65
+                    (VCallNode:mark_deal_processed 65)
+                    (CallNode:create_commission 65
+                      (ConstNode:CommissionCalculator 65)
+                      (ArrayNode 65
+                        (DVarNode:deal 65)
+                      )
+                      null
+                    )
+                    null
+                  )
+                )
+              )
+            )
+            (VCallNode:private 69)
+            (DefnNode:mark_deal_processed 71
+              (ArgsNode 72
+                (ListNode 72)
+                (ListNode 72)
+                (ListNode 72)
+                (ListNode 72)
+              )
+              NilImplicitNode
+            )
+          )
+          null
+        )
+        (ClassNode 76
+          (Colon2ImplicitNode:CommissionCalculator 76
+            null
+          )
+          (BlockNode 77
+            (DefsNode:create_commission 77
+              (SelfNode 77)
+              (ArgsNode 77
+                (ListNode 77
+                  (ArgumentNode:deal 77)
+                )
+                (ListNode 77)
+                (ListNode 77)
+                (ListNode 77)
+              )
+              (CallNode:new 78
+                (ConstNode:Commission 78)
+                (ArrayNode 78
+                  (HashNode 78
+                    (SymbolNode:deal 78)
+                    (LocalVarNode:deal 78)
+                    (SymbolNode:amount 78)
+                    (FCallNode:calculate 78
+                      (ArrayNode 78
+                        (LocalVarNode:deal 78)
+                      )
+                      null
+                    )
+                  )
+                )
+                null
+              )
+            )
+            (VCallNode:private 81)
+            (DefsNode:calculate 83
+              (SelfNode 83)
+              (ArgsNode 83
+                (ListNode 83
+                  (ArgumentNode:deal 83)
+                )
+                (ListNode 83)
+                (ListNode 83)
+                (ListNode 83)
+              )
+              (CallNode:* 84
+                (CallNode:amount 84
+                  (LocalVarNode:deal 84)
+                  null
+                  null
+                )
+                (ArrayNode 84
+                  (FloatNode 84)
+                )
+                null
+              )
+            )
+          )
+          null
+        )
+        (ClassNode 88
+          (Colon2ImplicitNode:Commission 88
+            null
+          )
+          NilImplicitNode
+          null
+        )
+      )
+    )
