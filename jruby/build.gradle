@@ -1,0 +1,9 @@
+//repositories {
+//    flatDir("libs")
+//}
+dependencies {
+    implementation group: 'org.jruby', name: 'jruby-core', version: '9.2.0.0'
+    implementation project(':core')
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.6'
+}

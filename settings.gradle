@@ -1,0 +1,3 @@
+rootProject.name = 'ruby'
+include 'core', 'jruby', 'web'
+
