@@ -1,0 +1,8 @@
+   (RootNode 0
+      (FCallNode:print 0
+        (ArrayNode 0
+          (StrNode 0)
+        )
+        null
+      )
+    )

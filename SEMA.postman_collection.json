@@ -1,138 +1,138 @@
 {
-	"info": {
-		"_postman_id": "df89de37-8243-441c-9555-6473a531aeab",
-		"name": "SEMA",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "Submit Parse Job",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "a7837067-8df1-492b-a0a6-16618de1516a",
-						"type": "text/javascript",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
-							"",
-							"var jsonData = pm.response.json();",
-							"",
-							"pm.test(\"Your test name\", function () {",
-							"    pm.expect(jsonData.link).to.eql(\"http://localhost:8080/astList?astFolder=validRuby\");",
-							"    ",
-							"});",
-							"",
-							"pm.globals.set(\"astListLink\", jsonData.link);"
-						]
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "parseFolder",
-							"value": "validRuby",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "http://localhost:8080/parse",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"parse"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get list of parsed AST Files",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "6e696da4-2ddc-4062-b362-e297f6fa242f",
-						"type": "text/javascript",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
-							"",
-							"var jsonData = pm.response.json();",
-							"",
-							"pm.test(\"AST Files are found.\", function () {",
-							"    pm.expect(jsonData).to.have.lengthOf(130)",
-							"});",
-							"",
-							"pm.globals.set(\"astLink\", jsonData[0])"
-						]
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"url": {
-					"raw": "{{astListLink}}",
-					"host": [
-						"{{astListLink}}"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get individual AST",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "b2744b3c-1c2d-4b5b-b92d-f34aff3451fa",
-						"type": "text/javascript",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
-							"pm.test(\"Body is correct\", function () {",
-							"    pm.expect(pm.response.text()).to.include('RootNode');",
-							"});"
-						]
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"url": {
-					"raw": "{{astLink}}",
-					"host": [
-						"{{astLink}}"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "df89de37-8243-441c-9555-6473a531aeab",
+    "name": "SEMA",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Submit Parse Job",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "a7837067-8df1-492b-a0a6-16618de1516a",
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "",
+              "var jsonData = pm.response.json();",
+              "",
+              "pm.test(\"Your test name\", function () {",
+              "    pm.expect(jsonData.link).to.eql(\"http://localhost:8080/astList?astFolder=validRuby\");",
+              "    ",
+              "});",
+              "",
+              "pm.globals.set(\"astListLink\", jsonData.link);"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "parseFolder",
+              "value": "validRuby",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/parse",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "parse"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get list of parsed AST Files",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "6e696da4-2ddc-4062-b362-e297f6fa242f",
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "",
+              "var jsonData = pm.response.json();",
+              "",
+              "pm.test(\"AST Files are found.\", function () {",
+              "    pm.expect(jsonData).to.have.lengthOf(130)",
+              "});",
+              "",
+              "pm.globals.set(\"astLink\", jsonData[0])"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "{{astListLink}}",
+          "host": [
+            "{{astListLink}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get individual AST",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "b2744b3c-1c2d-4b5b-b92d-f34aff3451fa",
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test(\"Body is correct\", function () {",
+              "    pm.expect(pm.response.text()).to.include('RootNode');",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "{{astLink}}",
+          "host": [
+            "{{astLink}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
 }

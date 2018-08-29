@@ -1,9 +1,8 @@
-//repositories {
-//    flatDir("libs")
-//}
 dependencies {
-    compile group: 'org.jruby', name: 'jruby-core', version: '9.2.0.0'
+    compile group: 'org.jruby', name: 'jruby-core', version: jrubyVersion
     compile project(':core')
-    compile 'com.google.code.gson:gson:2.8.5'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.6'
+}
+
+jar {
+
 }

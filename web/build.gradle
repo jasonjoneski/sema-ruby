@@ -1,7 +1,18 @@
+apply plugin: 'com.github.johnrengelman.shadow'
+
 dependencies {
-    implementation group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.11.v20180605'
-    implementation group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '9.4.11.v20180605'
-    implementation group: 'org.eclipse.jetty', name: 'jetty-annotations', version: '9.4.11.v20180605'
-    implementation project(':core')
-    implementation project(':jruby')
+    compile group: 'org.eclipse.jetty', name: 'jetty-server', version: jettyVersion
+    compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: jettyVersion
+    compile group: 'org.eclipse.jetty', name: 'jetty-annotations', version: jettyVersion
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
+    compile project(':core')
+    compile project(':jruby')
 }
+
+jar {
+    manifest {
+        attributes "Main-Class": "com.sema.parser.web.Main"
+    }
+}
+
+assemble.dependsOn shadowJar

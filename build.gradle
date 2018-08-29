@@ -1,6 +1,6 @@
 plugins {
+    id 'com.github.johnrengelman.shadow' version '2.0.4'
     id 'java'
-    id 'io.franzbecker.gradle-lombok' version '1.14'
     id 'findbugs'
 }
 
@@ -9,7 +9,11 @@ version '1.0-SNAPSHOT'
 
 ext {
     // main
-    tomcatVersion = '8.5.2'
+    logbackVersion = '1.2.3'
+    jacksonVersion = '2.9.6'
+    jettyVersion = '9.4.11.v20180605'
+    jrubyVersion = '9.2.0.0'
+    slf4jVersion = '1.7.25'
 
     // testing
     junitVersion = '4.12'
@@ -24,15 +28,16 @@ allprojects {
     }
 }
 
-
-
 subprojects {
     apply plugin: 'java'
-    apply plugin: 'io.franzbecker.gradle-lombok'
     apply plugin: 'findbugs'
 
     dependencies {
+        compile group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
+        compile group: 'ch.qos.logback', name: 'logback-classic', version: logbackVersion
+
         testCompile group: 'junit', name: 'junit', version: junitVersion
         testCompile group: 'org.mockito', name: 'mockito-core', version: mockitoVersion
     }
+
 }

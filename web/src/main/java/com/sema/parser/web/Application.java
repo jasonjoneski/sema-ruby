@@ -37,7 +37,7 @@ public class Application {
     }
 
     public static ObjectMapper getObjectMapper() {
-        ObjectMapper objectMapper =  new ObjectMapper();
+        ObjectMapper objectMapper = new ObjectMapper();
 
         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
 

@@ -1,10 +1,11 @@
 package com.sema.parser.web;
 
 public class AstErrorResponse {
-    private final String status = "error";
+    private final String status;
     private final String message;
 
     public AstErrorResponse(String message) {
+        this.status = "error";
         this.message = message;
     }
 

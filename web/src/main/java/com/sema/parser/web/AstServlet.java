@@ -2,6 +2,8 @@ package com.sema.parser.web;
 
 import com.sema.ast.AstFindException;
 import com.sema.ast.FolderAstFinder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -13,6 +15,8 @@ import java.io.IOException;
 import java.nio.file.Paths;
 
 public class AstServlet extends HttpServlet {
+    private static final Logger log = LoggerFactory.getLogger(AstServlet.class);
+
     private FolderAstFinder astFinder;
 
     @Override
@@ -20,8 +24,11 @@ public class AstServlet extends HttpServlet {
         String file = req.getParameter("file");
         File astFile = Paths.get(Application.getCodeFolder(), file).toFile();
 
+        log.info("Getting AST for file {}", file);
+
         if (!(astFile.exists() && astFile.isFile())) {
             resp.setStatus(404);
+            log.info("Cannot retrieve AST file {}", astFile);
             return;
         }
 
@@ -30,6 +37,7 @@ public class AstServlet extends HttpServlet {
             String ast = astFinder.getAstFile(astFile);
             resp.getOutputStream().print(ast);
         } catch (AstFindException astFindException) {
+            log.warn("Could not find file {}", astFile, astFindException);
             resp.setStatus(404);
         }
     }
